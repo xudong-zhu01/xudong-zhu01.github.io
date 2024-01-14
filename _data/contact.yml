@@ -19,10 +19,10 @@
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
 #
-#- type: linkedin
+- type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'www.linkedin.com/in/xudong-zhu-457bb3220'                  # Fill with your Linkedin homepage
-  noblank: true
+  #url:  'www.linkedin.com/in/xudong-zhu-457bb3220'                  # Fill with your Linkedin homepage
+
 #
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
