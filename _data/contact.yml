@@ -21,7 +21,8 @@
 #
 - type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  ''                  # Fill with your Linkedin homepage
+  url:  'www.linkedin.com/in/xudong-zhu-457bb3220'                  # Fill with your Linkedin homepage
+  noblank: true
 
 #
 # - type: stack-overflow
