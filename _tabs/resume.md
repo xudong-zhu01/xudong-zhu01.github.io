@@ -4,7 +4,7 @@ icon: fas fa-user-graduate
 order: 1
 ---
 
-[Download my resume here.](https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf)
+[Download my resume here.](https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf)<br>
 Last updated: January 2024
 
 ## Xudong Zhu
@@ -88,4 +88,3 @@ Microsoft Office, C, C++, SPSS, Web design, Social Media Platform Operations
 **Language** <br>
 Chinese (Proficient), English (Proficient), German(Good) <br>
 <hr>
-[Download my resume here.](https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf)
