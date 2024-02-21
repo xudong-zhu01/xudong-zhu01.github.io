@@ -4,6 +4,9 @@ icon: fas fa-user-graduate
 order: 1
 ---
 
+[Download my resume here.](https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf)
+Last updated: January 2024
+
 ## Xudong Zhu
 Master’s student at the Ruprecht-Karls-Universität Heidelberg<br>
 Born in Shaanxi, China on 18.06.1999<br>
@@ -24,10 +27,6 @@ Changchun, China <br>
 <hr>
 
 ### ACADEMIC ACTIVITIES
-**Ruprecht-Karls-Universität Heidelberg**, Heidelberg, Germany<br>
-*Teaching assignment: From Washington to Peking: History of the Early Interactions Between the United States and China* <br>
-Summer term, 2023
-<br><br>
 **Seventh Annual Young Scholars Forum on U.S. - China Relations**, Organized by the Carter Center<br>
 *Paper presented: What to Do About the Strategic Challenge? An Analysis of the Background of NATO’s new China Strategy*<br>
 September, 2022
@@ -43,6 +42,12 @@ July, 2018
 **Jilin University**, Changchun, China <br>
 *Field study along the China-North Korea border* <br>
 October, 2017 <br>
+<hr>
+
+### TEACHING ASSIGNMENT
+**Ruprecht-Karls-Universität Heidelberg**, Heidelberg, Germany<br>
+*From Washington to Peking: History of the Early Interactions Between the United States and China* <br>
+Summer term, 2023
 <hr>
 
 ### INTERNSHIP
