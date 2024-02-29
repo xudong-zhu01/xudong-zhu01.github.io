@@ -18,12 +18,12 @@ Website: https://xudong-zhu01.github.io/<br>
 **Ruprecht-Karls-Universität Heidelberg**, *Heidelberg Center for American Studies (HCA)*  <br> 
 Heidelberg, Germany <br>
 **M.A. in American Studies**, *Political Science and History*<br>
-2023
+2021 - 2023
 <br><br>
 **Jilin University**, *School of International and Public Affairs (SIPA)*<br>
 Changchun, China <br>
 **Bachelor in Law**, *Diplomacy* <br>
-2021 <br>
+2017 - 2021 <br>
 <hr>
 
 ### ACADEMIC ACTIVITIES
