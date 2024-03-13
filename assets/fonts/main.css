@@ -1,0 +1,34 @@
+/*! Source MiSans */
+
+@font-face
+  {font-family:'Source MiSans';
+    font-style:normal;font-weight:400;
+    font-display:swap;
+    src:url(https://github.com/xudong-zhu01/xudong-zhu01.github.io/blob/795b79c0467276383510ab3d540d4c02baf6fca3/assets/fonts/MiSans%20VF.ttf) format('truetype');
+  }
+@font-face
+{font-family:'Source MiSans';
+  font-style:normal;font-weight:600;
+  font-display:swap;
+  src:url(https://github.com/xudong-zhu01/xudong-zhu01.github.io/blob/795b79c0467276383510ab3d540d4c02baf6fca3/assets/fonts/MiSans%20VF.ttf) format('truetype');
+  
+}
+@font-face
+{font-family:'Source MiSans';
+  font-style:normal;font-weight:700;
+  font-display:swap;
+  src:url(https://github.com/xudong-zhu01/xudong-zhu01.github.io/blob/795b79c0467276383510ab3d540d4c02baf6fca3/assets/fonts/MiSans%20VF.ttf) format('truetype');
+  }
+@font-face
+{font-family:'Source MiSans';
+  font-style:normal;font-weight:900;
+  font-display:swap;
+  src:url(https://github.com/xudong-zhu01/xudong-zhu01.github.io/blob/795b79c0467276383510ab3d540d4c02baf6fca3/assets/fonts/MiSans%20VF.ttf) format('truetype');
+  }/*! Lato */
+@font-face
+{font-family:'Source MiSans';
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;
+  src:url(https://github.com/xudong-zhu01/xudong-zhu01.github.io/blob/795b79c0467276383510ab3d540d4c02baf6fca3/assets/fonts/MiSans%20VF.ttf) format('truetype');
+  }
