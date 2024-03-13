@@ -31,6 +31,10 @@
       <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
     {%- endcapture -%}
 
-    {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
+    {%- capture _font -%}
+      <a href="https://hyperos.mi.com/font/en/" target="_blank" rel="noopener">Misans</a>
+    {%- endcapture -%}
+
+    {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme | replace: ':FONT', _font}}
   </p>
 </footer>
