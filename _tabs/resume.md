@@ -22,7 +22,7 @@ Heidelberg, Germany <br>
 <br><br>
 **Jilin University**, *School of International and Public Affairs (SIPA)*<br>
 Changchun, China <br>
-**Bachelor in Law**, *Diplomacy* <br>
+**Bachelor’s Degree of Law**, *Diplomacy* <br>
 2017 - 2021 <br>
 <hr>
 
