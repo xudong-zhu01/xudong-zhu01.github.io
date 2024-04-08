@@ -12,8 +12,8 @@ Ruprecht-Karls-Universität Heidelberg, Heidelberg Center for American Studies (
 2023<br>
 <hr>
 
-## Bachelor Thesis<br>
-<br> [Summary of My Bachelor's Thesis](https://github.com/xudong-zhu01/xudong-zhu01.github.io/blob/6df7614966718e1dd5ec3da98a58951b820e679d/_posts/2024-01-01-bachelor.md)
+## Bachelor Thesis
+[Summary of My Bachelor's Thesis](https://xudong-zhu01.github.io/posts/bachelor/)<br> 
 **从大陆联盟到新路线：德意志第二帝国外交政策转型的研究**<br><br>
 指导教师：孙兴杰 教授<br><br>
 吉林大学，公共外交学院<br>
