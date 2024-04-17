@@ -3,8 +3,8 @@ icon: fas fa-book
 order: 4
 ---
 
-## Master Thesis<br>
-<br> 
+## Master's Thesis
+[Summary of My Master's Thesis](https://xudong-zhu01.github.io/posts/master/)<br>
 **On the Theory of Empire in International Relations and an Analysis of Pax Americana**<br><br>
 First supervisor: PD Dr. Martin Thunert<br>
 Second supervisor: Dr. Wilfried Mausbach<br><br>
@@ -12,7 +12,7 @@ Ruprecht-Karls-Universität Heidelberg, Heidelberg Center for American Studies (
 2023<br>
 <hr>
 
-## Bachelor Thesis
+## Bachelor's Thesis
 [Summary of My Bachelor's Thesis](https://xudong-zhu01.github.io/posts/bachelor/)<br> 
 **从大陆联盟到新路线：德意志第二帝国外交政策转型的研究**<br><br>
 指导教师：孙兴杰 教授<br><br>
