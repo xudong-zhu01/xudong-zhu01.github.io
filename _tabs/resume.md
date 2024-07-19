@@ -26,6 +26,12 @@ Changchun, China <br>
 2017 - 2021 <br>
 <hr>
 
+### TEACHING ASSIGNMENT
+**Ruprecht-Karls-Universität Heidelberg**, Heidelberg, Germany<br>
+*From Washington to Peking: History of the Early Interactions Between the United States and China* <br>
+Summer term, 2023
+<hr>
+
 ### ACADEMIC ACTIVITIES
 **Seventh Annual Young Scholars Forum on U.S. - China Relations**, Organized by the Carter Center<br>
 *Paper presented: What to Do About the Strategic Challenge? An Analysis of the Background of NATO’s new China Strategy*<br>
@@ -42,12 +48,6 @@ July, 2018
 **Jilin University**, Changchun, China <br>
 *Field study along the China-North Korea border* <br>
 October, 2017 <br>
-<hr>
-
-### TEACHING ASSIGNMENT
-**Ruprecht-Karls-Universität Heidelberg**, Heidelberg, Germany<br>
-*From Washington to Peking: History of the Early Interactions Between the United States and China* <br>
-Summer term, 2023
 <hr>
 
 ### INTERNSHIP
@@ -67,7 +67,7 @@ Worked as Professor Swaran Singh’s assistant during his visit to Jilin Univers
 2018
 <br><br>
 Member of the student union of SIPA, Jilin University <br>
-2018 - 2020
+2019 - 2020
 <br><br>
 Member of the Kung Fu Association, Jilin University <br>
 2017 - 2021<br>
