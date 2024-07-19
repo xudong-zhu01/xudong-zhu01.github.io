@@ -93,6 +93,6 @@ The “Diplomatic Award” in the 1st Simulated Diplomatic Spokesperson Competit
 Chinese (Proficient), English (Proficient), German(Good)
 <br><br>
 **Professional Skills** <br>
-Microsoft Office, C, C++, SPSS, Web design, Social Media Platform Operations
+Microsoft Office, Web development (HTML/CSS, JavaScript), C, C++, SPSS, Social Media Platform Operations
 <br>
 <hr>
