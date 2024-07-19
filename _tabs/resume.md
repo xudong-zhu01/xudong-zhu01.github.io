@@ -8,7 +8,7 @@ order: 1
 Last updated: January 2024
 
 ## Xudong Zhu
-Master’s student at the Ruprecht-Karls-Universität Heidelberg<br>
+<br>
 Born in Shaanxi, China on 18.06.1999<br>
 E-Mail: xudong.zhu@alumni.uni-heidelberg.de<br>
 Website: https://xudong-zhu01.github.io/<br>
