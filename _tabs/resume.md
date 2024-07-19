@@ -74,17 +74,25 @@ Member of the Kung Fu Association, Jilin University <br>
 <hr>
 
 ### AWARDS
-The “Excellence Award” of the 16th National Diplomatic Etiquette Competition. <br>
+The “Excellence Award” of the 16th National Diplomatic Etiquette Competition
+<br>
 2018
 <br><br>
-The "Diplomatic Award" of the First Simulated Diplomatic Spokesperson Contest of SIPA, Jilin University.<br>
-2017 <br>
+Best Negotiator in the 3rd Simulated Diplomatic Negotiation Competition, Jilin University
+<br>
+2018 
+<br><br>
+The “Diplomatic Award” in the 1st Simulated Diplomatic Spokesperson Competition, SIPA, Jilin University.
+<br>
+2017
+<br>
 <hr>
 
 ### SKILLS
+**Language** <br>
+Chinese (Proficient), English (Proficient), German(Good)
+<br><br>
 **Professional Skills** <br>
 Microsoft Office, C, C++, SPSS, Web design, Social Media Platform Operations
-<br><br>
-**Language** <br>
-Chinese (Proficient), English (Proficient), German(Good) <br>
+<br>
 <hr>
