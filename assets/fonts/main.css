@@ -1,37 +1,37 @@
-/*! Source MiSans */
+/*! Source SF-Pro */
 
 @font-face
-  {font-family:'Source MiSans';
+  {font-family:'Source SF-Pro';
     font-style:normal;font-weight:400;
     font-display:swap;
-    src:url(https://xudong-zhu01.github.io/assets/fonts/MiSans_Latin_VF.ttf) format('truetype');
+    src:url(https://xudong-zhu01.github.io/assets/fonts/SF-Pro.ttf) format('truetype');
   }
 @font-face
-{font-family:'Source MiSans';
+{font-family:'Source SF-Pro';
   font-style:normal;font-weight:600;
   font-display:swap;
-  src:url(https://xudong-zhu01.github.io/assets/fonts/MiSans_Latin_VF.ttf) format('truetype');
+  src:url(https://xudong-zhu01.github.io/assets/fonts/SF-Pro.ttf) format('truetype');
   }
   
 
 @font-face
-{font-family:'Source MiSans';
+{font-family:'Source SF-Pro';
   font-style:normal;font-weight:700;
   font-display:swap;
-  src:url(https://xudong-zhu01.github.io/assets/fonts/MiSans_Latin_VF.ttf) format('truetype');
+  src:url(https://xudong-zhu01.github.io/assets/fonts/SF-Pro.ttf) format('truetype');
   })
 
 @font-face
-{font-family:'Source MiSans';
+{font-family:'Source SF-Pro';
   font-style:normal;font-weight:900;
   font-display:swap;
-  src:url(https://xudong-zhu01.github.io/assets/fonts/MiSans_Latin_VF.ttf) format('truetype');
+  src:url(https://xudong-zhu01.github.io/assets/fonts/SF-Pro.ttf) format('truetype');
   })
 
 @font-face
-{font-family:'Source MiSans';
+{font-family:'Source SF-Pro';
   font-style:normal;
   font-weight:400;
   font-display:swap;
-  src:url(https://xudong-zhu01.github.io/assets/fonts/MiSans_Latin_VF.ttf) format('truetype');
+  src:url(https://xudong-zhu01.github.io/assets/fonts/SF-Pro.ttf) format('truetype');
   })
