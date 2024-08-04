@@ -1,10 +1,10 @@
-/*! Source SF-Pro */
+/*! Source PublicSans[wght] */
 
 @font-face
-  {font-family:'Source SF-Pro';
+  {font-family:'Source PublicSans[wght]';
     font-style:normal;font-weight:400;
     font-display:swap;
-    src:url(https://xudong-zhu01.github.io/assets/fonts/SF-Pro.ttf) format('truetype');
+    src:url(https://xudong-zhu01.github.io/assets/fonts/PublicSans[wght].ttf) format('truetype');
   }
 
 @font-face
@@ -16,31 +16,31 @@
 
   
 @font-face
-{font-family:'Source SF-Pro';
+{font-family:'Source PublicSans[wght]';
   font-style:normal;font-weight:600;
   font-display:swap;
-  src:url(https://xudong-zhu01.github.io/assets/fonts/SF-Pro.ttf) format('truetype');
+  src:url(https://xudong-zhu01.github.io/assets/fonts/PublicSans[wght].ttf) format('truetype');
   }
   
 
 @font-face
-{font-family:'Source SF-Pro';
+{font-family:'Source PublicSans[wght]';
   font-style:normal;font-weight:700;
   font-display:swap;
-  src:url(https://xudong-zhu01.github.io/assets/fonts/SF-Pro.ttf) format('truetype');
+  src:url(https://xudong-zhu01.github.io/assets/fonts/PublicSans[wght].ttf) format('truetype');
   })
 
 @font-face
-{font-family:'Source SF-Pro';
+{font-family:'Source PublicSans[wght]';
   font-style:normal;font-weight:900;
   font-display:swap;
-  src:url(https://xudong-zhu01.github.io/assets/fonts/SF-Pro.ttf) format('truetype');
+  src:url(https://xudong-zhu01.github.io/assets/fonts/PublicSans[wght].ttf) format('truetype');
   })
 
 @font-face
-{font-family:'Source SF-Pro';
+{font-family:'Source PublicSans[wght]';
   font-style:normal;
   font-weight:400;
   font-display:swap;
-  src:url(https://xudong-zhu01.github.io/assets/fonts/SF-Pro.ttf) format('truetype');
+  src:url(https://xudong-zhu01.github.io/assets/fonts/PublicSans[wght].ttf) format('truetype');
   })
