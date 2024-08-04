@@ -6,6 +6,15 @@
     font-display:swap;
     src:url(https://xudong-zhu01.github.io/assets/fonts/SF-Pro.ttf) format('truetype');
   }
+
+@font-face
+  {font-family:'Source edukai-5.0';
+    font-style:normal;font-weight:400;
+    font-display:swap;
+    src:url(https://xudong-zhu01.github.io/assets/fonts/edukai-5.0.ttf) format('truetype');
+  }
+
+  
 @font-face
 {font-family:'Source SF-Pro';
   font-style:normal;font-weight:600;
