@@ -9,3 +9,8 @@ order: 2
 <br>Seventh Annual Young Scholars Forum on U.S.-China Relations, organized by the Carter Center
 <br>September 27-29, 2022
 <hr>
+## Upcoming Publication
+**WANG Li, ZHU Xudong**, *How to Maintain a Balance in The Intricate Pas Detrois Among China, US and EU*,<br>
+forthcoming publication by Routledge <br>
+2025<br>
+<hr>
