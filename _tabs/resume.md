@@ -15,15 +15,15 @@ Website: https://xudong-zhu01.github.io/<br>
 <hr>
 
 ### EDUCATION
+2021 - 2023 <br>
 **Ruprecht-Karls-Universität Heidelberg**, *Heidelberg Center for American Studies (HCA)*  <br> 
 Heidelberg, Germany <br>
 **M.A. in American Studies**, *Political Science and History*<br>
-2021 - 2023
 <br><br>
+2017 - 2021 <br>
 **Jilin University**, *School of International and Public Affairs (SIPA)*<br>
 Changchun, China <br>
 **Bachelor’s Degree of Law**, *Diplomacy* <br>
-2017 - 2021 <br>
 <hr>
 
 ### TEACHING ASSIGNMENT
