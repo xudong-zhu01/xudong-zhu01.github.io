@@ -27,9 +27,9 @@ Changchun, China <br>
 <hr>
 
 ### TEACHING ASSIGNMENT
+Summer term, 2023<br>
 **Ruprecht-Karls-Universität Heidelberg**, Heidelberg, Germany<br>
 *From Washington to Peking: History of the Early Interactions Between the United States and China* <br>
-Summer term, 2023
 <hr>
 
 ### UPCOMING PUBLICATIONS
