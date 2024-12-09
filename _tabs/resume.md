@@ -41,15 +41,15 @@ Summer term, 2023<br>
 September, 2022<br>
 **Seventh Annual Young Scholars Forum on U.S. - China Relations**, Organized by the Carter Center<br>
 *Paper presented: What to Do About the Strategic Challenge? An Analysis of the Background of NATO’s new China Strategy*<br>
-<br><br>
+<br>
 July - August, 2019<br>
 **Eberhard Karls Universität Tübingen**, Tübingen, Germany <br>
 *The “International and European Studies” summer school*<br>
-<br><br>
+<br>
 July, 2018<br>
 **Rutgers, The State University of New Jersey**, New Brunswick, NJ <br>
 *Student summer program at Rutgers University* <br>
-<br><br>
+<br>
 October, 2017 <br>
 **Jilin University**, Changchun, China <br>
 *Field study along the China-North Korea border* <br>
@@ -66,16 +66,12 @@ May - August, 2020 <br>
 ### SERVICE
 2018<br>
 Volunteer of the 6th China-Korea Public Diplomacy Forum <br>
-<br>
 2019 - 2020<br>
 Moderator of the Academic Forum at SIPA, Jilin University <br>
-<br>
 2018<br>
 Worked as Professor Swaran Singh’s assistant during his visit to Jilin University <br> 
-<br>
 2019 - 2020<br>
 Member of the student union of SIPA, Jilin University <br>
-<br>
 2017 - 2021<br>
 Member of the Kung Fu Association, Jilin University <br>
 <hr>
