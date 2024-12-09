@@ -10,7 +10,8 @@ order: 2
 <br>September 27-29, 2022
 <hr>
 ## Upcoming Publication
-**WANG Li, ZHU Xudong**, *How to Maintain a Balance in The Intricate Pas Detrois Among China, US and EU*,<br>
+**How to Maintain a Balance in The Intricate Pas Detrois Among China, US and EU**<br>
+WANG Li, ZHU Xudong<br>
 forthcoming publication by Routledge <br>
 2025<br>
 <hr>
