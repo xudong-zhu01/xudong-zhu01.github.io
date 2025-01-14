@@ -18,6 +18,7 @@ Website: https://xudong-zhu01.github.io/<br>
 Mar 2025 - Present <br>
 **University of Aberdeen**, *The School of Divinity, History, Philosophy & Art History* <br>
 Aberdeen, United Kingdom <br>
+**PhD Candidate in World History** <br>
 <br>
 Oct 2021 – Aug 2023 <br>
 **Ruprecht-Karls-Universität Heidelberg**, *Heidelberg Center for American Studies (HCA)*  <br> 
