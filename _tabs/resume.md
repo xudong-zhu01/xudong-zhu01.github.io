@@ -5,7 +5,7 @@ order: 1
 ---
 
 [Download my resume here.](https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf)<br>
-Last updated: December 2024
+Last updated: January 2025
 
 ## Xudong Zhu
 <br>
