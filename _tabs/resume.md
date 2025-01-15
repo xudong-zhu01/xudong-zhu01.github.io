@@ -21,12 +21,12 @@ Aberdeen, United Kingdom <br>
 **PhD Candidate**, *World History* <br>
 <br>
 Oct 2021 – Aug 2023 <br>
-**Ruprecht-Karls-Universität Heidelberg**, *Heidelberg Center for American Studies (HCA)*  <br> 
+**Ruprecht-Karls-Universität Heidelberg**, *Heidelberg Center for American Studies*  <br> 
 Heidelberg, Germany <br>
 **M.A. in American Studies**, *Political Science and History*<br>
 <br>
 Sep 2017 – Jun 2021 <br>
-**Jilin University**, *School of International and Public Affairs (SIPA)*<br>
+**Jilin University**, *School of International and Public Affairs*<br>
 Changchun, China <br>
 **Bachelor’s Degree of Law**, *Diplomacy* <br>
 <hr>
