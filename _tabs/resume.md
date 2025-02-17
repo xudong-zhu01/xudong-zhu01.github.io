@@ -15,18 +15,18 @@ Website: https://xudong-zhu01.github.io/<br>
 
 ### EDUCATION
 Mar 2025 - Present <br>
-**PhD Candidate**, *World History* <br>
-**University of Aberdeen**, *The School of Divinity, History, Philosophy & Art History* <br>
+***PhD Candidate***, *World History* <br>
+**University of Aberdeen**, The School of Divinity, History, Philosophy & Art History <br>
 Aberdeen, United Kingdom <br>
 <br>
 Oct 2021 – Aug 2023 <br>
 **M.A. in American Studies**, *Political Science and History*<br>
-**Ruprecht-Karls-Universität Heidelberg**, *Heidelberg Center for American Studies*  <br> 
+**Ruprecht-Karls-Universität Heidelberg**, Heidelberg Center for American Studies  <br> 
 Heidelberg, Germany <br>
 <br>
 Sep 2017 – Jun 2021 <br>
 **Bachelor’s Degree of Law**, *Diplomacy* <br>
-**Jilin University**, *School of International and Public Affairs*<br>
+**Jilin University**, School of International and Public Affairs<br>
 Changchun, China <br>
 <hr>
 
