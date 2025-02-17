@@ -5,30 +5,29 @@ order: 1
 ---
 
 [Download my resume here.](https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf)<br>
-Last updated: February 2025
+Last updated: March 2025
 
 ## Xudong Zhu
 <br>
-Born in Shaanxi, China on 18.06.1999<br>
-E-Mail: xudong.zhu@alumni.uni-heidelberg.de<br>
+E-Mail: xudong.zhu01@gmail.com<br>
 Website: https://xudong-zhu01.github.io/<br>
 <hr>
 
 ### EDUCATION
 Mar 2025 - Present <br>
+**PhD Candidate**, *World History* <br>
 **University of Aberdeen**, *The School of Divinity, History, Philosophy & Art History* <br>
 Aberdeen, United Kingdom <br>
-**PhD Candidate**, *World History* <br>
 <br>
 Oct 2021 – Aug 2023 <br>
+**M.A. in American Studies**, *Political Science and History*<br>
 **Ruprecht-Karls-Universität Heidelberg**, *Heidelberg Center for American Studies*  <br> 
 Heidelberg, Germany <br>
-**M.A. in American Studies**, *Political Science and History*<br>
 <br>
 Sep 2017 – Jun 2021 <br>
+**Bachelor’s Degree of Law**, *Diplomacy* <br>
 **Jilin University**, *School of International and Public Affairs*<br>
 Changchun, China <br>
-**Bachelor’s Degree of Law**, *Diplomacy* <br>
 <hr>
 
 ### TEACHING ASSIGNMENT
