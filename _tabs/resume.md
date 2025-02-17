@@ -4,7 +4,7 @@ icon: fas fa-user-graduate
 order: 1
 ---
 
-[Download my resume here.](https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf)<br>
+[Download my CV here.](https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf)<br>
 Last updated: March 2025
 
 ## Xudong Zhu
