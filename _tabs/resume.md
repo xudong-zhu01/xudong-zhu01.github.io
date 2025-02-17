@@ -8,14 +8,13 @@ order: 1
 Last updated: March 2025
 
 ## Xudong Zhu
-<br>
 E-Mail: xudong.zhu01@gmail.com<br>
 Website: https://xudong-zhu01.github.io/<br>
 <hr>
 
 ### EDUCATION
 Mar 2025 - Present <br>
-***PhD Candidate***, *World History* <br>
+**PhD Candidate**, *World History* <br>
 **University of Aberdeen**, The School of Divinity, History, Philosophy & Art History <br>
 Aberdeen, United Kingdom <br>
 <br>
