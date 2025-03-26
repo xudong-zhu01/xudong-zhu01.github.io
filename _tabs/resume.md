@@ -14,7 +14,7 @@ Website: https://xudong-zhu01.github.io/<br>
 
 ### EDUCATION
 Mar 2025 - Present <br>
-**PhD Candidate**, *World History* <br>
+**PhD Candidate**, *International History* <br>
 **University of Aberdeen**, The School of Divinity, History, Philosophy & Art History <br>
 Aberdeen, United Kingdom <br>
 <br>
