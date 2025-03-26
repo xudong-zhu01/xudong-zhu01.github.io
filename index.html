@@ -2,21 +2,51 @@
 layout: page
 # Index page
 ---
+html
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Welcome - Xudong Zhu</title>
     <style>
+        body {
+            font-family: Arial, sans-serif; /* 统一字体 */
+            max-width: 800px; /* 限制宽度 */
+            margin: 0 auto; /* 居中 */
+            padding: 20px; /* 内边距 */
+        }
         p {
             text-indent: 2em; /* 首行缩进 */
-            line-height: 1.6; /* 增加行距，提升可读性 */
+            line-height: 1.6; /* 行距 */
             margin-bottom: 1em; /* 段落间距 */
         }
         h2 {
             text-align: center; /* 标题居中 */
             color: #333; /* 标题颜色 */
+            margin-top: 2em; /* 上间距 */
         }
         i {
-            font-style: italic; /* 确保斜体效果 */
+            font-style: italic; /* 斜体 */
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc; /* 柔和分隔线 */
+            margin: 2em 0; /* 分隔线间距 */
+        }
+        ul {
+            list-style-type: disc; /* 项目符号 */
+            margin-left: 2em; /* 缩进 */
+            line-height: 1.6; /* 行距 */
+        }
+        img {
+            max-width: 100%; /* 自适应宽度 */
+            height: auto; /* 保持比例 */
+            display: block; /* 居中 */
+            margin: 1em auto; /* 间距 */
+        }
+        strong {
+            color: #000; /* 强调文字颜色 */
         }
     </style>
 </head>
@@ -34,30 +64,33 @@ layout: page
     <p>
         I hold a Master of Arts in American Studies from Ruprecht-Karls-Universität Heidelberg, Germany, and a Bachelor’s degree in Law with a focus on Diplomacy from Jilin University, China. My academic journey has centered on International Relations, encompassing international history, theoretical frameworks, international law, and international organizations. At Heidelberg, I specialized in U.S. history and politics, developing deep expertise in areas such as U.S. economic policy, the transatlantic alliance, nuclear deterrence theory, and Trump-era politics. My research interests also extend to German politics and foreign affairs, German history, and the European Union.
     </p>
+
+    <hr>
+
+    <h2>NEWS AND UPDATES</h2>
+    <p>
+        <strong>[Feb. 2025]</strong> I am delighted to share that I have been admitted as a PhD candidate in History at the University of Aberdeen.
+    </p>
+
+    <hr>
+
+    <h2>RESEARCH INTERESTS</h2>
+    <ul>
+        <li>Applied History</li>
+        <li>Global Security and Governance</li>
+        <li>Historical Statecraft</li>
+        <li>Realpolitik and Grand Strategy</li>
+        <li>Sino-German/European Relations</li>
+        <li>Sino-US Relations</li>
+    </ul>
+
+    <hr>
+
+    <p>
+        <img src="https://xudong-zhu01.github.io/assets/img/wk.png" alt="Desktop View">
+    </p>
+    <p>
+        <img src="https://xudong-zhu01.github.io/assets/w1.png" alt="Auto">
+    </p>
 </body>
-
-        <hr />
-
-        <h2>NEWS and UPDATES</h2>
-
-        <p><strong><font color="black">[Feb. 2025]</font> I am delighted to share that I have been admitted as a PhD candidate in History at the University of Aberdeen. </strong><br /></p>
-         
-        <hr />
-
-        <h2>RESEARCH INTERESTS</h2>
-        
-        <ul>
-          <li>Applied History</li>
-          <li>Global Security and Governance</li>
-          <li>Historical Statecraft</li>
-          <li>Realpolitik and Grand Strategy</li>
-          <li>Sino-German/European Relations</li>
-          <li>Sino-US Relations</li>
-        </ul>
-
-        <hr />
-
-        <p><img src="https://xudong-zhu01.github.io/assets/img/wk.png" alt="Desktop View" /></p>
-
-        <hr />
-        <p></p><img src = "https://xudong-zhu01.github.io/assets/w1.png" alt="auto"/></p>
+</html>
