@@ -4,7 +4,7 @@ icon: fas fa-user-graduate
 order: 1
 ---
 <iframe src="https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf" width="100%" height="600px">
-    此浏览器不支持 PDF 预览，请<a href="yourfile.pdf" download>点击下载 PDF</a>。
+    此浏览器不支持 PDF 预览，请<a href="https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf" download>点击下载 PDF</a>。
 </iframe>
 
 [Download my CV here.](https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf)<br>
