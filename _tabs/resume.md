@@ -3,12 +3,20 @@
 icon: fas fa-user-graduate
 order: 1
 ---
+<style>
+    iframe {
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+</style>
+<body>
 <iframe src="https://xudong-zhu01.github.io/documents/cv-xudong-zhu.pdf" width="100%" height="600px">
     此浏览器不支持 PDF 预览，请<a href="https://xudong-zhu01.github.io/documents/cv-xudong-zhu.pdf" download>点击下载 PDF</a>。
 </iframe>
 
 <!-- 引入 PDF.js 的 viewer -->
 <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://xudong-zhu01.github.io/documents/cv-xudong-zhu.pdf" width="100%" height="600px"></iframe>
+</body>
 
 [Download my CV here.](https://xudong-zhu01.github.io/documents/cv xudong zhu.pdf)<br>
 Last updated: March 2025
