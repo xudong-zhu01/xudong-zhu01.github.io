@@ -18,6 +18,8 @@ order: 2
 Xudong Zhu<br>
 卡特中心中美印象<br>
 
+<hr>
+
 ## Upcoming Publication
 
 **How to Maintain a Balance in The Intricate Pas Detrois Among China, US and EU**<br>
