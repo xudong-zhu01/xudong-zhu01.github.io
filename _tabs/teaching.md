@@ -4,6 +4,12 @@ order: 3
 ---
 
 ## Teaching Assignment
+
+**HI1022: Europe in the Twentieth Century**<br><br>
+
+<hr>
+<details>
+<summary>From Washington to Peking: History of the Early Interactions Between the United States and China</summary>
 **From Washington to Peking: History of the Early Interactions Between the United States and China**<br><br>
 Ruprecht-Karls-Universität Heidelberg, Heidelberg Center for American Studies (HCA)<br>
 Time: Monday, 18:00 - 20:00<br>
@@ -60,4 +66,5 @@ Chinese Exclusion Act of 1882.” *Journal of Human Capital 9*, no. 3 (2015):
 298–328.<br><br>
 • **Session 9 (June 12): Conclusion: America's Role in China's Entry into the
 International Order/ Feedback**<br>
+</details>
 <hr>
