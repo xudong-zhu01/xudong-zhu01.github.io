@@ -7,8 +7,11 @@ order: 3
 
 <details>
 <summary>HI1022: Europe in the Twentieth Century</summary>
+<br><br>
+University of Aberdeen
+<br><br>
+A comprehensive treatment of this enormous subject is obviously impracticable in an introductory course within the space of one semester, so we aim to highlight a selection of key political, economic, social and other themes. The selection varies from year to year, but is likely to include the rise of Bolshevism, reconstruction and European integration after WW2, and the Cold War. The twice-weekly lectures introduce the topics, while the eight tutorial meetings emphasise the development of practical transferable research and presentation skills as well as the building of historical knowledge.
 </details>
-
 <hr>
 <details>
 <summary>From Washington to Peking: History of the Early Interactions Between the United States and China</summary>
