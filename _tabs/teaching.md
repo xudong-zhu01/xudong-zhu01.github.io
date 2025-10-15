@@ -12,6 +12,7 @@ order: 3
 <hr>
 <details>
 <summary>From Washington to Peking: History of the Early Interactions Between the United States and China</summary>
+<br><br>
 Ruprecht-Karls-Universität Heidelberg, Heidelberg Center for American Studies (HCA)<br>
 Time: Monday, 18:00 - 20:00<br>
 Venue: Oculus, Heidelberg Center for American Studies (Hauptstraße 120)<br>
