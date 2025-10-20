@@ -3,9 +3,7 @@ icon: fas fa-book-open
 order: 2
 ---
 
-<section aria-labelledby="publications-heading">
-  <h2 id="publications-heading">Publications</h2>
-
+<section>
   <h3>Academic</h3>
   <ul>
     <li>
