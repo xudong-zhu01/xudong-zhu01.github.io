@@ -29,7 +29,7 @@ order: 2
     <li>
       <strong>朱旭东。</strong>
       《从“交易的艺术”到“外交的艺术”：特朗普国际关系观的前后呼应》，卡特中心中美印象，11/09/2025。
-      <a href="https://zmyx.info/on-trump-interview-with-playboy-in-1990/" target="_blank" rel="noopener">链接</a><br>
+      <a href="https://zmyx.info/on-trump-interview-with-playboy-in-1990/" target="_blank" rel="noopener">Link</a><br>
       （Xudong Zhu, <em>From “The Art of the Deal” to “The Art of Diplomacy”: The Continuities in Trump’s View of International Relations</em>, U.S.-China Perception Monitor, The Carter Center, 11/09/2025）
     </li>
   </ul>
