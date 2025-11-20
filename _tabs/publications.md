@@ -18,7 +18,7 @@ order: 2
       <a href="https://uscnpm.org/2025/08/12/europe-autonomy-against-chinese-influence/" target="_blank" rel="noopener">Link</a>
     </li>
     <li>
-      <strong>Wang, Paul; Zhu, Xudong,</strong>
+      <strong>Wang, Paul and Zhu, Xudong,</strong>
       "How to Maintain a Balance in The Intricate Pas Detrois Among China, US and EU", in <em>The Trilateral Interactions China, the US, and the EU on Tensions, Competition, and Cooperation</em>, ed. by Zuokui Liu, Marek Hrubec, and Shaohua Yan (Routledge, 2026)
       <a href="https://www.routledge.com/The-Trilateral-Interactions-China-the-US-and-the-EU-on-Tensions-Competition-and-Cooperation/Zuokui-Hrubec-Shaohua/p/book/9781041233336" target="_blank" rel="noopener">Link</a>
     </li>
