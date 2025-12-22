@@ -12,7 +12,7 @@ order: 1
 </style>
 
 [Download my CV here.](https://xudong-zhu01.github.io/documents/cv-xudong-zhu.pdf)<br>
-Last updated: Oct. 2025
+Last updated: Dec. 2025
 
 <body>
 <!-- 引入 PDF.js 的 viewer -->
