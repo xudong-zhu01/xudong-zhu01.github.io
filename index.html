@@ -6,19 +6,181 @@ title: Welcome
 <div class="row mb-5">
   <div class="col-12">
     <p class="lead">
-      My name is <strong>Xudong Zhu</strong>. I am a PhD candidate in International History at the 
+      My name is <strong>Xudong Zhu</strong>. I am a PhD candidate in
+      International History at the
       <span class="text-danger">University of Aberdeen</span>.
     </p>
     <p>
-      I hold a Master of Arts in American Studies from <span style="color: #960018">Ruprecht-Karls-Universität Heidelberg</span> and a Bachelor’s degree in Law with a focus on Diplomacy from <span class="text-primary">Jilin University</span>. My academic journey has centered on International Relations, encompassing international history, IR theory, international law, and international organizations. At Heidelberg, I specialized in U.S. history, politics, and the transatlantic alliance.
+      I hold a Master of Arts in American Studies from
+      <span style="color: #960018">Ruprecht-Karls-Universität Heidelberg</span>
+      and a Bachelor’s degree in Law with a focus on Diplomacy from
+      <span class="text-primary">Jilin University</span>. My academic journey
+      has centered on International Relations, encompassing international
+      history, IR theory, international law, and international organizations. At
+      Heidelberg, I specialized in U.S. history, politics, and the transatlantic
+      alliance.
     </p>
     <p>
-      My research interests also extend to German politics and foreign affairs, German history, and the European Union.
+      My research interests also extend to German politics and foreign affairs,
+      German history, and the European Union.
     </p>
   </div>
 </div>
+<style>
+  .home-modern {
+    color: var(--text-color);
+  }
 
-<hr class="my-4">
+  .hero-modern {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    color: #f8fafc;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  }
+
+  .hero-modern::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at 20% 20%,
+        rgba(255, 255, 255, 0.12),
+        transparent 35%
+      ),
+      radial-gradient(
+        circle at 80% 0%,
+        rgba(59, 130, 246, 0.2),
+        transparent 25%
+      );
+    pointer-events: none;
+  }
+
+  .hero-modern h1 {
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero-eyebrow {
+    letter-spacing: 0.2em;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: rgba(248, 250, 252, 0.8);
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1.25rem 0;
+  }
+
+  .btn-modern {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    border-radius: 999px;
+    padding: 0.7rem 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  }
+
+  .btn-modern.primary {
+    background: linear-gradient(120deg, #60a5fa, #a78bfa);
+    color: #0b1021;
+  }
+
+  .btn-modern.secondary {
+    background: rgba(248, 250, 252, 0.14);
+    color: #e5e7eb;
+    border: 1px solid rgba(248, 250, 252, 0.2);
+  }
+
+  .btn-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.85rem;
+    margin-top: 1.5rem;
+  }
+
+  .stat-card {
+    background: rgba(15, 23, 42, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1rem;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+    color: rgba(226, 232, 240, 0.85);
+  }
+
+  .stat-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+  .section-heading {
+    font-size: 1.1rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted-color);
+    margin-bottom: 0.75rem;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  }
+
+  [data-mode="dark"] .glass-card,
+  @media (prefers-color-scheme: dark) {
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      border-color: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .pill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .pill {
+    border-radius: 999px;
+    padding: 0.5rem 0.95rem;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--card-border-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .modern-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  <hr class="my-4">
 
 <div class="row g-5">
   <div class="col-lg-7">
@@ -46,23 +208,274 @@ title: Welcome
             Admitted as a PhD candidate in History at the University of Aberdeen.
           </li>
         </ul>
+  .modern-list li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.85rem;
+    align-items: start;
+  }
+
+  .modern-badge {
+    border-radius: 999px;
+    padding: 0.35rem 0.85rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    background: linear-gradient(135deg, #e0f2fe, #e0e7ff);
+    color: #0f172a;
+    border: 1px solid rgba(14, 116, 144, 0.08);
+  }
+
+  .modern-meta {
+    color: var(--text-muted-color);
+    font-size: 0.95rem;
+  }
+
+  .two-column-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .callout-card {
+    border-left: 4px solid #3b82f6;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .map-card img {
+    border-radius: 0.9rem;
+    border: 1px solid var(--card-border-color);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  @media (max-width: 767px) {
+    .hero-modern {
+      padding: 2rem 1.25rem;
+    }
+
+    .modern-list li {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="home-modern">
+  <section class="hero-modern mb-5">
+    <div class="position-relative" style="z-index: 1">
+      <p class="hero-eyebrow mb-2">
+        International History • University of Aberdeen
+      </p>
+      <h1 class="fw-bold mb-3">Xudong Zhu</h1>
+      <p class="lead mb-4" style="max-width: 760px">
+        PhD candidate in International History exploring statecraft, alliance
+        dynamics, and the real-world lessons history offers to today’s policy
+        debates.
+      </p>
+      <div class="hero-actions">
+        <a
+          class="btn-modern primary"
+          href="/documents/cv_xudong_zhu.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i class="fas fa-file-alt"></i> View CV
+        </a>
+        <a
+          class="btn-modern secondary"
+          href="https://www.linkedin.com/in/xudong-zhu-457bb3220"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i class="fab fa-linkedin"></i> Connect on LinkedIn
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-label">Doctoral Research</div>
+          <div class="stat-value">
+            International History, University of Aberdeen
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Previous Degrees</div>
+          <div class="stat-value">
+            M.A. American Studies, Heidelberg • LL.B. Diplomacy, Jilin
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Focus</div>
+          <div class="stat-value">
+            U.S.–Europe relations, Sino-European affairs, applied history
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+
+  <div class="two-column-grid mb-4">
+    <section class="glass-card">
+      <div class="section-heading">News &amp; Updates</div>
+      <ul class="modern-list">
+        <li>
+          <span class="modern-badge">Oct 2025</span>
+          <div>
+            <div class="fw-semibold mb-1">
+              Postgraduate Member, Royal Historical Society
+            </div>
+            <div class="modern-meta">
+              Also serving as Teaching Assistant for
+              <em>HI1022: Europe in the Twentieth Century</em>.
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="modern-badge">Aug 2025</span>
+          <div>
+            <div class="fw-semibold mb-1">
+              <i class="fas fa-award text-warning"></i> Jimmy Carter Prize
+              (Runner-up)
+            </div>
+            <div class="modern-meta">
+              Recognized in the 2025 China Focus Essay Contest —
+              <a
+                href="https://uscnpm.org/2025/08/12/europe-autonomy-against-chinese-influence/"
+                target="_blank"
+                rel="noreferrer"
+                >Read the article</a
+              >.
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="modern-badge">Jun 2025</span>
+          <div>
+            <div class="fw-semibold mb-1">EEW Summer Internship</div>
+            <div class="modern-meta">
+              Joined the University of Aberdeen’s EEW team for summer research.
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="modern-badge">Feb 2025</span>
+          <div>
+            <div class="fw-semibold mb-1">PhD Admission</div>
+            <div class="modern-meta">
+              Admitted as a PhD candidate in History at the University of
+              Aberdeen.
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="glass-card callout-card">
+      <div class="section-heading">Focus &amp; Approach</div>
+      <p class="mb-3">
+        I work at the intersection of international history and contemporary
+        policy, using applied history to inform debates on alliance management,
+        strategic autonomy, and the evolving transatlantic relationship.
+      </p>
+      <div class="pill-list mb-3">
+        <span class="pill">Applied History</span>
+        <span class="pill">Global Security &amp; Governance</span>
+        <span class="pill">Historical Statecraft</span>
+        <span class="pill">Realpolitik &amp; Grand Strategy</span>
+        <span class="pill">Sino-German/EU Relations</span>
+        <span class="pill">Sino-US Relations</span>
+      </div>
+      <div class="pill-list">
+        <span class="pill">International Law &amp; Organizations</span>
+        <span class="pill">U.S. History &amp; Transatlantic Alliance</span>
+      </div>
+    </section>
   </div>
 
   <div class="col-lg-5">
     <h3 class="mb-3">Research Interests</h3>
     <div class="d-flex flex-wrap gap-2 mb-4">
-      <span class="badge rounded-pill text-bg-light border">Applied History</span>
-      <span class="badge rounded-pill text-bg-light border">Global Security & Governance</span>
-      <span class="badge rounded-pill text-bg-light border">Historical Statecraft</span>
-      <span class="badge rounded-pill text-bg-light border">Realpolitik & Grand Strategy</span>
-      <span class="badge rounded-pill text-bg-light border">Sino-German/EU Relations</span>
-      <span class="badge rounded-pill text-bg-light border">Sino-US Relations</span>
+      <span class="badge rounded-pill text-bg-light border"
+        >Applied History</span
+      >
+      <span class="badge rounded-pill text-bg-light border"
+        >Global Security & Governance</span
+      >
+      <span class="badge rounded-pill text-bg-light border"
+        >Historical Statecraft</span
+      >
+      <span class="badge rounded-pill text-bg-light border"
+        >Realpolitik & Grand Strategy</span
+      >
+      <span class="badge rounded-pill text-bg-light border"
+        >Sino-German/EU Relations</span
+      >
+      <span class="badge rounded-pill text-bg-light border"
+        >Sino-US Relations</span
+      >
     </div>
+    <div class="two-column-grid mb-4">
+      <section class="glass-card">
+        <div class="section-heading">Teaching &amp; Service</div>
+        <p class="mb-2">
+          <strong>Teaching Assistant</strong> for
+          <em>HI1022: Europe in the Twentieth Century</em>, bringing archival
+          sources and policy case studies into the classroom.
+        </p>
+        <p class="mb-0">
+          Engaged in mentorship and academic community-building through the
+          Royal Historical Society postgraduate network.
+        </p>
+      </section>
 
-    <div class="mt-4 text-center">
-      <img src="https://xudong-zhu01.github.io/assets/img/wk.png" alt="Visitor Map" class="img-fluid rounded shadow-sm border">
+      <div class="mt-4 text-center">
+        <img
+          src="https://xudong-zhu01.github.io/assets/img/wk.png"
+          alt="Visitor Map"
+          class="img-fluid rounded shadow-sm border"
+        />
+      </div>
+      <section class="glass-card map-card">
+        <div class="section-heading">Where visitors are tuning in</div>
+        <img
+          src="https://xudong-zhu01.github.io/assets/img/wk.png"
+          alt="Visitor Map"
+          class="img-fluid"
+        />
+      </section>
     </div>
   </div>
+
+  <section class="glass-card">
+    <div class="section-heading">Let’s connect</div>
+    <div class="two-column-grid">
+      <div>
+        <p class="mb-2">
+          I’m always keen to discuss research collaborations, teaching
+          opportunities, and policy-focused projects.
+        </p>
+        <div class="pill-list">
+          <span class="pill"
+            ><i class="fas fa-envelope"></i> xudong.zhu01@gmail.com</span
+          >
+          <span class="pill"
+            ><i class="fas fa-map-marker-alt"></i> Aberdeen, Scotland</span
+          >
+        </div>
+      </div>
+      <div
+        class="d-flex align-items-center justify-content-start justify-content-md-end gap-2"
+      >
+        <a class="btn-modern primary" href="mailto:xudong.zhu01@gmail.com">
+          <i class="fas fa-paper-plane"></i> Say hello
+        </a>
+        <a
+          class="btn-modern secondary"
+          href="/documents/cv_xudong_zhu.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </section>
 </div>
