@@ -3,81 +3,336 @@ layout: page
 # Index page
 ---
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Welcome - Xudong Zhu</title>
-  <style>
-    p {
-      line-height: 1.6; /* 增加行距，提升可读性 */
-      margin-bottom: 1em; /* 段落间距 */
-    }
-    h2 {
-      text-align: center; /* 标题居中 */
-      color: #333; /* 标题颜色 */
-    }
-    i {
-      font-style: italic; /* 确保斜体效果 */
-    }
-  </style>
-</head>
-<body>
-  <h2>WELCOME!</h2>
-  <p>
-    My name is Xudong Zhu. I am a PhD candidate in International History at
-    <span style="color: rgb(128, 0, 32)">the University of Aberdeen.</span>
-  </p>
-  <p>
-    I hold a Master of Arts in American Studies from
-    <span style="color: rgb(150, 0, 24)"
-      >Ruprecht-Karls-Universität Heidelberg</span
-    >, Germany, and a Bachelor’s degree in Law with a focus on Diplomacy from
-    <span style="color: rgb(14, 65, 156)">Jilin University</span>, China. My
-    academic journey has centered on International Relations, encompassing
-    international history, IR theory, international law, and international
-    organizations. At Heidelberg, I specialized in U.S. history, politics, and
-    the transatlantic alliance.
-  </p>
-  <p>
-    My research interests also extend to German politics and foreign affairs,
-    German history, and the European Union.
-  </p>
-</body>
+<style>
+  :root {
+    --accent: #0f62fe;
+    --text-main: #0b1b2b;
+    --text-muted: #4b5563;
+    --border: #e5e7eb;
+    --card-bg: #ffffff;
+  }
 
-<hr />
+  .page-shell {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2.5rem;
+    color: var(--text-main);
+  }
 
-<h2>NEWS and UPDATES</h2>
+  .hero {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(15, 98, 254, 0.05), rgba(15, 98, 254, 0.02));
+  }
 
-<p>
-  <strong><font color="black">2025</font></strong
-  ><br />
-  <ul>[Oct.] Honoured to be elected as a Postgraduate Member of the Royal Historical
-  Society.<br />
-  Excited to be a Teaching Assistant for HI1022: Europe in the Twentieth Century!<br /></ul>
-  <ul>[Aug.] My essay was recognized with the Jimmy Carter Prize (Runner-up) in the 2025 China Focus Essay Contest. <a href="https://uscnpm.org/2025/08/12/europe-autonomy-against-chinese-influence/" target="_blank">Read the article here.</a></ul>
-  <ul>[Jun.] Commenced a summer internship with the EEW team (Experience, Engagement & Wellbeing) at the University of Aberdeen, contributing to projects designed to improve the international student experience.</ul> 
-  <ul>[Feb.] I am delighted to
-  share that I have been admitted as a PhD candidate in History at the
-  University of Aberdeen.</ul>
-</p>
+  .hero h1 {
+    font-size: clamp(2rem, 3vw, 2.4rem);
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.01em;
+  }
 
-<hr />
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    background: rgba(15, 98, 254, 0.08);
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.78rem;
+  }
 
-<h2>RESEARCH INTERESTS</h2>
+  .lead {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin: 0 0 1.1rem;
+  }
 
-<ul>
-  <li>Applied History</li>
-  <li>Global Security and Governance</li>
-  <li>Historical Statecraft</li>
-  <li>Realpolitik and Grand Strategy</li>
-  <li>Sino-German/European Relations</li>
-  <li>Sino-US Relations</li>
-</ul>
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin: 0 0 1.2rem;
+  }
 
-<hr />
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--card-bg);
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
 
-<p>
-  <img
-    src="https://xudong-zhu01.github.io/assets/img/wk.png"
-    alt="Desktop View"
-  />
-</p>
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.1rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  }
+
+  .button-primary {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+    box-shadow: 0 8px 18px rgba(15, 98, 254, 0.18);
+  }
+
+  .button-ghost {
+    background: var(--card-bg);
+    color: var(--text-main);
+  }
+
+  .button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.06);
+  }
+
+  .quick-facts {
+    display: grid;
+    gap: 0.9rem;
+    padding: 1rem;
+    border-radius: 14px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+  }
+
+  .fact-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 700;
+  }
+
+  .fact-value {
+    font-weight: 700;
+  }
+
+  .section {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+  }
+
+  .section-title {
+    margin: 0;
+    font-size: 1.35rem;
+  }
+
+  .section-subtitle {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.1rem;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .muted {
+    color: var(--text-muted);
+  }
+
+  .news-date {
+    font-weight: 800;
+    color: var(--accent);
+  }
+
+  .news-link {
+    color: var(--text-main);
+    font-weight: 700;
+    text-underline-offset: 3px;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-main);
+    font-weight: 700;
+    text-decoration: none;
+  }
+</style>
+
+<div class="page-shell">
+  <section class="hero">
+    <div>
+      <span class="eyebrow">International History · Policy</span>
+      <h1>Hello, I’m Xudong Zhu</h1>
+      <p class="lead">
+        PhD candidate in International History at the University of Aberdeen, studying how statecraft,
+        alliances, and great-power competition inform today’s governance.
+      </p>
+      <div class="chips">
+        <span class="chip">Royal Historical Society (Postgraduate Member)</span>
+        <span class="chip">Teaching Assistant, University of Aberdeen</span>
+        <span class="chip">Jimmy Carter Prize (Runner-up)</span>
+      </div>
+      <div class="actions">
+        <a class="button button-primary" href="/documents/cv_xudong_zhu.pdf" target="_blank" rel="noopener">View CV</a>
+        <a class="button button-ghost" href="mailto:xudong.zhu01@gmail.com">Get in touch</a>
+      </div>
+    </div>
+    <div class="quick-facts">
+      <div>
+        <div class="fact-label">Current focus</div>
+        <div class="fact-value">Comparative foreign policy &amp; transatlantic security</div>
+      </div>
+      <div>
+        <div class="fact-label">Academic journey</div>
+        <div class="fact-value">MA American Studies, Heidelberg · LLB (Diplomacy), Jilin University</div>
+      </div>
+      <div>
+        <div class="fact-label">Languages</div>
+        <div class="fact-value">English · Chinese · German (B2)</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">News &amp; Updates</h2>
+      <span class="section-subtitle">Recent highlights</span>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <span class="news-date">Oct 2025</span>
+        <p class="muted">Honoured to be elected as a Postgraduate Member of the Royal Historical Society and thrilled to support teaching for HI1022: Europe in the Twentieth Century.</p>
+      </article>
+      <article class="card">
+        <span class="news-date">Aug 2025</span>
+        <p class="muted">
+          Essay awarded the Jimmy Carter Prize (Runner-up) in the 2025 China Focus Essay Contest — exploring European autonomy and China policy.
+          <a class="news-link" href="https://uscnpm.org/2025/08/12/europe-autonomy-against-chinese-influence/" target="_blank" rel="noopener">Read the article</a>.
+        </p>
+      </article>
+      <article class="card">
+        <span class="news-date">Jun 2025</span>
+        <p class="muted">Joined the University of Aberdeen’s EEW team (Experience, Engagement &amp; Wellbeing) to enhance international student support and engagement.</p>
+      </article>
+      <article class="card">
+        <span class="news-date">Feb 2025</span>
+        <p class="muted">Admitted as a PhD candidate in History at the University of Aberdeen, focusing on security, alliances, and strategic history.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Research Interests</h2>
+      <span class="section-subtitle">What I study</span>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Applied History &amp; Statecraft</h3>
+        <p class="muted">Using historical parallels to inform contemporary strategy and decision-making.</p>
+        <ul class="muted">
+          <li>Historical statecraft and grand strategy</li>
+          <li>Realpolitik in comparative perspective</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Global Security &amp; Governance</h3>
+        <p class="muted">Institutions, alliances, and crisis management in a multipolar world.</p>
+        <ul class="muted">
+          <li>Transatlantic cooperation and NATO</li>
+          <li>International organizations and legal frameworks</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Sino–European &amp; Sino–US Relations</h3>
+        <p class="muted">Comparing strategic cultures, foreign policy tools, and public diplomacy.</p>
+        <ul class="muted">
+          <li>Sino-German and EU–China relations</li>
+          <li>US–China competition and alliance management</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Spotlights</h2>
+      <span class="section-subtitle">Teaching, writing, and engagement</span>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Teaching &amp; Mentoring</h3>
+        <p class="muted">Teaching Assistant for HI1022: Europe in the Twentieth Century — designing seminars that connect archival cases to present-day debates.</p>
+      </article>
+      <article class="card">
+        <h3>Writing &amp; Commentary</h3>
+        <p class="muted">Public scholarship on transatlantic relations, European strategic autonomy, and the policy uses of history.</p>
+      </article>
+      <article class="card">
+        <h3>Community &amp; Service</h3>
+        <p class="muted">Supporting student wellbeing through the EEW team and contributing to international student experience initiatives.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="section-header">
+      <h2 class="section-title">Connect</h2>
+      <span class="section-subtitle">Let’s collaborate</span>
+    </div>
+    <p class="muted">Feel free to reach out for research collaborations, speaking engagements, or policy-oriented projects.</p>
+    <div class="contact-grid">
+      <a class="contact-link" href="mailto:xudong.zhu01@gmail.com">xudong.zhu01@gmail.com</a>
+      <a class="contact-link" href="https://www.linkedin.com/in/xudong-zhu-457bb3220" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="contact-link" href="/documents/cv_xudong_zhu.pdf" target="_blank" rel="noopener">Download CV</a>
+    </div>
+  </section>
+</div>
