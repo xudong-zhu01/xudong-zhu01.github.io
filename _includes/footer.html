@@ -31,10 +31,6 @@
       <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
     {%- endcapture -%}
 
-    {%- capture _font -%}
-      <a href="https://public-sans.digital.gov/" target="_blank" rel="noopener">Public Sans</a>
-    {%- endcapture -%}
-
-    {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme | replace: ':FONT', _font}}
+    {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
   </p>
 </footer>
