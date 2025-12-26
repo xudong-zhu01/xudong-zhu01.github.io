@@ -1,5 +1,7 @@
 /* The common styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
 html {
   @media (prefers-color-scheme: light) {
     &:not([data-mode]),
@@ -33,6 +35,8 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   font-family: $font-family-base;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 
 /* --- Typography --- */
@@ -64,6 +68,7 @@ a {
   @extend %link-color;
 
   text-decoration: none;
+  @extend %clickable-transition;
 }
 
 img {
