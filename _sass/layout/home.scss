@@ -6,8 +6,11 @@
   margin-top: 2rem;
 
   .card-wrapper {
+    display: block;
+
     &:hover {
       text-decoration: none;
+      transform: translateY(-4px);
     }
 
     &:not(:last-child) {
@@ -16,8 +19,16 @@
   }
 
   .card {
-    border: 0;
-    background: none;
+    border: 1px solid var(--main-border-color);
+    background: var(--card-bg);
+    border-radius: $base-radius;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+      box-shadow: 0 14px 40px rgba(17, 24, 39, 0.12),
+        0 4px 8px rgba(17, 24, 39, 0.08);
+    }
 
     %img-radius {
       border-radius: $base-radius $base-radius 0 0;
