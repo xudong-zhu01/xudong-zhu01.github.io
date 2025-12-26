@@ -49,7 +49,7 @@ endif %}
       <div class="container d-flex flex-column px-xxl-5">
         {% include topbar.html lang=lang %}
 
-        <div class="row flex-grow-1">
+        <div class="row flex-grow-1 justify-content-center">
           <main aria-label="Main Content" class="{{ main_col }}">
             {% if layout.refactor or layout.layout == 'default' %} {% include
             refactor-content.html content=content lang=lang %} {% else %} {{
@@ -75,7 +75,7 @@ endif %}
           {% endif %}
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
           <!-- tail -->
           <div id="tail-wrapper" class="{{ tail_col }}">
             {% for _include in layout.tail_includes %} {% assign _include_path =
