@@ -1,44 +1,25 @@
 ---
-layout: page
-title: Theses
-icon: fas fa-graduation-cap
+icon: fas fa-book
 order: 4
 ---
 
-<div class="row g-4">
-  
-  <div class="col-md-12">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body">
-        <h3 class="card-title h4">Master's Thesis</h3>
-        <h5 class="card-subtitle mb-2 text-muted">On the Theory of Empire in International Relations and an Analysis of Pax Americana</h5>
-        <p class="card-text mt-3">
-          <strong>Institution:</strong> Heidelberg Center for American Studies (HCA)<br>
-          <strong>Supervisors:</strong> PD Dr. Martin Thunert, Dr. Wilfried Mausbach<br>
-          <strong>Year:</strong> 2023
-        </p>
-        <a href="https://xudong-zhu01.github.io/posts/master/" class="btn btn-outline-primary">
-          <i class="fas fa-file-alt me-2"></i>Read Summary
-        </a>
-      </div>
-    </div>
-  </div>
+## Master's Thesis
+[Summary of My Master's Thesis](https://xudong-zhu01.github.io/posts/master/)<br>
+**On the Theory of Empire in International Relations and an Analysis of Pax Americana**<br><br>
+First supervisor: PD Dr. Martin Thunert<br>
+Second supervisor: Dr. Wilfried Mausbach<br><br>
+Ruprecht-Karls-Universität Heidelberg, Heidelberg Center for American Studies (HCA)<br>
+2023<br>
+<hr>
 
-  <div class="col-md-12">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body">
-        <h3 class="card-title h4">Bachelor's Thesis</h3>
-        <h5 class="card-subtitle mb-2 text-muted">From the Continental Alliance to New Route: A Study on the Transition of the Foreign Policy of the Second German Reich</h5>
-        <p class="card-text mt-3">
-          <strong>Institution:</strong> Jilin University, School of International and Public Affairs<br>
-          <strong>Supervisor:</strong> Prof. Dr. Xingjie Sun<br>
-          <strong>Year:</strong> 2021
-        </p>
-        <a href="https://xudong-zhu01.github.io/posts/bachelor/" class="btn btn-outline-primary">
-          <i class="fas fa-file-alt me-2"></i>Read Summary
-        </a>
-      </div>
-    </div>
-  </div>
-
-</div>
+## Bachelor's Thesis
+[Summary of My Bachelor's Thesis](https://xudong-zhu01.github.io/posts/bachelor/)<br> 
+**从大陆联盟到新路线：德意志第二帝国外交政策转型的研究**<br><br>
+指导教师：孙兴杰 教授<br><br>
+吉林大学，公共外交学院<br>
+2021<br>
+**From the Continental Alliance to New Route: A Study on the Transition of the Foreign Policy of the Second German Reich**<br><br>
+Supervisor: Prof. Dr. Xingjie Sun<br><br>
+Jilin University, School of International and Public Affairs (SIPA)<br>
+2021<br>
+<hr>
