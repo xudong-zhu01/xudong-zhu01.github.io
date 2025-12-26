@@ -37,39 +37,47 @@ endif %}
     {% include sidebar.html lang=lang %}
 
     <div id="main-wrapper" class="d-flex justify-content-center">
+      {% assign main_col = 'col-12 col-lg-11 col-xl-9 px-md-4' %}
+      {% assign tail_col = 'col-12 col-lg-11 col-xl-9 px-md-4' %}
+      {% assign show_panel = true %}
+      {% if page.full_width %}
+        {% assign main_col = 'col-12 px-md-4' %}
+        {% assign tail_col = 'col-12 px-md-4' %}
+        {% assign show_panel = false %}
+      {% endif %}
+
       <div class="container d-flex flex-column px-xxl-5">
         {% include topbar.html lang=lang %}
 
         <div class="row flex-grow-1">
-          <main
-            aria-label="Main Content"
-            class="col-12 col-lg-11 col-xl-9 px-md-4"
-          >
+          <main aria-label="Main Content" class="{{ main_col }}">
             {% if layout.refactor or layout.layout == 'default' %} {% include
             refactor-content.html content=content lang=lang %} {% else %} {{
             content }} {% endif %}
           </main>
 
-          <!-- panel -->
-          <aside
-            aria-label="Panel"
-            id="panel-wrapper"
-            class="col-xl-3 ps-2 mb-5 text-muted"
-          >
-            <div class="access">
-              {% include_cached update-list.html lang=lang %} {% include_cached
-              trending-tags.html lang=lang %}
-            </div>
+          {% if show_panel %}
+            <!-- panel -->
+            <aside
+              aria-label="Panel"
+              id="panel-wrapper"
+              class="col-xl-3 ps-2 mb-5 text-muted"
+            >
+              <div class="access">
+                {% include_cached update-list.html lang=lang %} {% include_cached
+                trending-tags.html lang=lang %}
+              </div>
 
-            {% for _include in layout.panel_includes %} {% assign _include_path
-            = _include | append: '.html' %} {% include {{ _include_path }}
-            lang=lang %} {% endfor %}
-          </aside>
+              {% for _include in layout.panel_includes %} {% assign _include_path
+              = _include | append: '.html' %} {% include {{ _include_path }}
+              lang=lang %} {% endfor %}
+            </aside>
+          {% endif %}
         </div>
 
         <div class="row">
           <!-- tail -->
-          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+          <div id="tail-wrapper" class="{{ tail_col }}">
             {% for _include in layout.tail_includes %} {% assign _include_path =
             _include | append: '.html' %} {% include {{ _include_path }}
             lang=lang %} {% endfor %} {% include_cached footer.html lang=lang %}
