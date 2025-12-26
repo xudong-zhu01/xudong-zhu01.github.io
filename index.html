@@ -130,9 +130,31 @@ layout: page
 
   .fact-list {
     margin: 0.25rem 0 0;
-    padding-left: 1.1rem;
+    padding: 0;
     display: grid;
-    gap: 0.2rem;
+    gap: 0.4rem;
+    list-style: none;
+  }
+
+  .fact-item {
+    display: flex;
+    gap: 0.55rem;
+    align-items: flex-start;
+  }
+
+  .fact-icon {
+    width: 1.15rem;
+    height: 1.15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .fact-icon svg {
+    width: 100%;
+    height: 100%;
   }
 
   .fact-label {
@@ -251,13 +273,45 @@ layout: page
         <div class="fact-label">Academic journey</div>
         <div class="fact-value">
           <ul class="fact-list">
-            <li>
-              MA in American Studies <br />
-              (Heidelberg University, DE)
+            <li class="fact-item">
+              <span class="fact-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m3 9.5 9-4.5 9 4.5-9 4.5z" />
+                  <path d="M7 11.75V16c0 1.1 2.24 2 5 2s5-.9 5-2v-4.25" />
+                  <path d="M12 14.2v4.8" />
+                </svg>
+              </span>
+              <span>
+                MA in American Studies <br />
+                (Heidelberg University, DE)
+              </span>
             </li>
-            <li>
-              LLB in Diplomacy <br />
-              (Jilin University, CN)
+            <li class="fact-item">
+              <span class="fact-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m3 9.5 9-4.5 9 4.5-9 4.5z" />
+                  <path d="M7 11.75V16c0 1.1 2.24 2 5 2s5-.9 5-2v-4.25" />
+                  <path d="M12 14.2v4.8" />
+                </svg>
+              </span>
+              <span>
+                LLB in Diplomacy <br />
+                (Jilin University, CN)
+              </span>
             </li>
           </ul>
         </div>
@@ -266,8 +320,42 @@ layout: page
         <div class="fact-label">Membership</div>
         <div class="fact-value">
           <ul class="fact-list">
-            <li>Royal Historical Society</li>
-            <li>Association of Chinese Political Studies</li>
+            <li class="fact-item">
+              <span class="fact-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="8" cy="8" r="3" />
+                  <circle cx="16" cy="10" r="3" />
+                  <path d="M3.5 19a4.5 4.5 0 0 1 9 0" />
+                  <path d="M13 18.5a4.5 4.5 0 0 1 7.5-3.5" />
+                </svg>
+              </span>
+              <span>Royal Historical Society</span>
+            </li>
+            <li class="fact-item">
+              <span class="fact-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="8" cy="8" r="3" />
+                  <circle cx="16" cy="10" r="3" />
+                  <path d="M3.5 19a4.5 4.5 0 0 1 9 0" />
+                  <path d="M13 18.5a4.5 4.5 0 0 1 7.5-3.5" />
+                </svg>
+              </span>
+              <span>Association of Chinese Political Studies</span>
+            </li>
           </ul>
         </div>
       </div>
