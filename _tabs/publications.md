@@ -33,7 +33,7 @@ order: 2
   <ul>
       <li>
       <strong>朱旭东，</strong>
-      《如果俾斯麦掌舵华盛顿：他将如何管理中美关系?》，卡特中心中美印象，11/09/2025。
+      《如果俾斯麦掌舵华盛顿：他将如何管理中美关系?》，卡特中心中美印象，11/12/2025。
       <a href="https://zmyx.info/if-bismarck-directed-china-policy-in-washington/" target="_blank" rel="noopener">Link</a><br>
       （Xudong Zhu, <em>If Bismarck Ran Washington: What Approach Would He Take to U.S.–China Relations?</em>, U.S.-China Perception Monitor, The Carter Center, 11/12/2025）
     </li>
