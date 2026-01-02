@@ -194,6 +194,36 @@ layout: page
     font-size: 0.95rem;
   }
 
+  .news-section {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.2rem;
+    background: var(--card-bg);
+  }
+
+  .news-year {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-main);
+    letter-spacing: 0.05em;
+  }
+
+  .news-list {
+    list-style: none;
+    margin: 0.75rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .news-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.6rem;
+    align-items: start;
+    color: var(--text-muted);
+  }
+
   .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -379,6 +409,55 @@ layout: page
         <div class="fact-label">Languages</div>
         <div class="fact-value">English · Chinese · German</div>
       </div>
+    </div>
+  </section>
+
+  <section class="section news-section">
+    <div class="section-header">
+      <h2 class="section-title">News &amp; Updates</h2>
+      <span class="section-subtitle">Recent highlights and milestones</span>
+    </div>
+    <div>
+      <div class="news-year">2025</div>
+      <ul class="news-list">
+        <li class="news-item">
+          <span class="news-date">[Oct.]</span>
+          <span>
+            Honoured to be elected as a Postgraduate Member of the Royal
+            Historical Society.
+          </span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">[Oct.]</span>
+          <span>
+            Excited to be a Teaching Assistant for HI1022: Europe in the
+            Twentieth Century!
+          </span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">[Aug.]</span>
+          <span>
+            My essay was recognized with the Jimmy Carter Prize (Runner-up) in
+            the 2025 China Focus Essay Contest. Read the article here.
+          </span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">[Jun.]</span>
+          <span>
+            Commenced a summer internship with the EEW team (Experience,
+            Engagement &amp; Wellbeing) at the University of Aberdeen,
+            contributing to projects designed to improve the international
+            student experience.
+          </span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">[Feb.]</span>
+          <span>
+            I am delighted to share that I have been admitted as a PhD candidate
+            in History at the University of Aberdeen.
+          </span>
+        </li>
+      </ul>
     </div>
   </section>
 
