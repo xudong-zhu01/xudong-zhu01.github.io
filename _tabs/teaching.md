@@ -228,6 +228,7 @@ order: 3
       <li><strong>Session 9 (June 12):</strong> Conclusion: America's Role in China's Entry into the International Order / Feedback</li>
     </ul>
   </div>
+  </div>
 
 ---
 
