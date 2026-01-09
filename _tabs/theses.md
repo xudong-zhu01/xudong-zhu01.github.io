@@ -154,62 +154,6 @@ order: 4
   }
 </style>
 
-<div class="section-intro">
-  <strong style="color: #7c3aed;"><i class="fas fa-graduation-cap"></i> Academic Theses</strong><br>
-  My academic research focuses on international history, statecraft, and the dynamics of great-power relations. 
-  Below are my completed and ongoing thesis projects that examine historical patterns to inform contemporary 
-  policy analysis and strategic thinking.
-</div>
-
-## <i class="fas fa-user-graduate"></i> PhD Dissertation (In Progress)
-
-<div class="thesis-item">
-  <div class="thesis-badge">
-    <i class="fas fa-spinner fa-spin"></i> Ongoing Research
-  </div>
-  
-  <div class="thesis-title">
-    Statecraft, Grand Strategy, and Great-Power Competition in Contemporary Governance
-  </div>
-  
-  <div class="thesis-meta">
-    <div class="meta-item">
-      <i class="fas fa-university"></i>
-      <span><span class="meta-label">Institution:</span> University of Aberdeen</span>
-    </div>
-    <div class="meta-item">
-      <i class="fas fa-user-tie"></i>
-      <span><span class="meta-label">Supervisors:</span> TBD</span>
-    </div>
-    <div class="meta-item">
-      <i class="fas fa-calendar-alt"></i>
-      <span><span class="meta-label">Expected Completion:</span> 2027</span>
-    </div>
-  </div>
-  
-  <div class="thesis-abstract">
-    <strong style="color: #7c3aed;">Research Focus:</strong><br>
-    This dissertation examines how statecraft and grand strategy frameworks can be applied to analyze 
-    contemporary great-power competition. By integrating historical case studies with modern geopolitical 
-    analysis, the research explores how states navigate complex international environments, balance competing 
-    interests, and formulate effective strategic policies. The work aims to contribute to both historical 
-    scholarship and practical policy-making by demonstrating the continued relevance of classical strategic 
-    thinking in the 21st century.
-  </div>
-  
-  <div class="research-focus">
-    <div class="focus-title">
-      <i class="fas fa-bullseye"></i> Key Research Questions
-    </div>
-    <ul class="focus-list">
-      <li>How can historical patterns of statecraft inform contemporary policy responses to great-power competition?</li>
-      <li>What role does grand strategy play in shaping state behavior in multipolar international systems?</li>
-      <li>How do states balance ideological commitments with pragmatic strategic interests?</li>
-      <li>What lessons can be drawn from past diplomatic crises for managing current geopolitical tensions?</li>
-    </ul>
-  </div>
-</div>
-
 ## <i class="fas fa-award"></i> Master's Thesis
 
 <div class="thesis-item">
@@ -293,6 +237,10 @@ order: 4
       <span><span class="meta-label">Institution:</span> Jilin University, China</span>
     </div>
     <div class="meta-item">
+      <i class="fas fa-user-tie"></i>
+      <span><span class="meta-label">Supervisor:</span> Prof. Dr. Xingjie Sun</span>
+    </div>
+    <div class="meta-item">
       <i class="fas fa-graduation-cap"></i>
       <span><span class="meta-label">Degree:</span> LLB in Diplomacy</span>
     </div>
@@ -301,18 +249,6 @@ order: 4
       <span><span class="meta-label">Completed:</span> September 2021</span>
     </div>
   </div>
-  
-  <div class="thesis-abstract">
-    <strong style="color: #7c3aed;">Focus Areas:</strong><br>
-    Undergraduate research examining the intersection of diplomatic practice and international legal frameworks. 
-    The work explored how legal norms shape diplomatic behavior, negotiation skills, diplomatic etiquette, 
-    and the role of international law in conflict resolution and cooperation among states.
-  </div>
 </div>
 
 ---
-
-<div style="text-align: center; margin-top: 3rem; padding: 1.5rem; background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); border-radius: 8px; border: 1px solid #e9d5ff;">
-  <p style="color: #666; margin-bottom: 0.5rem;"><i class="fas fa-envelope"></i> Interested in my research or potential collaboration?</p>
-  <p style="font-weight: 600; color: #7c3aed; font-size: 1.1rem; margin: 0;">xudong.zhu01@gmail.com</p>
-</div>
