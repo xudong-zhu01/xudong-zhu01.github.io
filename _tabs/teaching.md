@@ -228,21 +228,6 @@ order: 3
       <li><strong>Session 9 (June 12):</strong> Conclusion: America's Role in China's Entry into the International Order / Feedback</li>
     </ul>
   </div>
-  
-  <div class="responsibilities">
-    <strong style="color: #1a1a1a;"><i class="fas fa-book-reader"></i> Selected Readings:</strong>
-    <ul>
-      <li>Swift, John W., et al. "The Voyage of the Empress of China." <em>The Pennsylvania Magazine of History and Biography</em> 63, no. 1 (1939): 24–36.</li>
-      <li>Morse, Hosea Ballou. "The Burlingame Mission." In <em>The International Relations of the Chinese Empire vol 2</em>, 185-202. London: Longmans, Green, 1910.</li>
-      <li>Barrett, John. "America's Duty in China." <em>The North American Review</em> 171, no. 525 (1900): 145–57.</li>
-      <li>Carrai, Maria Adele. "The Politics of History in the Late Qing Era: William A. P. Martin and a History of International Law for China." <em>Journal of the History of International Law</em>, no. 22 (2020), 269–305.</li>
-      <li>Rosenbaum, Arthur Lewis. "Christianity, Academics, and National Salvation in China: Yenching University, 1924-1949." <em>The Journal of American-East Asian Relations</em> 13 (2004): 25–54.</li>
-      <li>Carson, Scott Alan. "Chinese Sojourn Labor and the American Transcontinental Railroad." <em>Journal of Institutional and Theoretical Economics</em> 161, no. 1 (2005): 80–102.</li>
-      <li>Hsu, Madeline Y. "Chinese and American Collaborations through Educational Exchange during the Era of Exclusion, 1872–1955." <em>Pacific Historical Review</em> 83, no. 2 (2014): 314–32.</li>
-      <li>Lee, Erika. "The Chinese Exclusion Example: Race, Immigration, and American Gatekeeping, 1882-1924." <em>Journal of American Ethnic History</em> 21, no. 3 (2002): 36–62.</li>
-    </ul>
-  </div>
-</div>
 
 ---
 
@@ -260,11 +245,6 @@ order: 3
   </div>
   
   <div class="skill-card">
-    <div class="skill-title"><i class="fas fa-search"></i> Research Methods</div>
-    <p style="color: #666; font-size: 0.9rem; margin: 0;">Teaching source evaluation and historiography</p>
-  </div>
-  
-  <div class="skill-card">
     <div class="skill-title"><i class="fas fa-comments"></i> Student Mentorship</div>
     <p style="color: #666; font-size: 0.9rem; margin: 0;">One-on-one academic support and guidance</p>
   </div>
@@ -277,7 +257,6 @@ order: 3
 I am particularly interested in teaching courses related to:
 
 - **Modern International History**: 19th-21st century global politics and diplomacy
-- **Cold War Studies**: Superpower competition and its contemporary relevance
 - **European Integration**: History and politics of the European Union
 - **Great Power Relations**: Strategic dynamics between major states
 - **Applied History**: Using historical analysis for policy-making
