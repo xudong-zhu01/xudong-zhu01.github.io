@@ -190,7 +190,7 @@ order: 4
     </a>
   </div>
 
-## <i class="fas fa-balance-scale"></i> Bachelor's Thesis
+## <i class="fas fa-award"></i> Bachelor's Thesis
 
   <div class="thesis-title">
     From the Continental Alliance to New Route: A Study on the Transition of the Foreign Policy of the Second German Reich
