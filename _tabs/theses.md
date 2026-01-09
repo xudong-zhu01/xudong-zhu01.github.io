@@ -213,12 +213,12 @@ order: 4
       <i class="fas fa-calendar-check"></i>
       <span><span class="meta-label">Completed:</span> 2021</span>
     </div>
-    </div>
-    <div class="thesis-links">
-    <a href="https://xudong-zhu01.github.io/posts/bachelor/" class="thesis-link">
-      <i class="fas fa-file-alt"></i> Read Summary
-    </a>
   </div>
-</div>
+
+  <div class="thesis-links">
+  <a href="https://xudong-zhu01.github.io/posts/bachelor/" class="thesis-link">
+    <i class="fas fa-file-alt"></i> Read Summary
+  </a>
+  </div>
 
 ---
