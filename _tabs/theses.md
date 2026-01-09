@@ -211,9 +211,9 @@ order: 4
     </div>
     <div class="meta-item">
       <i class="fas fa-calendar-check"></i>
-      <span><span class="meta-label">Completed:</span> September 2021</span>
+      <span><span class="meta-label">Completed:</span> 2021</span>
     </div>
-    
+    </div>
     <div class="thesis-links">
     <a href="https://xudong-zhu01.github.io/posts/bachelor/" class="thesis-link">
       <i class="fas fa-file-alt"></i> Read Summary
