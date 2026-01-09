@@ -111,11 +111,6 @@ order: 2
   }
 </style>
 
-<div class="section-intro">
-  My research explores the intersection of international history, statecraft, and contemporary governance. 
-  Below is a selection of my academic publications, conference presentations, and ongoing research projects.
-</div>
-
 ## <i class="fas fa-graduation-cap"></i> Academic Publications
 
 <div class="publication-item">
@@ -132,7 +127,7 @@ order: 2
     This paper challenges the prevalent "divide and rule" characterization of China's EU policy, arguing instead for a nuanced approach that recognizes European agency and advocates for mutual respect in Sino-European relations. Drawing on historical analysis and contemporary policy frameworks, the research demonstrates how respect-based engagement can foster more sustainable diplomatic outcomes.
   </div>
   <div class="pub-links">
-    <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+    <a href="https://github.com/xudong-zhu01/xudong-zhu01.github.io/blob/c2921b68e803767c6dcc93cf9111a829315e05bb/documents/ACPS-China-EU-Xudong%20Zhu.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
   </div>
 </div>
 
