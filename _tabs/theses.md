@@ -166,10 +166,6 @@ order: 4
       <span><span class="meta-label">Institution:</span> Ruprecht-Karls-Universität Heidelberg</span>
     </div>
     <div class="meta-item">
-      <i class="fas fa-map-marker-alt"></i>
-      <span><span class="meta-label">Center:</span> Heidelberg Center for American Studies (HCA)</span>
-    </div>
-    <div class="meta-item">
       <i class="fas fa-user-tie"></i>
       <span><span class="meta-label">First Supervisor:</span> PD Dr. Martin Thunert</span>
     </div>
@@ -185,25 +181,7 @@ order: 4
   
   <div class="thesis-abstract">
     <strong style="color: #7c3aed;">Abstract:</strong><br>
-    Throughout history, humans have constructed political institutions of two distinct types: empires 
-and sovereign states. Empires used to be the dominance of the ancient world. However, from the 
-17th century to today, sovereign states have slowly developed into the main actors of the 
-international system. In political practice, imperial governance models and thinking are increasingly 
-used by major powers. To better understand great power competition, it becomes crucial to 
-understand the definition of empire, the logic of domination, and its role in various theories of 
-international relations. In particular, the United States, the only superpower in the world, has gained 
-a dominant position in the world system by using its powerful military power, ample wealth, and 
-the values of freedom and democracy, and created Pax Americana. The construction of the 
-American Empire is not achieved overnight , but a large-scale project that has been started since the 
-founding of the United States. From the Spanish-American War to the two world wars, and then to 
-the Cold War, the United States has gradually expanded its authority from the American continent to 
-the United States in the process of shaping war and peace. worldwide. The American Empire has 
-provided a stable governance order for the international community. The ideology of freedom and 
-democracy, the establishment of international institutions, and the effectiveness of governance have 
-brought legitimacy to Pax Americana, and are recognized by most countries and peoples in the 
-world. Despite facing external and internal challenges, the dominant position of the United States as 
-a liberal empire in international relations will not be shaken, and imperial thinking will still have a 
-profound impact on the formulation of American foreign policy.
+    Throughout history, humans have constructed political institutions of two distinct types: empires and sovereign states. Empires used to be the dominance of the ancient world. However, from the 17th century to today, sovereign states have slowly developed into the main actors of the international system. In political practice, imperial governance models and thinking are increasingly used by major powers. To better understand great power competition, it becomes crucial to understand the definition of empire, the logic of domination, and its role in various theories of international relations. In particular, the United States, the only superpower in the world, has gained a dominant position in the world system by using its powerful military power, ample wealth, and the values of freedom and democracy, and created Pax Americana. The construction of the American Empire is not achieved overnight , but a large-scale project that has been started since the founding of the United States. From the Spanish-American War to the two world wars, and then to the Cold War, the United States has gradually expanded its authority from the American continent to the United States in the process of shaping war and peace. worldwide. The American Empire has provided a stable governance order for the international community. The ideology of freedom and democracy, the establishment of international institutions, and the effectiveness of governance have brought legitimacy to Pax Americana, and are recognized by most countries and peoples in the world. Despite facing external and internal challenges, the dominant position of the United States as a liberal empire in international relations will not be shaken, and imperial thinking will still have a profound impact on the formulation of American foreign policy.
   </div>
   
   <div class="thesis-links">
@@ -211,7 +189,6 @@ profound impact on the formulation of American foreign policy.
       <i class="fas fa-file-alt"></i> Read Summary
     </a>
   </div>
-</div>
 
 ## <i class="fas fa-balance-scale"></i> Bachelor's Thesis
 
@@ -236,11 +213,11 @@ profound impact on the formulation of American foreign policy.
       <i class="fas fa-calendar-check"></i>
       <span><span class="meta-label">Completed:</span> September 2021</span>
     </div>
+    
     <div class="thesis-links">
     <a href="https://xudong-zhu01.github.io/posts/bachelor/" class="thesis-link">
       <i class="fas fa-file-alt"></i> Read Summary
     </a>
-  </div>
   </div>
 </div>
 
