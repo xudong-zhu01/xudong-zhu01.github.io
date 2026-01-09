@@ -4,8 +4,6 @@ icon: fas fa-user-graduate
 order: 1
 ---
 
-## Download CV
-
 <div style="text-align: center; margin: 30px 0;">
   <a href="https://xudong-zhu01.github.io/documents/cv-xudong-zhu.pdf" class="btn btn-primary" download style="display: inline-block; padding: 12px 30px; background-color: #0d6efd; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.3s ease;">
     📄 Download Full CV (PDF)
@@ -14,8 +12,6 @@ order: 1
 </div>
 
 ---
-
-## View Resume
 
 <style>
   .resume-container {
