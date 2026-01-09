@@ -7,7 +7,7 @@ order: 3
   .teaching-item {
     margin-bottom: 2.5rem;
     padding: 1.5rem;
-    border-left: 4px solid #0f62fe;
+    border-left: 4px solid #10b981;
     background: linear-gradient(to right, rgba(15, 98, 254, 0.03), transparent);
     border-radius: 8px;
     transition: all 0.3s ease;
