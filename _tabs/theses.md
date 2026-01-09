@@ -163,7 +163,7 @@ order: 4
   <div class="thesis-meta">
     <div class="meta-item">
       <i class="fas fa-university"></i>
-      <span><span class="meta-label">Institution:</span> Ruprecht-Karls-Universität Heidelberg</span>
+      <span><span class="meta-label">Institution:</span> Ruprecht-Karls-Universität Heidelberg, Germany</span>
     </div>
     <div class="meta-item">
       <i class="fas fa-user-tie"></i>
