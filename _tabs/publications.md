@@ -127,7 +127,7 @@ order: 2
     This paper challenges the prevalent "divide and rule" characterization of China's EU policy, arguing instead for a nuanced approach that recognizes European agency and advocates for mutual respect in Sino-European relations. Drawing on historical analysis and contemporary policy frameworks, the research demonstrates how respect-based engagement can foster more sustainable diplomatic outcomes.
   </div>
   <div class="pub-links">
-    <a href="https://github.com/xudong-zhu01/xudong-zhu01.github.io/blob/c2921b68e803767c6dcc93cf9111a829315e05bb/documents/ACPS-China-EU-Xudong%20Zhu.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+    <a href="https://xudong-zhu01.github.io/documents/ACPS-China-EU-XudongZhu.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
   </div>
 </div>
 
@@ -140,7 +140,7 @@ order: 2
     <i class="fas fa-trophy"></i> Jimmy Carter Prize, China Focus Essay Contest 2025
   </div>
   <div class="pub-meta">
-    China Focus | 2025
+    The Carter Center, in cooperation with the University of California, San Diego, and the 1990 Institute | 2025
   </div>
   <div class="pub-abstract">
     This award-winning essay analyzes how the Trump administration's policies inadvertently catalyzed European strategic autonomy, examining implications for transatlantic relations and China's position in the evolving security architecture. The work integrates grand strategy theory with contemporary geopolitical analysis to assess Europe's emerging role as an independent actor.
