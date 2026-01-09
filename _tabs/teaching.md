@@ -97,7 +97,7 @@ order: 3
     font-weight: 700;
     margin: 2.5rem 0 1.5rem;
     padding-bottom: 0.75rem;
-    border-bottom: 3px solid #0f62fe;
+    border-bottom: 3px solid #10b981;
     color: #1a1a1a;
   }
   
