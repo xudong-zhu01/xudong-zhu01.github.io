@@ -176,8 +176,6 @@ order: 2
   </div>
 </div>
 
-## <i class="fas fa-comments"></i> Conference Presentations
-
 <div class="publication-item">
   <div class="pub-title">
     What to Do About the Strategic Challenge? An Analysis of the Background of NATO's New China Strategy
@@ -192,18 +190,6 @@ order: 2
     Presented analysis of NATO's evolving strategic posture toward China, examining the alliance's adaptation to new security challenges and the implications for global governance and multilateral cooperation.
   </div>
 </div>
-
----
-
-## <i class="fas fa-flask"></i> Working Papers & Current Research
-
-> I am currently working on several projects examining statecraft, applied history, and contemporary international relations. If you're interested in collaboration or would like to discuss my research, please [get in touch](mailto:xudong.zhu01@gmail.com).
-
-### Research Interests
-- **Applied History & Statecraft**: Using historical case studies to inform contemporary policy
-- **Great Power Competition**: Analyzing strategic dynamics between major powers
-- **European Security & Governance**: EU's role in global affairs and transatlantic relations
-- **China's Foreign Policy**: Strategic analysis of China's international engagement
 
 ---
 
@@ -250,9 +236,6 @@ order: 2
     </a>
   </div>
 </div>
-</div>
-
-
 
 <div style="text-align: center; margin-top: 3rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
   <p style="color: #666; margin-bottom: 0.5rem;"><i class="fas fa-envelope"></i> For inquiries about my research or potential collaborations:</p>
