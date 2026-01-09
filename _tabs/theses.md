@@ -216,18 +216,6 @@ profound impact on the formulation of American foreign policy.
       <i class="fas fa-file-alt"></i> Read Summary
     </a>
   </div>
-  
-  <div class="research-focus">
-    <div class="focus-title">
-      <i class="fas fa-lightbulb"></i> Key Contributions
-    </div>
-    <ul class="focus-list">
-      <li>Comprehensive analysis of empire theory in international relations scholarship</li>
-      <li>Critical examination of Pax Americana's structural characteristics and evolution</li>
-      <li>Assessment of America's contemporary strategic challenges and policy options</li>
-      <li>Implications for understanding multipolar transitions in global politics</li>
-    </ul>
-  </div>
 </div>
 
 ## <i class="fas fa-balance-scale"></i> Bachelor's Thesis
