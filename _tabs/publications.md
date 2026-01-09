@@ -146,7 +146,7 @@ order: 2
     This award-winning essay analyzes how the Trump administration's policies inadvertently catalyzed European strategic autonomy, examining implications for transatlantic relations and China's position in the evolving security architecture. The work integrates grand strategy theory with contemporary geopolitical analysis to assess Europe's emerging role as an independent actor.
   </div>
   <div class="pub-links">
-    <a href="https://uscnpm.org/analysis/europe-autonomy-against-chinese-influence/" class="pub-link"><i class="fas fa-link"></i> Link</a>
+    <a href="https://uscnpm.org/analysis/europe-autonomy-against-chinese-influence/" class="pub-link"><i class="fas fa-external-link-alt"></i> Link</a>
   </div>
 </div>
 
