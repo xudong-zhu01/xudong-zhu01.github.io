@@ -207,6 +207,46 @@ order: 2
 
 ---
 
+## <i class="fas fa-newspaper"></i> Media & Commentary
+
+<div class="publication-item">
+  <div class="pub-title">
+    A Decisive Moment for Germany
+  </div>
+  <div class="pub-venue">
+    <i class="fas fa-newspaper"></i> Media Commentary
+  </div>
+  <div class="pub-meta">
+    Published Analysis | 2022
+  </div>
+  <div class="pub-abstract">
+    Analysis examining Germany's strategic position amid the Ukraine crisis, exploring how French President Macron's policies and the possibility of Western military involvement in Ukraine challenge German foreign policy calculations and European security dynamics.
+  </div>
+  <div class="pub-links">
+    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i> Read Article</a>
+  </div>
+</div>
+
+<div class="publication-item">
+  <div class="pub-title">
+    Expert Commentary on International Affairs
+  </div>
+  <div class="pub-venue">
+    <i class="fas fa-microphone"></i> Various Media Outlets
+  </div>
+  <div class="pub-meta">
+    Ongoing Contributions
+  </div>
+  <div class="pub-abstract">
+    Regular contributions to discussions on international relations, European affairs, and China's role in global governance. Available for expert commentary on topics related to statecraft, transatlantic relations, and great-power competition.
+  </div>
+  <div class="pub-links">
+    <a href="mailto:xudong.zhu01@gmail.com" class="pub-link"><i class="fas fa-envelope"></i> Contact for Media Inquiries</a>
+  </div>
+</div>
+
+
+
 <div style="text-align: center; margin-top: 3rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
   <p style="color: #666; margin-bottom: 0.5rem;"><i class="fas fa-envelope"></i> For inquiries about my research or potential collaborations:</p>
   <p style="font-weight: 600; color: #0f62fe; font-size: 1.1rem;">xudong.zhu01@gmail.com</p>
