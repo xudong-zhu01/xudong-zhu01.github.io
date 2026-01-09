@@ -156,11 +156,6 @@ order: 4
 
 ## <i class="fas fa-award"></i> Master's Thesis
 
-<div class="thesis-item">
-  <div class="thesis-badge">
-    <i class="fas fa-check-circle"></i> Completed 2023
-  </div>
-  
   <div class="thesis-title">
     On the Theory of Empire in International Relations and an Analysis of Pax Americana
   </div>
@@ -220,13 +215,8 @@ profound impact on the formulation of American foreign policy.
 
 ## <i class="fas fa-balance-scale"></i> Bachelor's Thesis
 
-<div class="thesis-item">
-  <div class="thesis-badge">
-    <i class="fas fa-check-circle"></i> Completed 2021
-  </div>
-  
   <div class="thesis-title">
-    Diplomacy Studies and International Law
+    From the Continental Alliance to New Route: A Study on the Transition of the Foreign Policy of the Second German Reich
   </div>
   
   <div class="thesis-meta">
