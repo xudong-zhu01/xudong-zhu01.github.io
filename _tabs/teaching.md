@@ -193,32 +193,53 @@ order: 3
 <div class="teaching-item">
   <div class="course-title">
     <i class="fas fa-book-open"></i>
-    International Student Support
+    From Washington to Peking: History of the Early Interactions Between the United States and China
   </div>
   
   <div class="institution">
     <i class="fas fa-university"></i>
-    University of Aberdeen - EEW Team (Experience, Engagement & Wellbeing)
+    Ruprecht-Karls-Universität Heidelberg - Heidelberg Center for American Studies (HCA)
   </div>
   
   <div class="semester-info">
     <i class="fas fa-calendar-alt"></i>
-    Summer 2025
-    <span class="badge">Intern</span>
+    Summer Term 2023
+    <span class="badge">Seminar Instructor</span>
   </div>
   
   <div class="course-description">
-    Contributed to projects designed to improve the international student experience at the University of Aberdeen. 
-    Worked on initiatives to enhance student engagement, wellbeing, and cultural integration within the academic community.
+    <strong style="color: #0f62fe;"><i class="fas fa-clock"></i> Schedule:</strong> Monday, 18:00 - 20:00<br>
+    <strong style="color: #0f62fe;"><i class="fas fa-map-marker-alt"></i> Venue:</strong> Oculus, Heidelberg Center for American Studies (Hauptstraße 120)<br><br>
+    
+    A comprehensive examination of the formative period of Sino-American relations, exploring key figures, pivotal events, and foundational interactions that shaped the complex relationship between the United States and China from the 18th century through the early 20th century.
   </div>
   
   <div class="responsibilities">
-    <strong style="color: #1a1a1a;"><i class="fas fa-tasks"></i> Key Contributions:</strong>
+    <strong style="color: #1a1a1a;"><i class="fas fa-list-ul"></i> Course Sessions & Topics:</strong>
     <ul>
-      <li>Developed resources and materials for international student orientation</li>
-      <li>Assisted in organizing cultural events and academic workshops</li>
-      <li>Provided peer support and mentorship to incoming international students</li>
-      <li>Gathered feedback to inform policy recommendations for student services</li>
+      <li><strong>Session 1 (Apr. 17):</strong> Empress of China: The Beginning of Sino-US Relations and Trade</li>
+      <li><strong>Session 2 (Apr. 24):</strong> Anson Burlingame I - Burlingame-Seward Treaty of 1868</li>
+      <li><strong>Session 3 (May 1):</strong> Anson Burlingame II - Open Door Policy</li>
+      <li><strong>Session 4 (May 8):</strong> William Alexander Parsons Martin - International Law and the Diplomatic System</li>
+      <li><strong>Session 5 (May 15):</strong> John Leighton Stuart - Modern Higher Education in China</li>
+      <li><strong>Session 6 (May 22):</strong> Chinese Sojourn Labor and the American Transcontinental Railroad</li>
+      <li><strong>Session 7 (May 29):</strong> Chinese Students in America: Hopes for Renewing the Nation</li>
+      <li><strong>Session 8 (June 5):</strong> Days of Shame: Yellow Peril and the Chinese Exclusion Act</li>
+      <li><strong>Session 9 (June 12):</strong> Conclusion: America's Role in China's Entry into the International Order / Feedback</li>
+    </ul>
+  </div>
+  
+  <div class="responsibilities">
+    <strong style="color: #1a1a1a;"><i class="fas fa-book-reader"></i> Selected Readings:</strong>
+    <ul>
+      <li>Swift, John W., et al. "The Voyage of the Empress of China." <em>The Pennsylvania Magazine of History and Biography</em> 63, no. 1 (1939): 24–36.</li>
+      <li>Morse, Hosea Ballou. "The Burlingame Mission." In <em>The International Relations of the Chinese Empire vol 2</em>, 185-202. London: Longmans, Green, 1910.</li>
+      <li>Barrett, John. "America's Duty in China." <em>The North American Review</em> 171, no. 525 (1900): 145–57.</li>
+      <li>Carrai, Maria Adele. "The Politics of History in the Late Qing Era: William A. P. Martin and a History of International Law for China." <em>Journal of the History of International Law</em>, no. 22 (2020), 269–305.</li>
+      <li>Rosenbaum, Arthur Lewis. "Christianity, Academics, and National Salvation in China: Yenching University, 1924-1949." <em>The Journal of American-East Asian Relations</em> 13 (2004): 25–54.</li>
+      <li>Carson, Scott Alan. "Chinese Sojourn Labor and the American Transcontinental Railroad." <em>Journal of Institutional and Theoretical Economics</em> 161, no. 1 (2005): 80–102.</li>
+      <li>Hsu, Madeline Y. "Chinese and American Collaborations through Educational Exchange during the Era of Exclusion, 1872–1955." <em>Pacific Historical Review</em> 83, no. 2 (2014): 314–32.</li>
+      <li>Lee, Erika. "The Chinese Exclusion Example: Race, Immigration, and American Gatekeeping, 1882-1924." <em>Journal of American Ethnic History</em> 21, no. 3 (2002): 36–62.</li>
     </ul>
   </div>
 </div>
