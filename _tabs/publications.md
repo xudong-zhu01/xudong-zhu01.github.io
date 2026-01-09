@@ -133,7 +133,6 @@ order: 2
   </div>
   <div class="pub-links">
     <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-    <a href="#" class="pub-link"><i class="fas fa-presentation"></i> Slides</a>
   </div>
 </div>
 
@@ -152,8 +151,7 @@ order: 2
     This award-winning essay analyzes how the Trump administration's policies inadvertently catalyzed European strategic autonomy, examining implications for transatlantic relations and China's position in the evolving security architecture. The work integrates grand strategy theory with contemporary geopolitical analysis to assess Europe's emerging role as an independent actor.
   </div>
   <div class="pub-links">
-    <a href="#" class="pub-link"><i class="fas fa-link"></i> Link</a>
-    <a href="#" class="pub-link"><i class="fas fa-quote-right"></i> Cite</a>
+    <a href="https://uscnpm.org/analysis/europe-autonomy-against-chinese-influence/" class="pub-link"><i class="fas fa-link"></i> Link</a>
   </div>
 </div>
 
@@ -171,8 +169,7 @@ order: 2
     Co-authored analysis examining the delicate balance of power and interests among the world's three major economic and political entities, with particular focus on cooperation mechanisms and conflict management strategies in an era of great-power competition.
   </div>
   <div class="pub-links">
-    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i> Link</a>
-    <a href="#" class="pub-link"><i class="fas fa-bookmark"></i> BibTeX</a>
+    <a href="https://www.routledge.com/9781041233336" class="pub-link"><i class="fas fa-external-link-alt"></i> Link</a>
   </div>
 </div>
 
@@ -197,27 +194,6 @@ order: 2
 
 <div class="publication-item">
   <div class="pub-title">
-    From 'The Art of the Deal' to 'The Art of Diplomacy': The Continuities in Trump's View of International Relations
-  </div>
-  <div class="pub-venue">
-    <i class="fas fa-newspaper"></i> U.S.-China Perception Monitor, The Carter Center
-  </div>
-  <div class="pub-meta">
-    <strong>Zhu, X.</strong> | September 11, 2025
-  </div>
-  <div class="pub-abstract">
-    <em>Article in Chinese</em><br>
-    An analysis examining the continuities in Donald Trump's approach to international relations, from his early business philosophy to his diplomatic strategies, exploring how his transactional worldview shapes U.S. foreign policy.
-  </div>
-  <div class="pub-links">
-    <a href="https://zmyx.info/on-trump-interview-with-playboy-in-1990/" class="pub-link" target="_blank">
-      <i class="fas fa-external-link-alt"></i> Read Article (Chinese)
-    </a>
-  </div>
-</div>
-
-<div class="publication-item">
-  <div class="pub-title">
     If Bismarck Ran Washington: What Approach Would He Take to U.S.–China Relations?
   </div>
   <div class="pub-venue">
@@ -232,6 +208,27 @@ order: 2
   </div>
   <div class="pub-links">
     <a href="https://zmyx.info/if-bismarck-directed-china-policy-in-washington/" class="pub-link" target="_blank">
+      <i class="fas fa-external-link-alt"></i> Read Article (Chinese)
+    </a>
+  </div>
+</div>
+
+<div class="publication-item">
+  <div class="pub-title">
+    From 'The Art of the Deal' to 'The Art of Diplomacy': The Continuities in Trump's View of International Relations
+  </div>
+  <div class="pub-venue">
+    <i class="fas fa-newspaper"></i> U.S.-China Perception Monitor, The Carter Center
+  </div>
+  <div class="pub-meta">
+    <strong>Zhu, X.</strong> | September 11, 2025
+  </div>
+  <div class="pub-abstract">
+    <em>Article in Chinese</em><br>
+    An analysis examining the continuities in Donald Trump's approach to international relations, from his early business philosophy to his diplomatic strategies, exploring how his transactional worldview shapes U.S. foreign policy.
+  </div>
+  <div class="pub-links">
+    <a href="https://zmyx.info/on-trump-interview-with-playboy-in-1990/" class="pub-link" target="_blank">
       <i class="fas fa-external-link-alt"></i> Read Article (Chinese)
     </a>
   </div>
