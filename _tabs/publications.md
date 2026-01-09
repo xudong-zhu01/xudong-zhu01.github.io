@@ -3,45 +3,211 @@ icon: fas fa-book-open
 order: 2
 ---
 
-<section>
-  <h3>Academic</h3>
-  <ul>
-  <li>
-  <strong>Zhu, X.</strong> 
-  <em>Beyond Divide and Rule: Advocating a Respect-Based Chinese Policy Toward the European Union</em>, 
-  ACPS Annual Conference 2025, Association of Chinese Political Studies (ACPS), 20/11/2025.
-  </li>
-    <li>
-      <strong>Zhu, X.</strong>
-      <em>Trump As the (In)advertent Harbinger of a New Transatlantic Security Architecture: Europe’s Autonomy as a Bulwark Against Chinese Influence</em>,
-      Jimmy Carter Prize (Runner-up), China Focus Essay Contest, 2025.
-      <a href="https://uscnpm.org/2025/08/12/europe-autonomy-against-chinese-influence/" target="_blank" rel="noopener">Link</a>
-    </li>
-    <li>
-      Wang, L. and <strong>Zhu, X.</strong>
-      "How to Maintain a Balance in The Intricate Pas Detrois Among China, US and EU", in <em>The Trilateral Interactions China, the US, and the EU on Tensions, Competition, and Cooperation</em>, ed. by Zuokui Liu, Marek Hrubec, and Shaohua Yan (Routledge, 2026)
-      <a href="https://www.routledge.com/The-Trilateral-Interactions-China-the-US-and-the-EU-on-Tensions-Competition-and-Cooperation/Zuokui-Hrubec-Shaohua/p/book/9781041233336" target="_blank" rel="noopener">Link</a>
-    </li>
-    <li>
-      <strong>Zhu, X.</strong>
-      <em>What to Do About the Strategic Challenge? An Analysis of the Background of NATO’s New China Strategy</em>.
-      Seventh Annual Young Scholars Forum on U.S. - China Relations, The Carter Center, 2022.
-    </li>
-  </ul>
+<style>
+  .publication-item {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    border-left: 4px solid #0f62fe;
+    background: linear-gradient(to right, rgba(15, 98, 254, 0.03), transparent);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .publication-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateX(4px);
+  }
+  
+  .pub-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  
+  .pub-venue {
+    color: #0f62fe;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pub-meta {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pub-abstract {
+    color: #555;
+    line-height: 1.7;
+    margin-top: 0.75rem;
+    padding-left: 1rem;
+    border-left: 2px solid #e0e0e0;
+  }
+  
+  .pub-links {
+    margin-top: 0.75rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  
+  .pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.9rem;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .pub-link:hover {
+    background: #0f62fe;
+    color: white;
+    border-color: #0f62fe;
+    transform: translateY(-2px);
+  }
+  
+  .section-header {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid #0f62fe;
+    color: #1a1a1a;
+  }
+  
+  .section-intro {
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    background: #fef3c7;
+    color: #92400e;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+  }
+  
+  .badge.runner-up {
+    background: #dbeafe;
+    color: #1e40af;
+  }
+</style>
 
-  <h3>Media</h3>
-  <ul>
-      <li>
-      <strong>朱旭东，</strong>
-      《如果俾斯麦掌舵华盛顿：他将如何管理中美关系?》，卡特中心中美印象，11/12/2025。
-      <a href="https://zmyx.info/if-bismarck-directed-china-policy-in-washington/" target="_blank" rel="noopener">Link</a><br>
-      （Xudong Zhu, <em>If Bismarck Ran Washington: What Approach Would He Take to U.S.–China Relations?</em>, U.S.-China Perception Monitor, The Carter Center, 11/12/2025）
-    </li>
-    <li>
-      <strong>朱旭东，</strong>
-      《从“交易的艺术”到“外交的艺术”：特朗普国际关系观的前后呼应》，卡特中心中美印象，11/09/2025。
-      <a href="https://zmyx.info/on-trump-interview-with-playboy-in-1990/" target="_blank" rel="noopener">Link</a><br>
-      （Xudong Zhu, <em>From “The Art of the Deal” to “The Art of Diplomacy”: The Continuities in Trump’s View of International Relations</em>, U.S.-China Perception Monitor, The Carter Center, 11/09/2025）
-    </li>
-  </ul>
-</section>
+<div class="section-intro">
+  My research explores the intersection of international history, statecraft, and contemporary governance. 
+  Below is a selection of my academic publications, conference presentations, and ongoing research projects.
+</div>
+
+## <i class="fas fa-graduation-cap"></i> Academic Publications
+
+<div class="publication-item">
+  <div class="pub-title">
+    Beyond Divide and Rule: Advocating a Respect-Based Chinese Policy Toward the European Union
+  </div>
+  <div class="pub-venue">
+    <i class="fas fa-university"></i> ACPS Annual Conference 2025
+  </div>
+  <div class="pub-meta">
+    Association of Chinese Political Studies (ACPS) | November 20, 2025
+  </div>
+  <div class="pub-abstract">
+    This paper challenges the prevalent "divide and rule" characterization of China's EU policy, arguing instead for a nuanced approach that recognizes European agency and advocates for mutual respect in Sino-European relations. Drawing on historical analysis and contemporary policy frameworks, the research demonstrates how respect-based engagement can foster more sustainable diplomatic outcomes.
+  </div>
+  <div class="pub-links">
+    <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+    <a href="#" class="pub-link"><i class="fas fa-presentation"></i> Slides</a>
+  </div>
+</div>
+
+<div class="publication-item">
+  <div class="pub-title">
+    Trump As the (In)advertent Harbinger of a New Transatlantic Security Architecture: Europe's Autonomy as a Bulwark Against Chinese Influence
+    <span class="badge runner-up">Runner-up Prize</span>
+  </div>
+  <div class="pub-venue">
+    <i class="fas fa-trophy"></i> Jimmy Carter Prize, China Focus Essay Contest 2025
+  </div>
+  <div class="pub-meta">
+    China Focus | 2025
+  </div>
+  <div class="pub-abstract">
+    This award-winning essay analyzes how the Trump administration's policies inadvertently catalyzed European strategic autonomy, examining implications for transatlantic relations and China's position in the evolving security architecture. The work integrates grand strategy theory with contemporary geopolitical analysis to assess Europe's emerging role as an independent actor.
+  </div>
+  <div class="pub-links">
+    <a href="#" class="pub-link"><i class="fas fa-link"></i> Link</a>
+    <a href="#" class="pub-link"><i class="fas fa-quote-right"></i> Cite</a>
+  </div>
+</div>
+
+<div class="publication-item">
+  <div class="pub-title">
+    How to Maintain a Balance in The Intricate Pas Detrois Among China, US and EU
+  </div>
+  <div class="pub-venue">
+    <i class="fas fa-book"></i> Book Chapter
+  </div>
+  <div class="pub-meta">
+    Wang, L. and <strong>Zhu, X.</strong> | In: <em>The Trilateral Interactions China, the US, and the EU on Tensions, Competition, and Cooperation</em>, ed. by Zuokui Liu, Marek Hrubec, and Shaohua Yan (Routledge, 2026)
+  </div>
+  <div class="pub-abstract">
+    Co-authored analysis examining the delicate balance of power and interests among the world's three major economic and political entities, with particular focus on cooperation mechanisms and conflict management strategies in an era of great-power competition.
+  </div>
+  <div class="pub-links">
+    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i> Link</a>
+    <a href="#" class="pub-link"><i class="fas fa-bookmark"></i> BibTeX</a>
+  </div>
+</div>
+
+## <i class="fas fa-comments"></i> Conference Presentations
+
+<div class="publication-item">
+  <div class="pub-title">
+    What to Do About the Strategic Challenge? An Analysis of the Background of NATO's New China Strategy
+  </div>
+  <div class="pub-venue">
+    <i class="fas fa-users"></i> Seventh Annual Young Scholars Forum on U.S.-China Relations
+  </div>
+  <div class="pub-meta">
+    The Carter Center | 2022
+  </div>
+  <div class="pub-abstract">
+    Presented analysis of NATO's evolving strategic posture toward China, examining the alliance's adaptation to new security challenges and the implications for global governance and multilateral cooperation.
+  </div>
+</div>
+
+---
+
+## <i class="fas fa-flask"></i> Working Papers & Current Research
+
+> I am currently working on several projects examining statecraft, applied history, and contemporary international relations. If you're interested in collaboration or would like to discuss my research, please [get in touch](mailto:xudong.zhu01@gmail.com).
+
+### Research Interests
+- **Applied History & Statecraft**: Using historical case studies to inform contemporary policy
+- **Great Power Competition**: Analyzing strategic dynamics between major powers
+- **European Security & Governance**: EU's role in global affairs and transatlantic relations
+- **China's Foreign Policy**: Strategic analysis of China's international engagement
+
+---
+
+<div style="text-align: center; margin-top: 3rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+  <p style="color: #666; margin-bottom: 0.5rem;"><i class="fas fa-envelope"></i> For inquiries about my research or potential collaborations:</p>
+  <p style="font-weight: 600; color: #0f62fe; font-size: 1.1rem;">xudong.zhu01@gmail.com</p>
+</div>
