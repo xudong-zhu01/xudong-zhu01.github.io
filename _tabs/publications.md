@@ -211,38 +211,45 @@ order: 2
 
 <div class="publication-item">
   <div class="pub-title">
-    A Decisive Moment for Germany
+    From 'The Art of the Deal' to 'The Art of Diplomacy': The Continuities in Trump's View of International Relations
   </div>
   <div class="pub-venue">
-    <i class="fas fa-newspaper"></i> Media Commentary
+    <i class="fas fa-newspaper"></i> U.S.-China Perception Monitor, The Carter Center
   </div>
   <div class="pub-meta">
-    Published Analysis | 2022
+    <strong>Zhu, X.</strong> | September 11, 2025
   </div>
   <div class="pub-abstract">
-    Analysis examining Germany's strategic position amid the Ukraine crisis, exploring how French President Macron's policies and the possibility of Western military involvement in Ukraine challenge German foreign policy calculations and European security dynamics.
+    <em>Article in Chinese</em><br>
+    An analysis examining the continuities in Donald Trump's approach to international relations, from his early business philosophy to his diplomatic strategies, exploring how his transactional worldview shapes U.S. foreign policy.
   </div>
   <div class="pub-links">
-    <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i> Read Article</a>
+    <a href="https://zmyx.info/on-trump-interview-with-playboy-in-1990/" class="pub-link" target="_blank">
+      <i class="fas fa-external-link-alt"></i> Read Article (Chinese)
+    </a>
   </div>
 </div>
 
 <div class="publication-item">
   <div class="pub-title">
-    Expert Commentary on International Affairs
+    If Bismarck Ran Washington: What Approach Would He Take to U.S.–China Relations?
   </div>
   <div class="pub-venue">
-    <i class="fas fa-microphone"></i> Various Media Outlets
+    <i class="fas fa-newspaper"></i> U.S.-China Perception Monitor, The Carter Center
   </div>
   <div class="pub-meta">
-    Ongoing Contributions
+    <strong>Zhu, X.</strong> | December 11, 2025
   </div>
   <div class="pub-abstract">
-    Regular contributions to discussions on international relations, European affairs, and China's role in global governance. Available for expert commentary on topics related to statecraft, transatlantic relations, and great-power competition.
+    <em>Article in Chinese</em><br>
+    A thought experiment applying Otto von Bismarck's Realpolitik principles to contemporary U.S.-China relations. This analysis explores how classical statecraft and diplomatic pragmatism might inform current policy challenges between the two great powers.
   </div>
   <div class="pub-links">
-    <a href="mailto:xudong.zhu01@gmail.com" class="pub-link"><i class="fas fa-envelope"></i> Contact for Media Inquiries</a>
+    <a href="https://zmyx.info/if-bismarck-directed-china-policy-in-washington/" class="pub-link" target="_blank">
+      <i class="fas fa-external-link-alt"></i> Read Article (Chinese)
+    </a>
   </div>
+</div>
 </div>
 
 
