@@ -1,0 +1,499 @@
+---
+layout: page
+# Index page
+---
+
+<style>
+  :root {
+    --accent: #0f62fe;
+    --text-main: #0b1b2b;
+    --text-muted: #4b5563;
+    --border: #e5e7eb;
+    --card-bg: #ffffff;
+  }
+
+  .page-shell {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2.5rem;
+    color: var(--text-main);
+  }
+
+  .hero {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: linear-gradient(
+      135deg,
+      rgba(15, 98, 254, 0.05),
+      rgba(15, 98, 254, 0.02)
+    );
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 3vw, 2.4rem);
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.01em;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    background: rgba(15, 98, 254, 0.08);
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.78rem;
+  }
+
+  .lead {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin: 0 0 1.1rem;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin: 0 0 1.2rem;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--card-bg);
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.1rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.12s ease, box-shadow 0.12s ease,
+      background 0.12s ease;
+  }
+
+  .button-primary {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+    box-shadow: 0 8px 18px rgba(15, 98, 254, 0.18);
+  }
+
+  .button-ghost {
+    background: var(--card-bg);
+    color: var(--text-main);
+  }
+
+  .button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.06);
+  }
+
+  .quick-facts {
+    display: grid;
+    gap: 0.9rem;
+    padding: 1rem;
+    border-radius: 14px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+  }
+
+  .fact-list {
+    margin: 0.25rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+    list-style: none;
+  }
+
+  .fact-item {
+    display: flex;
+    gap: 0.55rem;
+    align-items: flex-start;
+  }
+
+  .fact-icon {
+    width: 1.15rem;
+    height: 1.15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .fact-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .fact-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 700;
+  }
+
+  .fact-value {
+    font-weight: 700;
+  }
+
+  .section {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+  }
+
+  .section-title {
+    margin: 0;
+    font-size: 1.35rem;
+  }
+
+  .section-subtitle {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .news-section {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.2rem;
+    background: var(--card-bg);
+  }
+
+  .news-year {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-main);
+    letter-spacing: 0.05em;
+  }
+
+  .news-list {
+    list-style: none;
+    margin: 0.75rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .news-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.6rem;
+    align-items: start;
+    color: var(--text-muted);
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.1rem;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .muted {
+    color: var(--text-muted);
+  }
+
+  .news-date {
+    font-weight: 800;
+    color: var(--accent);
+  }
+
+  .news-link {
+    color: var(--text-main);
+    font-weight: 700;
+    text-underline-offset: 3px;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-main);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .photo-section {
+    display: grid;
+    gap: 0.75rem;
+    justify-items: center;
+    text-align: center;
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .photo-section img {
+    max-width: 100%;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+  }
+</style>
+
+<div class="page-shell">
+  <section class="hero">
+    <div>
+      <span class="eyebrow">International History · Policy</span>
+      <h1>Hello, I’m Xudong Zhu</h1>
+      <p class="lead">
+        PhD Candidate in International History at the University of Aberdeen,
+        analyzing how statecraft, grand strategy, and great-power competition
+        shape contemporary governance. I welcome inquiries regarding research
+        collaborations, speaking engagements, or policy-oriented projects.
+      </p>
+      <div class="actions">
+        <a
+          class="button button-primary"
+          href="mailto:xudong.zhu01@gmail.com"
+          target="_blank"
+          rel="noopener"
+          >Say Hello</a
+        >
+        <a
+          class="button button-ghost"
+          href="https://www.linkedin.com/in/xudong-zhu-457bb3220"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
+    <div class="quick-facts">
+      <div>
+        <div class="fact-label">Academic journey</div>
+        <div class="fact-value">
+          <ul class="fact-list">
+            <li class="fact-item">
+              <span class="fact-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m3 9.5 9-4.5 9 4.5-9 4.5z" />
+                  <path d="M7 11.75V16c0 1.1 2.24 2 5 2s5-.9 5-2v-4.25" />
+                  <path d="M12 14.2v4.8" />
+                </svg>
+              </span>
+              <span>
+                MA in American Studies <br />
+                (Heidelberg University, DE)
+              </span>
+            </li>
+            <li class="fact-item">
+              <span class="fact-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m3 9.5 9-4.5 9 4.5-9 4.5z" />
+                  <path d="M7 11.75V16c0 1.1 2.24 2 5 2s5-.9 5-2v-4.25" />
+                  <path d="M12 14.2v4.8" />
+                </svg>
+              </span>
+              <span>
+                LLB in Diplomacy <br />
+                (Jilin University, CN)
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="fact-label">Membership</div>
+        <div class="fact-value">
+          <ul class="fact-list">
+            <li class="fact-item">
+              <span class="fact-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="8" cy="8" r="3" />
+                  <circle cx="16" cy="10" r="3" />
+                  <path d="M3.5 19a4.5 4.5 0 0 1 9 0" />
+                  <path d="M13 18.5a4.5 4.5 0 0 1 7.5-3.5" />
+                </svg>
+              </span>
+              <span>Royal Historical Society</span>
+            </li>
+            <li class="fact-item">
+              <span class="fact-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="8" cy="8" r="3" />
+                  <circle cx="16" cy="10" r="3" />
+                  <path d="M3.5 19a4.5 4.5 0 0 1 9 0" />
+                  <path d="M13 18.5a4.5 4.5 0 0 1 7.5-3.5" />
+                </svg>
+              </span>
+              <span>Association of Chinese Political Studies</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="fact-label">Languages</div>
+        <div class="fact-value">English · Chinese · German</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section news-section">
+    <div class="section-header">
+      <h2 class="section-title">Recent Highlights</h2>
+    </div>
+    <div>
+      <div class="news-year">2025</div>
+      <ul class="news-list">
+        <li class="news-item">
+          <span class="news-date">[Nov.]</span>
+          <span>
+            I’m happy to be part of the ACPS Annual Conference. My sincere
+            thanks to the organizers, and it’s been a pleasure meeting new
+            friends.
+          </span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">[Oct.]</span>
+          <span>
+            Honoured to be elected as a Postgraduate Member of the Royal
+            Historical Society.
+          </span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">[Oct.]</span>
+          <span>
+            Excited to be a Teaching Assistant for HI1022: Europe in the
+            Twentieth Century!
+          </span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">[Aug.]</span>
+          <span>
+            My essay was recognized with the Jimmy Carter Prize (Runner-up) in
+            the 2025 China Focus Essay Contest.
+          </span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">[Jun.]</span>
+          <span>
+            Commenced a summer internship with the EEW team (Experience,
+            Engagement &amp; Wellbeing) at the University of Aberdeen,
+            contributing to projects designed to improve the international
+            student experience.
+          </span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Research Interests</h2>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Applied History &amp; Statecraft</h3>
+        <ul class="muted">
+          <li>
+            Apply statecraft and grand-strategy frameworks to current
+            geopolitical issues
+          </li>
+          <li>
+            Compare Realpolitik across cases to assess power, interests, and
+            constraints
+          </li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Global Security &amp; Governance</h3>
+        <ul class="muted">
+          <li>Great power competition</li>
+          <li>International institutions and legal frameworks</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="photo-section">
+    <img
+      src="assets/img/wk.png"
+      alt="View of a university building with greenery in front"
+      loading="lazy"
+    />
+  </section>
+</div>
