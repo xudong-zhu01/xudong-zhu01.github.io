@@ -70,3 +70,19 @@
     }
   }
 }
+
+
+#page-category,
+#page-tag {
+  padding: 1.4rem 1.5rem;
+}
+
+#page-category ul > li,
+#page-tag ul > li {
+  border-bottom: 1px solid var(--main-border-color);
+}
+
+#page-category ul > li:last-child,
+#page-tag ul > li:last-child {
+  border-bottom: 0;
+}

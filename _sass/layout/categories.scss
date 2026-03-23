@@ -81,3 +81,20 @@
 .rotate {
   transform: rotate(-90deg);
 }
+
+
+.categories {
+  box-shadow: var(--panel-shadow);
+  overflow: hidden;
+}
+
+.categories .card-header {
+  padding: 1rem 1.25rem;
+  background: var(--search-bg);
+  border-bottom: 1px solid var(--main-border-color);
+}
+
+.categories .list-group-item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
