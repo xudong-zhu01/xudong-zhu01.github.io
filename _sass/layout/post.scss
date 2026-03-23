@@ -355,3 +355,58 @@ h1 + .post-meta {
     margin-right: -0.5rem;
   }
 }
+
+
+article > header {
+  margin-bottom: 2rem;
+}
+
+article > header h1 {
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 650;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+h1 + .post-meta {
+  display: grid;
+  gap: 0.65rem;
+  padding: 0.95rem 1.05rem;
+  border: 1px solid var(--main-border-color);
+  border-radius: 0.9rem;
+  background: var(--panel-bg);
+}
+
+.post-tail-wrapper {
+  margin-top: 2.5rem;
+  padding: 1.2rem 1.2rem 0.5rem;
+  border-bottom: 0;
+}
+
+.post-navigation {
+  margin-top: 1.25rem;
+  padding: 0.75rem;
+}
+
+.post-navigation .btn {
+  min-height: 100%;
+  padding: 0.9rem 1rem;
+  background: transparent;
+}
+
+#toc-wrapper {
+  border-left: 0;
+  padding-left: 0;
+}
+
+#toc-wrapper ul li a {
+  border-left: 2px solid transparent;
+  padding-left: 1rem;
+}
+
+#toc-wrapper ul li a:hover,
+#toc-wrapper ul li a.active {
+  border-left-color: var(--toc-highlight);
+  background: var(--panel-bg);
+  border-radius: 0.75rem;
+}

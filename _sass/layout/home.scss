@@ -198,3 +198,36 @@
     }
   } /* .pagination */
 }
+
+
+#post-list .card-wrapper {
+  margin-bottom: 1.35rem;
+}
+
+#post-list .card {
+  overflow: hidden;
+}
+
+#post-list .card .card-title {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+#post-list .card .post-meta {
+  padding-top: 0.9rem;
+  margin-top: 0.95rem;
+  border-top: 1px solid var(--main-border-color);
+}
+
+.pagination .page-item .page-link {
+  min-width: 2.35rem;
+  min-height: 2.35rem;
+  border: 1px solid transparent;
+}
+
+.pagination .page-item.active .page-link,
+.pagination .page-item .page-link:hover {
+  border-color: var(--panel-border);
+  background: var(--panel-bg);
+  box-shadow: var(--panel-shadow-soft);
+}
