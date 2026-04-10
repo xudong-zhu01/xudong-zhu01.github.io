@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching - Xudong Zhu</title>
+  <style>
+    /* =========================================
+       1. Visual Theme & Global Variables (严格与 index 保持一致)
+       ========================================= */
+    :root {
+      --pure-black: #000000;
+      --light-gray: #f5f5f7;
+      --near-black: #1d1d1f;
+      --apple-blue: #0071e3;
+      --link-light: #0066cc;
+      --link-dark: #2997ff;
+      --focus-ring: #0071e3;
+      --text-white: #ffffff;
+      --text-near-black: #1d1d1f;
+      --text-black-80: rgba(0, 0, 0, 0.8);
+      --text-white-80: rgba(255, 255, 255, 0.8);
+      --dark-surface-1: #272729;
+      --card-shadow: rgba(0, 0, 0, 0.12) 3px 5px 30px 0px; 
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-gray);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-top: 48px;
+    }
+
+    .sf-display { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .sf-text { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+    /* =========================================
+       2. Navigation (Glass Effect - 严格不变)
+       ========================================= */
+    .apple-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 48px;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+      margin: 0; padding: 0;
+    }
+    .nav-links a {
+      color: var(--text-white);
+      font-size: 12px;
+      font-weight: 400;
+      text-decoration: none;
+      letter-spacing: -0.12px;
+      transition: opacity 0.2s;
+    }
+    .nav-links a:hover { opacity: 0.7; }
+
+    /* =========================================
+       3. Layout & Typography Principles
+       ========================================= */
+    .apple-section {
+      width: 100%;
+      padding: 100px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .section-dark { background-color: var(--pure-black); color: var(--text-white); }
+    .section-light { background-color: var(--light-gray); color: var(--text-near-black); }
+
+    .display-hero { font-size: clamp(40px, 6vw, 56px); font-weight: 600; line-height: 1.07; letter-spacing: -0.28px; margin: 0 0 16px 0; text-align: center; }
+    .section-heading { font-size: clamp(32px, 5vw, 40px); font-weight: 600; line-height: 1.10; margin: 0 0 48px 0; text-align: center; }
+    .card-title { font-size: 24px; font-weight: 600; line-height: 1.14; letter-spacing: 0.196px; margin: 0 0 8px 0; }
+    .body-text { font-size: 17px; font-weight: 400; line-height: 1.47; letter-spacing: -0.374px; }
+    .caption-bold { font-size: 14px; font-weight: 600; line-height: 1.29; letter-spacing: -0.224px; }
+
+    /* =========================================
+       4. Buttons & Links
+       ========================================= */
+    a:focus, button:focus { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+    .cta-group { display: flex; gap: 16px; justify-content: center; align-items: center; }
+    
+    .btn-primary {
+      background-color: var(--apple-blue);
+      color: var(--text-white);
+      padding: 8px 15px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      text-decoration: none;
+    }
+
+    /* =========================================
+       5. Cards, Grids & Specific Styles
+       ========================================= */
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; }
+    
+    .card-dark { background-color: var(--dark-surface-1); border-radius: 8px; padding: 40px; border: none; }
+    .card-light { background-color: #ffffff; border-radius: 8px; padding: 40px; border: none; }
+    .card-elevated { box-shadow: var(--card-shadow); }
+    
+    .clean-list { list-style: none; padding: 0; margin: 0; }
+    .clean-list-dark-text li { margin-bottom: 12px; color: var(--text-black-80); }
+    .clean-list-light-text li { margin-bottom: 12px; color: var(--text-white-80); }
+    
+    /* 苹果风胶囊 Badge */
+    .badge-apple {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 980px;
+      margin-left: 12px;
+      vertical-align: middle;
+      letter-spacing: -0.12px;
+    }
+    .badge-light { background-color: #e8e8ed; color: var(--text-near-black); }
+    .badge-dark { background-color: rgba(255,255,255,0.15); color: var(--text-white); }
+
+    .course-meta {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      letter-spacing: -0.224px;
+    }
+
+    /* =========================================
+       6. Footer (严格不变)
+       ========================================= */
+    .apple-footer {
+      background-color: var(--pure-black);
+      padding: 32px 20px;
+      text-align: center;
+      color: var(--text-white-80);
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="apple-nav">
+    <ul class="nav-links sf-text">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html" style="opacity: 0.5;">Teaching</a></li>
+      <li><a href="theses.html">Theses</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero: Teaching Philosophy -->
+  <section class="apple-section section-dark" style="padding-top: 140px; padding-bottom: 80px;">
+    <div class="container" style="max-width: 800px; text-align: center;">
+      <h1 class="sf-display display-hero">Teaching</h1>
+      <p class="sf-text body-text" style="color: var(--text-white-80); margin: 0 auto; max-width: 680px;">
+        I believe in making history relevant and accessible by connecting past events to contemporary issues. 
+        My teaching approach emphasizes critical thinking, analytical skills, and the practical application 
+        of historical knowledge to understand current international relations and policy challenges.
+      </p>
+    </div>
+  </section>
+
+  <!-- Current Teaching -->
+  <section class="apple-section section-light" style="padding-top: 80px; padding-bottom: 80px;">
+    <div class="container">
+      <h2 class="sf-display section-heading">Current Experience</h2>
+      
+      <div class="card-light card-elevated" style="max-width: 800px; margin: 0 auto;">
+        <h3 class="sf-display card-title">
+          <span style="color: var(--apple-blue);">HI2520:</span> Global Empire In The Long Nineteenth Century
+        </h3>
+        <div class="sf-text course-meta" style="color: var(--text-black-80);">
+          University of Aberdeen | Academic Year 2025-2026
+          <span class="badge-apple badge-light">Teaching Assistant</span>
+        </div>
+        
+        <p class="sf-text body-text" style="color: var(--text-black-80); margin-bottom: 24px;">
+          The  long nineteenth century (c.1760-1914) saw dramatic rises and falls in political units and power systems (empires) bringing together a range of peoples and territories.  Generally, but not exclusively, they were dominated by Europeans (or those who at least claimed European descent). These global empires are now recognised by historians as a key feature of modern history, and have generated an increasingly rich and varied literature. This course offers you the chance to examine this crucial and controversial phenomenon which, for better or worse, made the modern world.
+        </p>
+        
+        <h4 class="sf-display" style="font-size: 17px; font-weight: 600; margin: 0 0 12px 0;">Responsibilities:</h4>
+        <ul class="sf-text body-text clean-list clean-list-dark-text" style="list-style-type: disc; padding-left: 20px;">
+          <li>Leading weekly tutorial sessions for undergraduate students</li>
+          <li>Facilitating discussions on primary and secondary source analysis</li>
+          <li>Providing feedback on essays and research assignments</li>
+          <li>Supporting students in developing critical thinking and writing skills</li>
+          <li>Holding office hours for individual student consultations</li>
+        </ul>
+      </div>
+
+      <div class="card-light card-elevated" style="max-width: 800px; margin: 0 auto;">
+        <h3 class="sf-display card-title">
+          <span style="color: var(--apple-blue);">HI1022:</span> Europe in the Twentieth Century
+        </h3>
+        <div class="sf-text course-meta" style="color: var(--text-black-80);">
+          University of Aberdeen | Academic Year 2025-2026
+          <span class="badge-apple badge-light">Teaching Assistant</span>
+        </div>
+        
+        <p class="sf-text body-text" style="color: var(--text-black-80); margin-bottom: 24px;">
+          This course provides a comprehensive examination of European history throughout the twentieth century, 
+          exploring major political, social, and cultural transformations. Students engage with critical historiographical 
+          debates and develop analytical skills for understanding complex historical narratives.
+        </p>
+        
+        <h4 class="sf-display" style="font-size: 17px; font-weight: 600; margin: 0 0 12px 0;">Responsibilities:</h4>
+        <ul class="sf-text body-text clean-list clean-list-dark-text" style="list-style-type: disc; padding-left: 20px;">
+          <li>Leading weekly tutorial sessions for undergraduate students</li>
+          <li>Facilitating discussions on primary and secondary source analysis</li>
+          <li>Providing feedback on essays and research assignments</li>
+          <li>Supporting students in developing critical thinking and writing skills</li>
+          <li>Holding office hours for individual student consultations</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Previous Teaching -->
+  <section class="apple-section section-dark" style="padding-top: 80px; padding-bottom: 80px;">
+    <div class="container">
+      <h2 class="sf-display section-heading">Previous Experience</h2>
+      
+      <div class="card-dark" style="max-width: 800px; margin: 0 auto;">
+        <h3 class="sf-display card-title" style="color: var(--text-white);">
+          From Washington to Peking: History of the Early Interactions Between the United States and China
+        </h3>
+        <div class="sf-text course-meta" style="color: var(--text-white-80);">
+          Heidelberg University (HCA) | Summer Term 2023
+          <span class="badge-apple badge-dark">Seminar Instructor</span>
+        </div>
+        
+        <div class="sf-text body-text" style="color: var(--text-white-80); margin-bottom: 24px;">
+          <strong>Schedule:</strong> Monday, 18:00 - 20:00<br>
+          <strong>Venue:</strong> Oculus, Heidelberg Center for American Studies<br><br>
+          A comprehensive examination of the formative period of Sino-American relations, exploring key figures, pivotal events, and foundational interactions that shaped the complex relationship between the United States and China from the 18th century through the early 20th century.
+        </div>
+        
+        <h4 class="sf-display" style="font-size: 17px; font-weight: 600; margin: 0 0 12px 0; color: var(--text-white);">Course Sessions:</h4>
+        <ul class="sf-text body-text clean-list clean-list-light-text" style="list-style-type: none;">
+          <li><strong style="color: var(--text-white);">Session 1:</strong> Empress of China: The Beginning of Sino-US Relations and Trade</li>
+          <li><strong style="color: var(--text-white);">Session 2:</strong> Anson Burlingame I - Burlingame-Seward Treaty of 1868</li>
+          <li><strong style="color: var(--text-white);">Session 3:</strong> Anson Burlingame II - Open Door Policy</li>
+          <li><strong style="color: var(--text-white);">Session 4:</strong> William Alexander Parsons Martin - International Law</li>
+          <li><strong style="color: var(--text-white);">Session 5:</strong> John Leighton Stuart - Modern Higher Education in China</li>
+          <li><strong style="color: var(--text-white);">Session 6:</strong> Chinese Sojourn Labor and the American Transcontinental Railroad</li>
+          <li><strong style="color: var(--text-white);">Session 7:</strong> Chinese Students in America: Hopes for Renewing the Nation</li>
+          <li><strong style="color: var(--text-white);">Session 8:</strong> Days of Shame: Yellow Peril and the Chinese Exclusion Act</li>
+          <li><strong style="color: var(--text-white);">Session 9:</strong> Conclusion: America's Role in China's Entry into the International Order</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills, Interests & Contact -->
+  <section class="apple-section section-light" style="padding-top: 80px; padding-bottom: 120px;">
+    <div class="container">
+      
+      <div class="grid-2" style="max-width: 980px; margin: 0 auto 64px auto;">
+        
+        <!-- Teaching Skills -->
+        <div class="card-light card-elevated">
+          <h3 class="sf-display card-title" style="margin-bottom: 24px;">Teaching Skills</h3>
+          <ul class="sf-text body-text clean-list clean-list-dark-text">
+            <li style="margin-bottom: 16px;">
+              <strong style="color: var(--text-near-black); display: block;">Seminar Leadership</strong>
+              <span style="font-size: 14px;">Facilitating engaging discussions and debates</span>
+            </li>
+            <li style="margin-bottom: 16px;">
+              <strong style="color: var(--text-near-black); display: block;">Academic Writing</strong>
+              <span style="font-size: 14px;">Guiding essay development and critical analysis</span>
+            </li>
+            <li>
+              <strong style="color: var(--text-near-black); display: block;">Student Mentorship</strong>
+              <span style="font-size: 14px;">One-on-one academic support and guidance</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Teaching Interests -->
+        <div class="card-light card-elevated">
+          <h3 class="sf-display card-title" style="margin-bottom: 24px;">Teaching Interests</h3>
+          <ul class="sf-text body-text clean-list clean-list-dark-text" style="list-style-type: disc; padding-left: 20px;">
+            <li><strong>Modern International History</strong>: 19th-21st century global politics and diplomacy</li>
+            <li><strong>European Integration</strong>: History and politics of the European Union</li>
+            <li><strong>Great Power Relations</strong>: Strategic dynamics between major states</li>
+            <li><strong>Applied History</strong>: Using historical analysis for policy-making</li>
+            <li><strong>Research Methods</strong>: Training students in historical and social science research</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Contact CTA -->
+      <div style="text-align: center;">
+        <p class="sf-text body-text" style="color: var(--text-black-80); margin-bottom: 16px;">
+          Interested in guest lectures or teaching collaboration?
+        </p>
+        <a href="mailto:xudong.zhu01@gmail.com" class="btn-primary sf-text">Contact Me</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="apple-footer sf-text">
+    <div class="container">
+      &copy; 2026 Xudong Zhu. All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
