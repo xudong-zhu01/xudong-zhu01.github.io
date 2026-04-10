@@ -20,13 +20,12 @@
       --text-near-black: #1d1d1f;
       --text-black-80: rgba(0, 0, 0, 0.8);
       --text-white-80: rgba(255, 255, 255, 0.8);
-      --dark-surface-1: #272729;
     }
 
     body {
       margin: 0;
       padding: 0;
-      background-color: var(--pure-black); /* 配合首屏暗色 */
+      background-color: var(--light-gray); /* 配合主体浅色 */
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       padding-top: 48px;
@@ -78,31 +77,60 @@
     }
     .container {
       width: 100%;
-      max-width: 800px; /* 论文展示更适合窄一号的容器 */
+      max-width: 800px; /* 论文展示窄一号容器更佳 */
       margin: 0 auto;
     }
     .section-dark { background-color: var(--pure-black); color: var(--text-white); }
     .section-light { background-color: var(--light-gray); color: var(--text-near-black); }
 
-    .display-hero { font-size: clamp(40px, 6vw, 56px); font-weight: 600; line-height: 1.07; letter-spacing: -0.28px; margin: 0 0 48px 0; }
-    .thesis-title { font-size: 28px; font-weight: 600; line-height: 1.14; letter-spacing: 0.196px; margin: 0 0 24px 0; }
+    .display-hero { font-size: clamp(40px, 6vw, 56px); font-weight: 600; line-height: 1.07; letter-spacing: -0.28px; margin: 0; text-align: center; }
+    
+    /* 论文专用排版 */
+    .thesis-section {
+      padding: 80px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.1); /* 浅色背景的细微灰线分隔 */
+    }
+    .thesis-section:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .thesis-eyebrow {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-black-80);
+      text-transform: uppercase;
+      letter-spacing: -0.224px;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .thesis-title { 
+      font-size: clamp(28px, 4vw, 36px); 
+      font-weight: 600; 
+      line-height: 1.14; 
+      letter-spacing: 0.196px; 
+      margin: 0 0 32px 0; 
+      color: var(--text-near-black);
+    }
+    
     .body-text { font-size: 17px; font-weight: 400; line-height: 1.47; letter-spacing: -0.374px; }
     
     .meta-list {
       list-style: none;
       padding: 0;
       margin: 0 0 32px 0;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid rgba(0,0,0,0.1);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
       padding: 24px 0;
-    }
-    .section-light .meta-list {
-      border-color: rgba(0,0,0,0.1);
+      color: var(--text-black-80);
     }
     .meta-item {
       display: flex;
       justify-content: space-between;
       margin-bottom: 12px;
+      align-items: flex-start;
+      gap: 20px;
     }
     .meta-item:last-child {
       margin-bottom: 0;
@@ -110,7 +138,7 @@
     .meta-label {
       font-weight: 600;
       flex-shrink: 0;
-      margin-right: 24px;
+      color: var(--text-near-black);
     }
     .meta-value {
       text-align: right;
@@ -123,9 +151,6 @@
     
     .link-inline-light { color: var(--link-light); text-decoration: none; font-size: 17px; font-weight: 400; }
     .link-inline-light:hover { text-decoration: underline; }
-    
-    .link-inline-dark { color: var(--link-dark); text-decoration: none; font-size: 17px; font-weight: 400; }
-    .link-inline-dark:hover { text-decoration: underline; }
 
     /* =========================================
        5. Footer (严格不变)
@@ -152,71 +177,81 @@
     </ul>
   </nav>
 
-  <!-- Master's Thesis Section (Dark) -->
-  <section class="apple-section section-dark" style="padding-top: 140px; padding-bottom: 140px;">
+  <!-- 极简暗色 Hero (片头) -->
+  <section class="apple-section section-dark" style="padding-top: 180px; padding-bottom: 120px;">
     <div class="container">
-      <span class="sf-text" style="color: var(--text-white-80); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: -0.224px; display: block; margin-bottom: 12px;">Master's Thesis</span>
-      
-      <h1 class="sf-display thesis-title" style="font-size: clamp(32px, 5vw, 40px); line-height: 1.10;">
-        On the Theory of Empire in International Relations and an Analysis of Pax Americana
-      </h1>
-      
-      <ul class="sf-text body-text meta-list" style="color: var(--text-white-80);">
-        <li class="meta-item">
-          <span class="meta-label" style="color: var(--text-white);">Institution</span>
-          <span class="meta-value">Ruprecht-Karls-Universität Heidelberg, Germany</span>
-        </li>
-        <li class="meta-item">
-          <span class="meta-label" style="color: var(--text-white);">First Supervisor</span>
-          <span class="meta-value">PD Dr. Martin Thunert</span>
-        </li>
-        <li class="meta-item">
-          <span class="meta-label" style="color: var(--text-white);">Second Supervisor</span>
-          <span class="meta-value">Dr. Wilfried Mausbach</span>
-        </li>
-        <li class="meta-item">
-          <span class="meta-label" style="color: var(--text-white);">Completed</span>
-          <span class="meta-value">2023</span>
-        </li>
-      </ul>
-
-      <div style="margin-top: 32px;">
-        <a href="https://xudong-zhu01.github.io/posts/master/" class="sf-text link-inline-dark">Read Summary &gt;</a>
-      </div>
+      <h1 class="sf-display display-hero">Theses.</h1>
     </div>
   </section>
 
-  <!-- Bachelor's Thesis Section (Light) -->
-  <section class="apple-section section-light" style="padding-top: 120px; padding-bottom: 160px;">
+  <!-- 统一的浅色内容展示区 -->
+  <section class="apple-section section-light" style="padding-top: 20px; padding-bottom: 160px;">
     <div class="container">
-      <span class="sf-text" style="color: var(--text-black-80); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: -0.224px; display: block; margin-bottom: 12px;">Bachelor's Thesis</span>
       
-      <h1 class="sf-display thesis-title" style="font-size: clamp(32px, 5vw, 40px); line-height: 1.10; color: var(--text-near-black);">
-        From the Continental Alliance to New Route: A Study on the Transition of the Foreign Policy of the Second German Reich
-      </h1>
-      
-      <ul class="sf-text body-text meta-list" style="color: var(--text-black-80);">
-        <li class="meta-item">
-          <span class="meta-label" style="color: var(--text-near-black);">Institution</span>
-          <span class="meta-value">Jilin University, China</span>
-        </li>
-        <li class="meta-item">
-          <span class="meta-label" style="color: var(--text-near-black);">Supervisor</span>
-          <span class="meta-value">Prof. Dr. Xingjie Sun</span>
-        </li>
-        <li class="meta-item">
-          <span class="meta-label" style="color: var(--text-near-black);">Degree</span>
-          <span class="meta-value">LLB in Diplomacy</span>
-        </li>
-        <li class="meta-item">
-          <span class="meta-label" style="color: var(--text-near-black);">Completed</span>
-          <span class="meta-value">2021</span>
-        </li>
-      </ul>
+      <!-- Master's Thesis -->
+      <div class="thesis-section">
+        <span class="sf-text thesis-eyebrow">Master's Thesis</span>
+        
+        <h2 class="sf-display thesis-title">
+          On the Theory of Empire in International Relations and an Analysis of Pax Americana
+        </h2>
+        
+        <ul class="sf-text body-text meta-list">
+          <li class="meta-item">
+            <span class="meta-label">Institution</span>
+            <span class="meta-value">Ruprecht-Karls-Universität Heidelberg, Germany</span>
+          </li>
+          <li class="meta-item">
+            <span class="meta-label">First Supervisor</span>
+            <span class="meta-value">PD Dr. Martin Thunert</span>
+          </li>
+          <li class="meta-item">
+            <span class="meta-label">Second Supervisor</span>
+            <span class="meta-value">Dr. Wilfried Mausbach</span>
+          </li>
+          <li class="meta-item">
+            <span class="meta-label">Completed</span>
+            <span class="meta-value">2023</span>
+          </li>
+        </ul>
 
-      <div style="margin-top: 32px;">
-        <a href="https://xudong-zhu01.github.io/posts/bachelor/" class="sf-text link-inline-light">Read Summary &gt;</a>
+        <div>
+          <a href="https://xudong-zhu01.github.io/posts/master/" class="sf-text link-inline-light">Read Summary &gt;</a>
+        </div>
       </div>
+
+      <!-- Bachelor's Thesis -->
+      <div class="thesis-section">
+        <span class="sf-text thesis-eyebrow">Bachelor's Thesis</span>
+        
+        <h2 class="sf-display thesis-title">
+          From the Continental Alliance to New Route: A Study on the Transition of the Foreign Policy of the Second German Reich
+        </h2>
+        
+        <ul class="sf-text body-text meta-list">
+          <li class="meta-item">
+            <span class="meta-label">Institution</span>
+            <span class="meta-value">Jilin University, China</span>
+          </li>
+          <li class="meta-item">
+            <span class="meta-label">Supervisor</span>
+            <span class="meta-value">Prof. Dr. Xingjie Sun</span>
+          </li>
+          <li class="meta-item">
+            <span class="meta-label">Degree</span>
+            <span class="meta-value">LLB in Diplomacy</span>
+          </li>
+          <li class="meta-item">
+            <span class="meta-label">Completed</span>
+            <span class="meta-value">2021</span>
+          </li>
+        </ul>
+
+        <div>
+          <a href="https://xudong-zhu01.github.io/posts/bachelor/" class="sf-text link-inline-light">Read Summary &gt;</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
