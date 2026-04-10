@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Xudong Zhu</title>
+  <style>
+    /* =========================================
+       1. Visual Theme & Global Variables (严格与 index 保持一致)
+       ========================================= */
+    :root {
+      --pure-black: #000000;
+      --light-gray: #f5f5f7;
+      --near-black: #1d1d1f;
+      --apple-blue: #0071e3;
+      --link-light: #0066cc;
+      --link-dark: #2997ff;
+      --focus-ring: #0071e3;
+      --text-white: #ffffff;
+      --text-near-black: #1d1d1f;
+      --text-black-80: rgba(0, 0, 0, 0.8);
+      --text-white-80: rgba(255, 255, 255, 0.8);
+      --card-shadow: rgba(0, 0, 0, 0.12) 3px 5px 30px 0px; 
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-gray);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-top: 48px;
+    }
+
+    .sf-display { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .sf-text { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+    /* =========================================
+       2. Navigation (Glass Effect - 严格不变)
+       ========================================= */
+    .apple-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 48px;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+      margin: 0; padding: 0;
+    }
+    .nav-links a {
+      color: var(--text-white);
+      font-size: 12px;
+      font-weight: 400;
+      text-decoration: none;
+      letter-spacing: -0.12px;
+      transition: opacity 0.2s;
+    }
+    .nav-links a:hover { opacity: 0.7; }
+
+    /* =========================================
+       3. Layout & Typography Principles
+       ========================================= */
+    .apple-section {
+      width: 100%;
+      padding: 100px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .section-dark { background-color: var(--pure-black); color: var(--text-white); }
+    .section-light { background-color: var(--light-gray); color: var(--text-near-black); }
+
+    .display-hero {
+      font-size: clamp(40px, 6vw, 56px);
+      font-weight: 600;
+      line-height: 1.07;
+      letter-spacing: -0.28px;
+      margin: 0 0 16px 0;
+      text-align: center;
+    }
+    .body-text { font-size: 17px; font-weight: 400; line-height: 1.47; letter-spacing: -0.374px; }
+    .caption-text { font-size: 14px; font-weight: 400; line-height: 1.29; letter-spacing: -0.224px; }
+
+    /* =========================================
+       4. Buttons & Links
+       ========================================= */
+    a:focus, button:focus { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+    .cta-group { display: flex; flex-direction: column; gap: 16px; align-items: center; justify-content: center; margin-top: 32px; }
+    
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--apple-blue);
+      color: var(--text-white);
+      padding: 12px 24px;
+      border-radius: 980px; /* 胶囊形状 CTA */
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 400;
+      transition: background-color 0.2s ease;
+    }
+    .btn-primary:hover { background-color: #0066cc; }
+
+    /* =========================================
+       5. CV Specific Components (iframe & notices)
+       ========================================= */
+    .resume-wrapper {
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      border-radius: 8px; /* 严格遵从 design.md 8px 圆角 */
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      background-color: #ffffff;
+      border: 1px solid rgba(0,0,0,0.05); /* 极细的边框增加质感 */
+    }
+    
+    .resume-wrapper iframe {
+      width: 100%;
+      height: 80vh;
+      min-height: 800px;
+      border: none;
+      display: block;
+    }
+
+    .mobile-notice {
+      display: none;
+      text-align: center;
+      padding: 12px 20px;
+      background-color: rgba(0, 0, 0, 0.04);
+      border-radius: 8px;
+      color: var(--text-black-80);
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .resume-wrapper iframe {
+        height: 70vh;
+        min-height: 500px;
+      }
+      .mobile-notice {
+        display: block; /* 仅在移动端显示克制的提示 */
+      }
+    }
+
+    /* =========================================
+       6. Footer (严格不变)
+       ========================================= */
+    .apple-footer {
+      background-color: var(--pure-black);
+      padding: 32px 20px;
+      text-align: center;
+      color: var(--text-white-80);
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="apple-nav">
+    <ul class="nav-links sf-text">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html" style="opacity: 0.5;">CV</a></li> <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="theses.html">Theses</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <section class="apple-section section-dark" style="padding-top: 140px; padding-bottom: 60px;">
+    <div class="container" style="max-width: 800px;">
+      <h1 class="sf-display display-hero">Curriculum Vitae</h1>
+      
+      <div class="cta-group sf-text">
+        <a href="https://xudong-zhu01.github.io/documents/cv-xudong-zhu.pdf" class="btn-primary sf-text" download>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Full CV
+        </a>
+        <p class="caption-text" style="color: var(--text-white-80); margin: 0;">
+          Last updated: April 2026
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="apple-section section-light" style="padding-top: 60px; padding-bottom: 120px;">
+    <div class="container" style="max-width: 1024px;">
+      
+      <div class="sf-text caption-text mobile-notice">
+        For the best reading experience on mobile devices, please download the PDF above.
+      </div>
+
+      <div class="resume-wrapper">
+        <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://xudong-zhu01.github.io/documents/cv-xudong-zhu.pdf" title="Xudong Zhu - Curriculum Vitae"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="apple-footer sf-text">
+    <div class="container">
+      &copy; 2026 Xudong Zhu. All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
