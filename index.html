@@ -139,7 +139,7 @@
     .link-inline-light:hover { text-decoration: underline; }
 
     /* =========================================
-       5. Cards, Grids & Footer
+       5. Cards, Grids, Photos & Footer
        ========================================= */
     .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
     .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; }
@@ -154,8 +154,34 @@
     .news-date { flex-shrink: 0; width: 60px; color: var(--text-black-80); }
     .news-content { color: var(--text-black-80); }
 
-    .photo-container { border-radius: 12px; overflow: hidden; margin: 0 auto; max-width: 100%; box-shadow: var(--card-shadow); display: flex; }
+    /* Photo styling (modified for integration and design spec) */
+    .photo-container { 
+      border-radius: 8px; /* Strict adherence to design.md 8px radius */
+      overflow: hidden; 
+      display: flex; 
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .integrated-photo {
+      border: 1px solid rgba(255,255,255,0.1); /* Subtle definition on dark bg */
+    }
     .photo-container img { width: 100%; height: auto; display: block; }
+
+    /* Hero Portrait Styling */
+    .hero-portrait-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px; /* Space from Nav */
+      margin-bottom: 24px; /* Space to tag */
+    }
+    .hero-portrait {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px; /* Strictly following design.md radius */
+      border: 1px solid rgba(255, 255, 255, 0.2); /* White border for contrast on black */
+      box-shadow: 0 4px 30px rgba(0,0,0,0.5); /* Subtle lift */
+    }
 
     .apple-footer {
       background-color: var(--light-gray);
@@ -182,6 +208,11 @@
 
   <section class="apple-section section-dark">
     <div class="container" style="text-align: center; max-width: 800px; margin-bottom: 80px;">
+      
+      <div class="hero-portrait-container">
+        <img src="assets/1.png" alt="Xudong Zhu Portrait" class="hero-portrait" loading="eager" />
+      </div>
+
       <span class="sf-text caption-bold" style="color: var(--text-white-80); text-transform: uppercase; margin-bottom: 12px; display: block;">International History · Policy</span>
       <h1 class="sf-display display-hero">Hello, I’m Xudong Zhu.</h1>
       <p class="sf-text body-text" style="color: var(--text-white-80); margin: 0 auto 32px auto; max-width: 680px;">
@@ -265,14 +296,11 @@
           </ul>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="apple-section section-dark" style="padding-bottom: 120px;">
-    <div class="container">
-      <div class="photo-container">
-        <img src="assets/wk.png" alt="University building" loading="lazy" />
+      <div class="photo-container integrated-photo" style="margin-top: 60px;">
+        <img src="assets/img/wk.png" alt="University building" loading="lazy" />
       </div>
+
     </div>
   </section>
 
