@@ -21,16 +21,16 @@
       --text-black-80: rgba(0, 0, 0, 0.8);
       --text-white-80: rgba(255, 255, 255, 0.8);
       --dark-surface-1: #272729;
-      --card-shadow: rgba(0, 0, 0, 0.22) 3px 5px 30px 0px;
+      --card-shadow: rgba(0, 0, 0, 0.12) 3px 5px 30px 0px; /* 调整为更柔和的浅色模式阴影 */
     }
 
     body {
       margin: 0;
       padding: 0;
-      background-color: var(--pure-black);
+      background-color: var(--light-gray); /* 默认背景改为浅色 */
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      padding-top: 48px; /* Offset for sticky nav */
+      padding-top: 48px;
     }
 
     .sf-display { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -124,71 +124,70 @@
       border: 1px solid transparent;
       text-decoration: none;
     }
-    .btn-pill-dark {
+    .btn-pill-light {
       background-color: transparent;
-      color: var(--link-dark);
+      color: var(--link-light);
       padding: 8px 20px;
       border-radius: 980px;
-      border: 1px solid var(--link-dark);
+      border: 1px solid var(--link-light);
       text-decoration: none;
     }
-    .btn-pill-dark:hover { text-decoration: underline; }
-    
-    /* Inline Links (Learn More) */
-    .link-inline-light { color: var(--link-light); text-decoration: none; font-size: 14px; }
-    .link-inline-light:hover { text-decoration: underline; }
+    .btn-pill-light:hover { text-decoration: underline; }
 
     /* =========================================
        5. Cards, Grids, Photos & Footer
        ========================================= */
     .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
     .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; }
-    .card-dark { background-color: var(--dark-surface-1); border-radius: 8px; padding: 32px; border: none; }
+    
+    /* 新增：适用于浅色背景的纯白卡片 */
+    .card-light { background-color: #ffffff; border-radius: 8px; padding: 32px; border: none; }
     .card-elevated { box-shadow: var(--card-shadow); }
+    
     .clean-list { list-style: none; padding: 0; margin: 0; }
-    .clean-list li { margin-bottom: 12px; color: var(--text-white-80); }
+    .clean-list-dark-text li { margin-bottom: 12px; color: var(--text-black-80); }
+    .clean-list-light-text li { margin-bottom: 12px; color: var(--text-white-80); }
     
     .news-timeline { max-width: 740px; margin: 0 auto; }
     .news-year { font-size: 28px; font-weight: 600; margin-bottom: 24px; text-align: center; }
     .news-item { display: flex; gap: 24px; margin-bottom: 32px; align-items: flex-start; }
-    .news-date { flex-shrink: 0; width: 60px; color: var(--text-black-80); }
-    .news-content { color: var(--text-black-80); }
+    .news-date { flex-shrink: 0; width: 60px; }
 
-    /* Photo styling (modified for integration and design spec) */
+    /* Photo styling */
     .photo-container { 
-      border-radius: 8px; /* Strict adherence to design.md 8px radius */
+      border-radius: 8px; 
       overflow: hidden; 
       display: flex; 
       max-width: 100%;
       margin: 0 auto;
     }
-    .integrated-photo {
-      border: 1px solid rgba(255,255,255,0.1); /* Subtle definition on dark bg */
+    .integrated-photo-light {
+      border: 1px solid rgba(0,0,0,0.05); /* 浅色背景下的细微深色边框 */
+      box-shadow: var(--card-shadow);
     }
     .photo-container img { width: 100%; height: auto; display: block; }
 
-    /* Hero Portrait Styling */
+    /* Hero Portrait Styling (已适配浅色背景) */
     .hero-portrait-container {
       display: flex;
       justify-content: center;
-      margin-top: 40px; /* Space from Nav */
-      margin-bottom: 24px; /* Space to tag */
+      margin-top: 40px; 
+      margin-bottom: 24px; 
     }
     .hero-portrait {
       width: 120px;
       height: 120px;
       object-fit: cover;
-      border-radius: 8px; /* Strictly following design.md radius */
-      border: 1px solid rgba(255, 255, 255, 0.2); /* White border for contrast on black */
-      box-shadow: 0 4px 30px rgba(0,0,0,0.5); /* Subtle lift */
+      border-radius: 8px; 
+      border: 1px solid rgba(0, 0, 0, 0.08); /* 浅色背景下使用极其微弱的灰边 */
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08); /* 浅色背景下更柔和的弥散阴影 */
     }
 
     .apple-footer {
-      background-color: var(--light-gray);
+      background-color: var(--pure-black); /* Footer随之变黑以收尾 */
       padding: 32px 20px;
       text-align: center;
-      border-top: 1px solid rgba(0,0,0,0.05);
-      color: var(--text-black-80);
+      color: var(--text-white-80);
       font-size: 12px;
     }
   </style>
@@ -206,44 +205,44 @@
     </ul>
   </nav>
 
-  <section class="apple-section section-dark">
+  <section class="apple-section section-light">
     <div class="container" style="text-align: center; max-width: 800px; margin-bottom: 80px;">
       
       <div class="hero-portrait-container">
         <img src="assets/1.png" alt="Xudong Zhu Portrait" class="hero-portrait" loading="eager" />
       </div>
 
-      <span class="sf-text caption-bold" style="color: var(--text-white-80); text-transform: uppercase; margin-bottom: 12px; display: block;">International History · Policy</span>
-      <h1 class="sf-display display-hero">Hello, I’m Xudong Zhu.</h1>
-      <p class="sf-text body-text" style="color: var(--text-white-80); margin: 0 auto 32px auto; max-width: 680px;">
+      <span class="sf-text caption-bold" style="color: var(--text-black-80); text-transform: uppercase; margin-bottom: 12px; display: block;">International History · Policy</span>
+      <h1 class="sf-display display-hero">Hello, I’m Xudong Zhu</h1>
+      <p class="sf-text body-text" style="color: var(--text-black-80); margin: 0 auto 32px auto; max-width: 680px;">
         PhD Candidate in International History at the University of Aberdeen,
         analyzing how statecraft, grand strategy, and great-power competition
         shape contemporary governance.
       </p>
       <div class="cta-group sf-text body-text">
         <a href="mailto:xudong.zhu01@gmail.com" class="btn-primary">Say Hello</a>
-        <a href="https://www.linkedin.com/in/xudong-zhu-457bb3220" target="_blank" class="btn-pill-dark">LinkedIn &gt;</a>
+        <a href="https://www.linkedin.com/in/xudong-zhu-457bb3220" target="_blank" class="btn-pill-light">LinkedIn &gt;</a>
       </div>
     </div>
 
     <div class="container grid-3">
-      <div class="card-dark">
+      <div class="card-light card-elevated">
         <h3 class="sf-display card-title">Academic Journey</h3>
-        <ul class="sf-text body-text clean-list">
+        <ul class="sf-text body-text clean-list clean-list-dark-text">
           <li>MA in American Studies<br><span style="font-size:14px">(Heidelberg University, DE)</span></li>
           <li>LLB in Diplomacy<br><span style="font-size:14px">(Jilin University, CN)</span></li>
         </ul>
       </div>
-      <div class="card-dark">
+      <div class="card-light card-elevated">
         <h3 class="sf-display card-title">Membership</h3>
-        <ul class="sf-text body-text clean-list">
+        <ul class="sf-text body-text clean-list clean-list-dark-text">
           <li>Royal Historical Society</li>
           <li>Association of Chinese Political Studies</li>
         </ul>
       </div>
-      <div class="card-dark">
+      <div class="card-light card-elevated">
         <h3 class="sf-display card-title">Languages</h3>
-        <ul class="sf-text body-text clean-list">
+        <ul class="sf-text body-text clean-list clean-list-dark-text">
           <li>English</li>
           <li>Chinese</li>
           <li>German</li>
@@ -252,52 +251,52 @@
     </div>
   </section>
 
-  <section class="apple-section section-light">
+  <section class="apple-section section-dark">
     <div class="container">
-      <h2 class="sf-display section-heading">Recent Highlights.</h2>
+      <h2 class="sf-display section-heading">Recent Highlights</h2>
       <div class="news-timeline">
-        <div class="sf-display news-year">2025</div>
+        <div class="sf-display news-year" style="color: var(--text-white);">2025</div>
         <div class="sf-text body-text news-item">
-          <div class="caption-bold news-date">Nov.</div>
-          <div class="news-content">I’m happy to be part of the ACPS Annual Conference. My sincere thanks to the organizers.</div>
+          <div class="caption-bold news-date" style="color: var(--text-white-80);">Nov.</div>
+          <div class="news-content" style="color: var(--text-white-80);">I’m happy to be part of the ACPS Annual Conference. My sincere thanks to the organizers.</div>
         </div>
         <div class="sf-text body-text news-item">
-          <div class="caption-bold news-date">Oct.</div>
-          <div class="news-content">Honoured to be elected as a Postgraduate Member of the Royal Historical Society.</div>
+          <div class="caption-bold news-date" style="color: var(--text-white-80);">Oct.</div>
+          <div class="news-content" style="color: var(--text-white-80);">Honoured to be elected as a Postgraduate Member of the Royal Historical Society.</div>
         </div>
         <div class="sf-text body-text news-item">
-          <div class="caption-bold news-date">Oct.</div>
-          <div class="news-content">Excited to be a Teaching Assistant for HI1022: Europe in the Twentieth Century!</div>
+          <div class="caption-bold news-date" style="color: var(--text-white-80);">Oct.</div>
+          <div class="news-content" style="color: var(--text-white-80);">Excited to be a Teaching Assistant for HI1022: Europe in the Twentieth Century!</div>
         </div>
         <div class="sf-text body-text news-item">
-          <div class="caption-bold news-date">Aug.</div>
-          <div class="news-content">My essay was recognized with the Jimmy Carter Prize (Runner-up) in the 2025 China Focus Essay Contest.</div>
+          <div class="caption-bold news-date" style="color: var(--text-white-80);">Aug.</div>
+          <div class="news-content" style="color: var(--text-white-80);">My essay was recognized with the Jimmy Carter Prize (Runner-up) in the 2025 China Focus Essay Contest.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="apple-section section-dark">
+  <section class="apple-section section-light">
     <div class="container">
-      <h2 class="sf-display section-heading">Research Interests.</h2>
+      <h2 class="sf-display section-heading">Research Interests</h2>
       <div class="grid-2">
-        <div class="card-dark card-elevated">
+        <div class="card-light card-elevated">
           <h3 class="sf-display card-title">Applied History &amp; Statecraft</h3>
-          <ul class="sf-text body-text clean-list" style="margin-top: 16px; list-style-type: disc; padding-left: 20px;">
+          <ul class="sf-text body-text clean-list clean-list-dark-text" style="margin-top: 16px; list-style-type: disc; padding-left: 20px;">
             <li>Apply statecraft and grand-strategy frameworks to current geopolitical issues</li>
             <li>Compare Realpolitik across cases to assess power, interests, and constraints</li>
           </ul>
         </div>
-        <div class="card-dark card-elevated">
+        <div class="card-light card-elevated">
           <h3 class="sf-display card-title">Global Security &amp; Governance</h3>
-          <ul class="sf-text body-text clean-list" style="margin-top: 16px; list-style-type: disc; padding-left: 20px;">
+          <ul class="sf-text body-text clean-list clean-list-dark-text" style="margin-top: 16px; list-style-type: disc; padding-left: 20px;">
             <li>Great power competition</li>
             <li>International institutions and legal frameworks</li>
           </ul>
         </div>
       </div>
 
-      <div class="photo-container integrated-photo" style="margin-top: 60px;">
+      <div class="photo-container integrated-photo-light" style="margin-top: 60px;">
         <img src="assets/wk.png" alt="University building" loading="lazy" />
       </div>
 
