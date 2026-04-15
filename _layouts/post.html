@@ -5,66 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} - Xudong Zhu</title>
 
-    <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-9SFENNRFJS');
   </script>
 
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+
   <style>
-    /* =========================================
-       1. 全局变量与基础样式
-       ========================================= */
-    :root {
-      --pure-black: #000000; --light-gray: #f5f5f7; --near-black: #1d1d1f;
-      --apple-blue: #0071e3; --text-black-80: rgba(0, 0, 0, 0.8);
+    /* 文章正文特定排版优化 */
+    .article-header {
+      padding: 100px 20px 40px;
+      text-align: center;
+      background-color: var(--light-gray);
     }
-    body {
-      margin: 0; padding: 0; background-color: #ffffff;
-      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
-      -webkit-font-smoothing: antialiased; padding-top: 48px;
-    }
-    
-    /* =========================================
-       2. 导航栏 (Glass Effect)
-       ========================================= */
-    .apple-nav {
-      position: fixed; top: 0; left: 0; right: 0; height: 48px;
-      background: rgba(0, 0, 0, 0.8); backdrop-filter: saturate(180%) blur(20px);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
-      z-index: 9999; display: flex; justify-content: center; align-items: center;
-    }
-    .nav-links { display: flex; gap: 32px; list-style: none; margin: 0; padding: 0; }
-    .nav-links a { color: #ffffff; font-size: 12px; text-decoration: none; transition: opacity 0.2s; }
-    .nav-links a:hover { opacity: 0.7; }
 
-    /* =========================================
-       3. 文章内容排版 (核心设计)
-       ========================================= */
-    .article-header { padding: 80px 20px 40px; text-align: center; background-color: var(--light-gray); }
-    .article-container { max-width: 740px; margin: 0 auto; padding: 60px 20px 120px; color: var(--near-black); line-height: 1.6; font-size: 18px; }
-    h1.entry-title { font-family: 'SF Pro Display', sans-serif; font-size: 40px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .entry-meta { font-size: 14px; color: var(--text-black-80); margin-bottom: 20px; }
-    
-    /* Markdown 渲染后的正文样式 */
-    .article-body p { margin-bottom: 1.5em; }
-    .article-body h2 { font-family: 'SF Pro Display', sans-serif; font-size: 28px; margin: 2em 0 1em; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.3em; }
-    .article-body h3 { font-family: 'SF Pro Display', sans-serif; font-size: 22px; margin: 1.5em 0 0.8em; }
-    .article-body blockquote { border-left: 3px solid var(--apple-blue); margin: 0; padding-left: 20px; color: var(--text-black-80); font-style: italic; }
-    .article-body img { max-width: 100%; border-radius: 8px; margin: 2em 0; box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 20px; }
-    .article-body a { color: var(--apple-blue); text-decoration: none; }
-    .article-body a:hover { text-decoration: underline; }
+    .article-container {
+      max-width: 720px; /* 严格限制宽度以提升长文阅读体验 */
+      margin: 0 auto;
+      padding: 60px 20px 120px;
+      color: var(--near-black);
+      background-color: #ffffff;
+    }
 
-    .apple-footer { background-color: var(--pure-black); padding: 32px 20px; text-align: center; color: rgba(255,255,255,0.8); font-size: 12px; }
+    .entry-title {
+      font-size: clamp(32px, 5vw, 44px);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .entry-meta {
+      font-size: 14px;
+      color: var(--text-black-80);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    /* 正文元素样式 */
+    .article-body {
+      font-size: 18px;
+      line-height: 1.65; /* 增加行高，学术阅读更舒适 */
+      letter-spacing: -0.01em;
+    }
+
+    .article-body p { margin-bottom: 1.8em; }
+
+    .article-body h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin: 2em 0 0.8em;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      padding-bottom: 0.3em;
+    }
+
+    .article-body blockquote {
+      border-left: 3px solid var(--apple-blue);
+      margin: 2em 0;
+      padding: 0.5em 0 0.5em 24px;
+      color: var(--text-black-80);
+      font-style: italic;
+      background-color: #f9f9fb;
+    }
+
+    .article-body img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 2.5em 0;
+      box-shadow: var(--card-shadow);
+    }
+
+    .back-to-blog {
+      display: inline-block;
+      margin-top: 80px;
+      color: var(--apple-blue);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .back-to-blog:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .article-container { padding: 40px 20px 80px; }
+      .article-body { font-size: 17px; }
+    }
   </style>
 </head>
 <body>
+
   <nav class="apple-nav">
-    <ul class="nav-links">
+    <ul class="nav-links sf-text">
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
       <li><a href="{{ '/cv.html' | relative_url }}">CV</a></li>
       <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
@@ -75,23 +109,29 @@
   </nav>
 
   <header class="article-header">
-    <div style="max-width: 800px; margin: 0 auto;">
-      <h1 class="entry-title">{{ page.title }}</h1>
-      <div class="entry-meta">{{ page.date | date: "%B %d, %Y" }} • By Xudong Zhu</div>
+    <div class="container" style="max-width: 800px;">
+      <h1 class="sf-display entry-title">{{ page.title }}</h1>
+      <div class="sf-text entry-meta">
+        {{ page.date | date: "%B %d, %Y" }} • By Xudong Zhu
+      </div>
     </div>
   </header>
 
   <main class="article-container">
-    <div class="article-body">
+    <article class="article-body sf-text">
       {{ content }}
-    </div>
-    <div style="margin-top: 80px; text-align: center;">
-      <a href="{{ '/blog.html' | relative_url }}" style="color: var(--apple-blue); text-decoration: none; font-size: 14px;">&larr; Back to Blog</a>
+    </article>
+    
+    <div style="text-align: center;">
+      <a href="{{ '/blog.html' | relative_url }}" class="back-to-blog sf-text">&larr; Back to Blog</a>
     </div>
   </main>
 
-  <footer class="apple-footer">
-    &copy; 2026 Xudong Zhu. All Rights Reserved.
+  <footer class="apple-footer sf-text">
+    <div class="container">
+      &copy; 2026 Xudong Zhu. All Rights Reserved.
+    </div>
   </footer>
+
 </body>
 </html>

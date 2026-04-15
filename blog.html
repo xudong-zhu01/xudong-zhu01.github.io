@@ -8,109 +8,23 @@ layout: null
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog - Xudong Zhu</title>
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-9SFENNRFJS');
   </script>
 
+  <link rel="stylesheet" href="style.css">
+
   <style>
-    /* =========================================
-       1. Visual Theme & Global Variables (依据 design.md)
-       ========================================= */
-    :root {
-      --pure-black: #000000;
-      --light-gray: #f5f5f7;
-      --near-black: #1d1d1f;
-      --apple-blue: #0071e3;
-      --link-light: #0066cc;
-      --text-white: #ffffff;
-      --text-black-80: rgba(0, 0, 0, 0.8);
-      --text-white-80: rgba(255, 255, 255, 0.8);
-      --card-shadow: rgba(0, 0, 0, 0.12) 3px 5px 30px 0px; 
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: var(--light-gray);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      padding-top: 48px;
-    }
-
-    .sf-display { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif; }
-    .sf-text { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif; }
-
-    /* =========================================
-       2. Navigation (Glass Effect)
-       ========================================= */
-    .apple-nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      height: 48px;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: saturate(180%) blur(20px);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      list-style: none;
-      margin: 0; padding: 0;
-    }
-    .nav-links a {
-      color: var(--text-white);
-      font-size: 12px;
-      font-weight: 400;
-      text-decoration: none;
-      letter-spacing: -0.12px;
-      transition: opacity 0.2s;
-    }
-    .nav-links a:hover { opacity: 0.7; }
-
-    /* =========================================
-       3. Layout
-       ========================================= */
-    .apple-section {
-      width: 100%;
-      padding: 120px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .container {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .section-dark { background-color: var(--pure-black); color: var(--text-white); }
-    .section-light { background-color: var(--light-gray); color: var(--text-near-black); }
-
-    .display-hero {
-      font-size: clamp(40px, 6vw, 56px);
-      font-weight: 600;
-      line-height: 1.07;
-      letter-spacing: -0.28px;
-      margin: 0 0 16px 0;
-      text-align: center;
-    }
-
-    /* =========================================
-       4. Blog Card System (News Style)
-       ========================================= */
+    /* Blog 列表特定组件优化 */
     .blog-list {
       display: flex;
       flex-direction: column;
       gap: 32px;
+      width: 100%;
     }
 
     .blog-card {
@@ -122,6 +36,7 @@ layout: null
       text-decoration: none;
       display: block;
       color: inherit;
+      text-align: left;
     }
     
     .blog-card:hover {
@@ -133,13 +48,14 @@ layout: null
       display: flex;
       align-items: center;
       margin-bottom: 16px;
+      gap: 12px;
     }
 
     .badge-apple {
       font-size: 12px;
       font-weight: 600;
       background-color: #f2f2f7;
-      color: var(--text-near-black);
+      color: var(--near-black);
       padding: 4px 12px;
       border-radius: 980px;
       letter-spacing: -0.12px;
@@ -149,24 +65,23 @@ layout: null
     .blog-date {
       font-size: 14px;
       color: var(--text-black-80);
-      margin-left: 12px;
       font-weight: 400;
     }
 
     .blog-title {
-      font-size: 28px;
+      font-size: clamp(22px, 4vw, 28px);
       font-weight: 600;
       line-height: 1.14;
       letter-spacing: 0.196px;
-      margin: 0 0 16px 0;
-      color: var(--text-near-black);
+      margin-bottom: 16px;
+      color: var(--near-black);
     }
 
     .blog-snippet {
       font-size: 17px;
       line-height: 1.47;
       color: var(--text-black-80);
-      margin: 0 0 24px 0;
+      margin-bottom: 24px;
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
@@ -177,17 +92,6 @@ layout: null
       color: var(--link-light);
       font-size: 14px;
       font-weight: 400;
-    }
-
-    /* =========================================
-       5. Footer
-       ========================================= */
-    .apple-footer {
-      background-color: var(--pure-black);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-white-80);
-      font-size: 12px;
     }
   </style>
 </head>
@@ -204,9 +108,17 @@ layout: null
     </ul>
   </nav>
 
+  <section class="apple-section section-dark" style="padding-top: 140px; padding-bottom: 100px;">
+    <div class="container" style="text-align: center;">
+      <h1 class="sf-display display-hero">Thoughts & Essays</h1>
+      <p class="sf-text" style="color: var(--text-white-80); font-size: 21px; max-width: 600px; margin: 24px auto 0; line-height: 1.19;">
+        Reflections on international history, geopolitical statecraft, and personal journeys.
+      </p>
+    </div>
+  </section>
+
   <section class="apple-section section-light" style="padding-top: 60px; padding-bottom: 160px;">
     <div class="container">
-      
       <div class="blog-list">
         {% for post in site.posts %}
         <a href="{{ post.url | relative_url }}" class="blog-card">
@@ -215,14 +127,13 @@ layout: null
             <span class="blog-date">{{ post.date | date: "%B %d, %Y" }}</span>
           </div>
           <h2 class="sf-display blog-title">{{ post.title }}</h2>
-          <p class="sf-text blog-snippet">
+          <p class="body-text blog-snippet">
             {{ post.excerpt | strip_html | truncatewords: 30 }}
           </p>
           <div class="sf-text link-more">Read Article &gt;</div>
         </a>
         {% endfor %}
       </div>
-
     </div>
   </section>
 
