@@ -5,103 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Theses - Xudong Zhu</title>
 
-    <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-9SFENNRFJS');
   </script>
 
+  <link rel="stylesheet" href="style.css">
+
   <style>
-    /* =========================================
-       1. Visual Theme & Global Variables (与 index 严格保持一致)
-       ========================================= */
-    :root {
-      --pure-black: #000000;
-      --light-gray: #f5f5f7;
-      --near-black: #1d1d1f;
-      --apple-blue: #0071e3;
-      --link-light: #0066cc;
-      --link-dark: #2997ff;
-      --focus-ring: #0071e3;
-      --text-white: #ffffff;
-      --text-near-black: #1d1d1f;
-      --text-black-80: rgba(0, 0, 0, 0.8);
-      --text-white-80: rgba(255, 255, 255, 0.8);
+    /* Theses 页面特定组件优化 */
+    .thesis-item {
+      padding: 64px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
     }
-
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: var(--light-gray); /* 配合主体浅色 */
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      padding-top: 48px;
-    }
-
-    .sf-display { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-    .sf-text { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-
-    /* =========================================
-       2. Navigation (Glass Effect - 严格不变)
-       ========================================= */
-    .apple-nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      height: 48px;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: saturate(180%) blur(20px);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      list-style: none;
-      margin: 0; padding: 0;
-    }
-    .nav-links a {
-      color: var(--text-white);
-      font-size: 12px;
-      font-weight: 400;
-      text-decoration: none;
-      letter-spacing: -0.12px;
-      transition: opacity 0.2s;
-    }
-    .nav-links a:hover { opacity: 0.7; }
-
-    /* =========================================
-       3. Layout & Typography Principles
-       ========================================= */
-    .apple-section {
-      width: 100%;
-      padding: 120px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .container {
-      width: 100%;
-      max-width: 800px; /* 论文展示窄一号容器更佳 */
-      margin: 0 auto;
-    }
-    .section-dark { background-color: var(--pure-black); color: var(--text-white); }
-    .section-light { background-color: var(--light-gray); color: var(--text-near-black); }
-
-    .display-hero { font-size: clamp(40px, 6vw, 56px); font-weight: 600; line-height: 1.07; letter-spacing: -0.28px; margin: 0; text-align: center; }
-    
-    /* 论文专用排版 */
-    .thesis-section {
-      padding: 80px 0;
-      border-bottom: 1px solid rgba(0,0,0,0.1); /* 浅色背景的细微灰线分隔 */
-    }
-    .thesis-section:last-child {
+    .thesis-item:last-child {
       border-bottom: none;
       padding-bottom: 0;
     }
@@ -116,62 +36,59 @@
       margin-bottom: 12px;
     }
 
-    .thesis-title { 
-      font-size: clamp(28px, 4vw, 36px); 
-      font-weight: 600; 
-      line-height: 1.14; 
-      letter-spacing: 0.196px; 
-      margin: 0 0 32px 0; 
-      color: var(--text-near-black);
+    .thesis-title {
+      font-size: clamp(24px, 4vw, 32px);
+      font-weight: 600;
+      line-height: 1.14;
+      letter-spacing: 0.196px;
+      margin-bottom: 32px;
+      color: var(--near-black);
     }
-    
-    .body-text { font-size: 17px; font-weight: 400; line-height: 1.47; letter-spacing: -0.374px; }
-    
+
+    /* 元数据列表排版 */
     .meta-list {
       list-style: none;
-      padding: 0;
-      margin: 0 0 32px 0;
-      border-top: 1px solid rgba(0,0,0,0.1);
-      border-bottom: 1px solid rgba(0,0,0,0.1);
       padding: 24px 0;
-      color: var(--text-black-80);
+      margin: 0 0 32px 0;
+      border-top: 1px solid rgba(0,0,0,0.05);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
     }
-    .meta-item {
+    .meta-row {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 12px;
       align-items: flex-start;
-      gap: 20px;
+      gap: 24px;
+      margin-bottom: 12px;
+      font-size: 16px;
     }
-    .meta-item:last-child {
-      margin-bottom: 0;
-    }
+    .meta-row:last-child { margin-bottom: 0; }
+    
     .meta-label {
       font-weight: 600;
+      color: var(--near-black);
       flex-shrink: 0;
-      color: var(--text-near-black);
     }
     .meta-value {
       text-align: right;
+      color: var(--text-black-80);
     }
 
-    /* =========================================
-       4. Buttons & Links
-       ========================================= */
-    a:focus, button:focus { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
-    
-    .link-inline-light { color: var(--link-light); text-decoration: none; font-size: 17px; font-weight: 400; }
-    .link-inline-light:hover { text-decoration: underline; }
+    .link-inline {
+      color: var(--apple-blue);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .link-inline:hover { text-decoration: underline; }
 
-    /* =========================================
-       5. Footer (严格不变)
-       ========================================= */
-    .apple-footer {
-      background-color: var(--pure-black);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-white-80);
-      font-size: 12px;
+    @media (max-width: 768px) {
+      .meta-row {
+        flex-direction: column;
+        gap: 4px;
+      }
+      .meta-value {
+        text-align: left;
+      }
     }
   </style>
 </head>
@@ -188,64 +105,69 @@
     </ul>
   </nav>
 
-  <!-- 统一的浅色内容展示区 -->
-  <section class="apple-section section-light" style="padding-top: 20px; padding-bottom: 160px;">
+  <section class="apple-section section-dark" style="padding-top: 180px; padding-bottom: 120px;">
     <div class="container">
+      <h1 class="sf-display display-hero">Theses</h1>
+    </div>
+  </section>
+
+  <section class="apple-section section-light" style="padding-top: 40px; padding-bottom: 160px;">
+    <div class="container" style="max-width: 800px;">
       
-      <!-- Master's Thesis -->
-      <div class="thesis-section">
+      <div class="thesis-item">
         <span class="sf-text thesis-eyebrow">Master's Thesis</span>
-        
         <h2 class="sf-display thesis-title">
           On the Theory of Empire in International Relations and an Analysis of Pax Americana
         </h2>
         
-        <ul class="sf-text body-text meta-list">
-          <li class="meta-item">
+        <div class="meta-list sf-text">
+          <div class="meta-row">
             <span class="meta-label">Institution</span>
             <span class="meta-value">Ruprecht-Karls-Universität Heidelberg, Germany</span>
-          </li>
-          <li class="meta-item">
+          </div>
+          <div class="meta-row">
             <span class="meta-label">First Supervisor</span>
             <span class="meta-value">PD Dr. Martin Thunert</span>
-          </li>
-          <li class="meta-item">
+          </div>
+          <div class="meta-row">
             <span class="meta-label">Second Supervisor</span>
             <span class="meta-value">Dr. Wilfried Mausbach</span>
-          </li>
-          <li class="meta-item">
+          </div>
+          <div class="meta-row">
             <span class="meta-label">Completed</span>
             <span class="meta-value">2023</span>
-          </li>
-        </ul>
+          </div>
+        </div>
+
+        <a href="https://xudong-zhu01.github.io/posts/master/" class="link-inline">Read Summary &gt;</a>
       </div>
 
-      <!-- Bachelor's Thesis -->
-      <div class="thesis-section">
+      <div class="thesis-item">
         <span class="sf-text thesis-eyebrow">Bachelor's Thesis</span>
-        
         <h2 class="sf-display thesis-title">
           From the Continental Alliance to New Route: A Study on the Transition of the Foreign Policy of the Second German Reich
         </h2>
         
-        <ul class="sf-text body-text meta-list">
-          <li class="meta-item">
+        <div class="meta-list sf-text">
+          <div class="meta-row">
             <span class="meta-label">Institution</span>
             <span class="meta-value">Jilin University, China</span>
-          </li>
-          <li class="meta-item">
+          </div>
+          <div class="meta-row">
             <span class="meta-label">Supervisor</span>
             <span class="meta-value">Prof. Dr. Xingjie Sun</span>
-          </li>
-          <li class="meta-item">
+          </div>
+          <div class="meta-row">
             <span class="meta-label">Degree</span>
             <span class="meta-value">LLB in Diplomacy</span>
-          </li>
-          <li class="meta-item">
-            <span class="meta-label">Completed</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-row">Completed</span>
             <span class="meta-value">2021</span>
-          </li>
-        </ul>
+          </div>
+        </div>
+
+        <a href="https://xudong-zhu01.github.io/posts/bachelor/" class="link-inline">Read Summary &gt;</a>
       </div>
 
     </div>
