@@ -5,125 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publications - Xudong Zhu</title>
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-9SFENNRFJS');
   </script>
 
+  <link rel="stylesheet" href="style.css">
+
   <style>
-    /* =========================================
-       1. Visual Theme & Global Variables (与 index 严格保持一致)
-       ========================================= */
-    :root {
-      --pure-black: #000000;
-      --light-gray: #f5f5f7;
-      --near-black: #1d1d1f;
-      --apple-blue: #0071e3;
-      --link-light: #0066cc;
-      --link-dark: #2997ff;
-      --focus-ring: #0071e3;
-      --text-white: #ffffff;
-      --text-near-black: #1d1d1f;
-      --text-black-80: rgba(0, 0, 0, 0.8);
-      --text-white-80: rgba(255, 255, 255, 0.8);
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: var(--light-gray);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      padding-top: 48px;
-    }
-
-    .sf-display { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-    .sf-text { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-
-    /* =========================================
-       2. Navigation (严格不变)
-       ========================================= */
-    .apple-nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      height: 48px;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: saturate(180%) blur(20px);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      list-style: none;
-      margin: 0; padding: 0;
-    }
-    .nav-links a {
-      color: var(--text-white);
-      font-size: 12px;
-      font-weight: 400;
-      text-decoration: none;
-      letter-spacing: -0.12px;
-      transition: opacity 0.2s;
-    }
-    .nav-links a:hover { opacity: 0.7; }
-
-    /* =========================================
-       3. Global Layout Basics
-       ========================================= */
-    .apple-section {
-      width: 100%;
-      padding: 100px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .container {
-      width: 100%;
-      max-width: 980px;
-      margin: 0 auto;
-    }
-    .section-dark { background-color: var(--pure-black); color: var(--text-white); }
-    .section-light { background-color: var(--light-gray); color: var(--text-near-black); }
-
-    .display-hero { font-size: clamp(40px, 6vw, 56px); font-weight: 600; line-height: 1.07; letter-spacing: -0.28px; margin: 0 0 16px 0; text-align: center; }
-    .section-heading { font-size: clamp(32px, 5vw, 40px); font-weight: 600; line-height: 1.10; margin: 0 0 48px 0; }
-    .body-text { font-size: 17px; font-weight: 400; line-height: 1.47; letter-spacing: -0.374px; }
-    
-    .link-inline-light { color: var(--link-light); text-decoration: none; font-size: 14px; font-weight: 400; letter-spacing: -0.224px; }
-    .link-inline-light:hover { text-decoration: underline; }
-
-    /* =========================================
-       4. Publication Specific Styles (Apple Vibe)
-       ========================================= */
+    /* Publications 页面特定排版优化 */
     .pub-list {
       display: flex;
       flex-direction: column;
-      gap: 72px; /* 极其宽裕的留白，替代边框 */
+      gap: 64px; /* 极其宽裕的留白，替代边框，符合苹果设计哲学 */
       max-width: 800px;
       margin: 0 auto;
     }
+    
     .pub-item {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
     }
+
     .pub-title {
-      font-size: 28px;
+      font-size: clamp(24px, 4vw, 28px);
       font-weight: 600;
-      line-height: 1.14; /* 苹果标志性的紧凑标题行高 */
+      line-height: 1.14;
       letter-spacing: 0.196px;
       margin: 0 0 12px 0;
-      color: var(--text-near-black);
+      color: var(--near-black);
     }
+
     .pub-meta {
       font-size: 14px;
       font-weight: 600;
@@ -131,24 +47,23 @@
       margin-bottom: 16px;
       letter-spacing: -0.224px;
     }
+
     .pub-abstract {
       font-size: 17px;
-      font-weight: 400;
       line-height: 1.47;
       color: var(--text-black-80);
       margin: 0 0 16px 0;
       letter-spacing: -0.374px;
     }
     
-    /* 胶囊形状的奖项标签 */
     .badge-apple {
       display: inline-block;
       font-size: 12px;
       font-weight: 600;
-      background-color: #e8e8ed; /* 非常柔和的浅灰底色 */
-      color: var(--text-near-black);
+      background-color: #e8e8ed;
+      color: var(--near-black);
       padding: 4px 10px;
-      border-radius: 980px; /* 标准苹果胶囊圆角 */
+      border-radius: 980px;
       margin-left: 12px;
       vertical-align: middle;
       letter-spacing: -0.12px;
@@ -161,16 +76,13 @@
       margin: 80px 0;
     }
 
-    /* =========================================
-       5. Footer (严格不变)
-       ========================================= */
-    .apple-footer {
-      background-color: var(--pure-black);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--text-white-80);
-      font-size: 12px;
+    .link-inline {
+      color: var(--apple-blue);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
     }
+    .link-inline:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -186,56 +98,67 @@
     </ul>
   </nav>
 
-  <section class="apple-section section-light" style="padding-top: 80px;">
-    <div class="container">
-
-    <div style="max-width: 800px; margin: 0 auto 48px auto;">
-        <h2 class="sf-display section-heading" style="text-align: left; margin: 0;">Academic Publications</h2>
+  <section class="apple-section section-dark" style="padding-top: 140px; padding-bottom: 80px;">
+    <div class="container" style="text-align: center;">
+      <h1 class="sf-display display-hero">Academic Publications</h1>
+      <p class="sf-text body-text" style="color: var(--text-white-80); margin: 32px auto 0; max-width: 600px;">
+        Research articles, book chapters, and commentary focusing on international relations, grand strategy, and policy.
+      </p>
     </div>
+  </section>
+
+  <section class="apple-section section-light" style="padding-top: 80px; padding-bottom: 120px;">
+    <div class="container">
       
       <div class="pub-list">
-
-        <div class="pub-item">
-          <h2 class="sf-display pub-title">How to maintain a balance in the intricate pas de trois among China, US and EU (co-author: Prof. Li Wang)</h2>
-          <div class="sf-text pub-meta">The Trilateral Interactions: China, the US, and the EU on Tensions, Competition, and Cooperation. Li, Z., Marek, H., Yan, S. (eds.). 1st Edition edition. Routledge, pp. 69-82</div>
-          <a href="https://doi.org/10.4324/9781003736554-8" target="_blank" class="sf-text link-inline-light">DOI: 10.4324/9781003736554-8 &gt;</a>
-        </div>
         
-        <div class="pub-item">
+        <div class="pub-item sf-text">
           <h2 class="sf-display pub-title">Beyond Divide and Rule: Advocating a Respect-Based Chinese Policy Toward the European Union</h2>
-          <div class="sf-text pub-meta">ACPS Annual Conference 2025 | November 20, 2025</div>
-          <a href="http://aura.abdn.ac.uk/bitstreams/6b6a8116-1c63-4e2a-91ae-6049f543f6b3/download" target="_blank" class="sf-text link-inline-light">Read Paper &gt;</a>
+          <div class="pub-meta">ACPS Annual Conference 2025 | November 20, 2025</div>
+          <p class="pub-abstract">
+            This paper challenges the prevalent "divide and rule" characterization of China's EU policy, arguing instead for a nuanced approach that recognizes European agency and advocates for mutual respect in Sino-European relations. 
+          </p>
+          <a href="https://xudong-zhu01.github.io/documents/ACPS-China-EU-XudongZhu.pdf" target="_blank" class="link-inline">Read Paper &gt;</a>
         </div>
 
-        <div class="pub-item">
+        <div class="pub-item sf-text">
           <h2 class="sf-display pub-title">
             Trump As the (In)advertent Harbinger of a New Transatlantic Security Architecture
-            <span class="sf-text badge-apple">Runner-up Prize</span>
+            <span class="badge-apple">Runner-up Prize</span>
           </h2>
-          <div class="sf-text pub-meta">Jimmy Carter Prize, China Focus Essay Contest 2025</div>
-          <a href="https://uscnpm.org/analysis/europe-autonomy-against-chinese-influence/" target="_blank" class="sf-text link-inline-light">Read Article &gt;</a>
+          <div class="pub-meta">Jimmy Carter Prize, China Focus Essay Contest 2025</div>
+          <p class="pub-abstract">
+            This award-winning essay analyzes how the Trump administration's policies inadvertently catalyzed European strategic autonomy, examining implications for transatlantic relations and China's position in the evolving security architecture.
+          </p>
+          <a href="https://uscnpm.org/analysis/europe-autonomy-against-chinese-influence/" target="_blank" class="link-inline">Read Article &gt;</a>
         </div>
 
       </div>
 
-      <div class="section-divider" style="max-width: 800px; margin-left: auto; margin-right: auto;"></div>
+      <div class="section-divider"></div>
 
       <div style="max-width: 800px; margin: 0 auto 48px auto;">
-        <h2 class="sf-display section-heading" style="text-align: left; margin: 0;">Media</h2>
+        <h2 class="sf-display section-heading" style="text-align: left; margin: 0;">Media &amp; Commentary</h2>
       </div>
 
       <div class="pub-list">
         
-        <div class="pub-item">
+        <div class="pub-item sf-text">
           <h2 class="sf-display pub-title">If Bismarck Ran Washington: What Approach Would He Take to U.S.–China Relations?</h2>
-          <div class="sf-text pub-meta">U.S.-China Perception Monitor, The Carter Center | Dec 11, 2025</div>
-          <a href="https://zmyx.info/if-bismarck-directed-china-policy-in-washington/" target="_blank" class="sf-text link-inline-light">Read Article (Chinese) &gt;</a>
+          <div class="pub-meta">U.S.-China Perception Monitor, The Carter Center | Dec 11, 2025</div>
+          <p class="pub-abstract">
+            <em>Article in Chinese.</em> A thought experiment applying Otto von Bismarck's Realpolitik principles to contemporary U.S.-China relations.
+          </p>
+          <a href="https://zmyx.info/if-bismarck-directed-china-policy-in-washington/" target="_blank" class="link-inline">Read Article (Chinese) &gt;</a>
         </div>
 
-         <div class="pub-item">
+        <div class="pub-item sf-text">
           <h2 class="sf-display pub-title">From ‘The Art of the Deal’ to ‘The Art of Diplomacy’: The Continuities in Trump’s View of International Relations</h2>
-          <div class="sf-text pub-meta">U.S.-China Perception Monitor, The Carter Center | Sep 11, 2025</div>
-          <a href="https://zmyx.info/on-trump-interview-with-playboy-in-1990/" target="_blank" class="sf-text link-inline-light">Read Article (Chinese) &gt;</a>
+          <div class="pub-meta">U.S.-China Perception Monitor, The Carter Center | Sep 11, 2025</div>
+          <p class="pub-abstract">
+            <em>Article in Chinese.</em> An analysis examining the transactional worldview and strategic continuities in Donald Trump's approach to international relations.
+          </p>
+          <a href="https://zmyx.info/on-trump-interview-with-playboy-in-1990/" target="_blank" class="link-inline">Read Article (Chinese) &gt;</a>
         </div>
 
       </div>
