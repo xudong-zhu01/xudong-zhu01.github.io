@@ -3,33 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Xudong Zhu - Academic Homepage</title>
+  <meta name="description" content="Xudong Zhu is a PhD Candidate in International History at the University of Aberdeen, working on statecraft, grand strategy, and great-power competition.">
+  <meta name="author" content="Xudong Zhu">
+  <link rel="canonical" href="https://xudong-zhu01.github.io/">
+
+  <meta property="og:title" content="Xudong Zhu - Academic Homepage">
+  <meta property="og:description" content="PhD Candidate in International History at the University of Aberdeen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xudong-zhu01.github.io/">
+  <meta property="og:image" content="https://xudong-zhu01.github.io/assets/1.png">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9SFENNRFJS');
+    gtag("js", new Date());
+    gtag("config", "G-9SFENNRFJS");
   </script>
 
   <link rel="stylesheet" href="style.css">
-  
-  <style>
-    /* 针对首页内容的特定排版增强 */
-    .news-timeline { max-width: 740px; margin: 0 auto; }
-    .news-year { font-size: 28px; font-weight: 600; margin-bottom: 24px; text-align: center; }
-    .news-item { display: flex; gap: 24px; margin-bottom: 32px; align-items: flex-start; }
-    .news-date { flex-shrink: 0; width: 60px; }
-    .clean-list { list-style: none; padding: 0; margin: 0; }
-    .clean-list li { margin-bottom: 12px; }
-  </style>
 </head>
-<body>
 
-  <nav class="apple-nav">
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="apple-nav" aria-label="Primary navigation">
     <ul class="nav-links sf-text">
-      <li><a href="index.html" style="opacity: 0.5;">Home</a></li>
+      <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="teaching.html">Teaching</a></li>
@@ -38,108 +40,132 @@
     </ul>
   </nav>
 
-  <section class="apple-section section-light">
-    <div class="container" style="text-align: center;">
-      <img src="assets/1.png" style="width: 120px; height: 120px; border-radius: 8px; margin-bottom: 24px; box-shadow: var(--card-shadow);" alt="Xudong Zhu Portrait">
-      
-      <span class="caption" style="text-transform: uppercase; display: block; margin-bottom: 12px; color: var(--text-black-80);">International History · Policy</span>
-      <h1 class="sf-display display-hero">Hello, I’m Xudong Zhu.</h1>
-      <p class="body-text" style="max-width: 680px; margin: 24px auto 40px; color: var(--text-black-80);">
-        PhD Candidate in International History at the University of Aberdeen, 
-        analyzing how statecraft, grand strategy, and great-power competition 
-        shape contemporary governance.
-      </p>
-      <div style="display: flex; gap: 16px; justify-content: center;">
-        <a href="mailto:xudong.zhu01@gmail.com" class="btn-primary">Say Hello</a>
-        <a href="https://www.linkedin.com/in/xudong-zhu-457bb3220" class="btn-primary">LinkedIn</a>
-        <a href="https://www.abdn.ac.uk/people/x.zhu.25" class="btn-primary">UoA Profile</a>
-      </div>
-    </div>
-  </section>
+  <main id="main">
+    <section class="apple-section section-light">
+      <div class="container hero-profile">
+        <img
+          src="assets/1.png"
+          class="hero-portrait"
+          alt="Portrait of Xudong Zhu"
+          width="120"
+          height="120"
+        >
 
-  <section class="apple-section section-light" style="padding-top: 0;">
-    <div class="container grid-3">
-      <div class="card card-light">
-        <h3 class="sf-display" style="font-size: 21px; margin-bottom: 12px;">Academic Journey</h3>
-        <ul class="body-text clean-list">
-          <li>MA in American Studies<br><span style="font-size: 14px; opacity: 0.8;">(Heidelberg University, DE)</span></li>
-          <li>LLB in Diplomacy<br><span style="font-size: 14px; opacity: 0.8;">(Jilin University, CN)</span></li>
-        </ul>
-      </div>
-      <div class="card card-light">
-        <h3 class="sf-display" style="font-size: 21px; margin-bottom: 12px;">Membership</h3>
-        <ul class="body-text clean-list">
-          <li>Royal Historical Society</li>
-          <li>Association of Chinese Political Studies</li>
-        </ul>
-      </div>
-      <div class="card card-light">
-        <h3 class="sf-display" style="font-size: 21px; margin-bottom: 12px;">Languages</h3>
-        <ul class="body-text clean-list">
-          <li>English</li>
-          <li>Chinese</li>
-          <li>German</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        <span class="caption hero-kicker">International History · Policy</span>
+        <h1 class="sf-display display-hero">Hello, I’m Xudong Zhu.</h1>
 
-  <section class="apple-section section-dark">
-    <div class="container">
-      <h2 class="sf-display section-heading">Recent Highlights.</h2>
-      <div class="news-timeline">
-        <div class="sf-display news-year">2025</div>
-        <div class="news-item body-text">
-          <div class="caption news-date" style="color: var(--text-white-80);">Nov.</div>
-          <div style="color: var(--text-white-80);">Happy to be part of the ACPS Annual Conference. My sincere thanks to the organizers.</div>
-        </div>
-        <div class="news-item body-text">
-          <div class="caption news-date" style="color: var(--text-white-80);">Oct.</div>
-          <div style="color: var(--text-white-80);">Honoured to be elected as a Postgraduate Member of the Royal Historical Society.</div>
-        </div>
-        <div class="news-item body-text">
-          <div class="caption news-date" style="color: var(--text-white-80);">Oct.</div>
-          <div style="color: var(--text-white-80);">Excited to be a Teaching Assistant for HI1022: Europe in the Twentieth Century!</div>
-        </div>
-        <div class="news-item body-text">
-          <div class="caption news-date" style="color: var(--text-white-80);">Aug.</div>
-          <div style="color: var(--text-white-80);">My essay was recognized with the Jimmy Carter Prize (Runner-up) in the 2025 China Focus Essay Contest.</div>
+        <p class="body-text hero-summary">
+          PhD Candidate in International History at the University of Aberdeen,
+          analyzing how statecraft, grand strategy, and great-power competition
+          shape contemporary governance.
+        </p>
+
+        <div class="hero-actions">
+          <a href="mailto:xudong.zhu01@gmail.com" class="btn-primary">Say Hello</a>
+          <a href="https://www.linkedin.com/in/xudong-zhu-457bb3220" target="_blank" rel="noopener noreferrer" class="btn-primary">LinkedIn</a>
+          <a href="https://www.abdn.ac.uk/people/x.zhu.25" target="_blank" rel="noopener noreferrer" class="btn-primary">UoA Profile</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="apple-section section-light">
-    <div class="container">
-      <h2 class="sf-display section-heading">Research Interests.</h2>
-      <div class="grid-2">
-        <div class="card card-light" style="border: 1px solid rgba(0,0,0,0.05);">
-          <h3 class="sf-display" style="font-size: 21px; margin-bottom: 12px;">Applied History & Statecraft</h3>
-          <ul class="body-text clean-list" style="list-style-type: disc; padding-left: 20px;">
-            <li>Apply statecraft and grand-strategy frameworks to current geopolitical issues</li>
-            <li>Compare Realpolitik across cases to assess power, interests, and constraints</li>
+    <section class="apple-section section-light" aria-labelledby="profile-summary" style="padding-top: 0;">
+      <div class="container grid-3">
+        <div class="card card-light">
+          <h2 id="profile-summary" class="sf-display card-title-small">Academic Journey</h2>
+          <ul class="body-text clean-list">
+            <li>
+              MA in American Studies<br>
+              <span class="caption muted">(Heidelberg University, DE)</span>
+            </li>
+            <li>
+              LLB in Diplomacy<br>
+              <span class="caption muted">(Jilin University, CN)</span>
+            </li>
           </ul>
         </div>
-        <div class="card card-light" style="border: 1px solid rgba(0,0,0,0.05);">
-          <h3 class="sf-display" style="font-size: 21px; margin-bottom: 12px;">Global Security & Governance</h3>
-          <ul class="body-text clean-list" style="list-style-type: disc; padding-left: 20px;">
-            <li>Great power competition</li>
-            <li>International institutions and legal frameworks</li>
+
+        <div class="card card-light">
+          <h2 class="sf-display card-title-small">Membership</h2>
+          <ul class="body-text clean-list">
+            <li>Royal Historical Society</li>
+            <li>Association of Chinese Political Studies</li>
+          </ul>
+        </div>
+
+        <div class="card card-light">
+          <h2 class="sf-display card-title-small">Languages</h2>
+          <ul class="body-text clean-list">
+            <li>English</li>
+            <li>Chinese</li>
+            <li>German</li>
           </ul>
         </div>
       </div>
+    </section>
 
-      <div class="photo-container" style="margin-top: 60px;">
-        <img src="assets/wk.png" alt="University building" loading="lazy">
+    <section class="apple-section section-dark" aria-labelledby="recent-highlights">
+      <div class="container">
+        <h2 id="recent-highlights" class="sf-display section-heading">Recent Highlights.</h2>
+
+        <div class="news-timeline">
+          <div class="sf-display news-year">2025</div>
+
+          <div class="news-item body-text">
+            <div class="caption news-date">Nov.</div>
+            <div class="news-text">Happy to be part of the ACPS Annual Conference. My sincere thanks to the organizers.</div>
+          </div>
+
+          <div class="news-item body-text">
+            <div class="caption news-date">Oct.</div>
+            <div class="news-text">Honoured to be elected as a Postgraduate Member of the Royal Historical Society.</div>
+          </div>
+
+          <div class="news-item body-text">
+            <div class="caption news-date">Oct.</div>
+            <div class="news-text">Excited to be a Teaching Assistant for HI1022: Europe in the Twentieth Century.</div>
+          </div>
+
+          <div class="news-item body-text">
+            <div class="caption news-date">Aug.</div>
+            <div class="news-text">My essay was recognized with the Jimmy Carter Prize Runner-up award in the 2025 China Focus Essay Contest.</div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="apple-section section-light" aria-labelledby="research-interests">
+      <div class="container">
+        <h2 id="research-interests" class="sf-display section-heading">Research Interests.</h2>
+
+        <div class="grid-2">
+          <div class="card card-light">
+            <h3 class="sf-display card-title-small">Applied History &amp; Statecraft</h3>
+            <ul class="body-text clean-list disc-list muted">
+              <li>Apply statecraft and grand-strategy frameworks to current geopolitical issues.</li>
+              <li>Compare Realpolitik across cases to assess power, interests, and constraints.</li>
+            </ul>
+          </div>
+
+          <div class="card card-light">
+            <h3 class="sf-display card-title-small">Global Security &amp; Governance</h3>
+            <ul class="body-text clean-list disc-list muted">
+              <li>Great-power competition.</li>
+              <li>International institutions and legal frameworks.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="photo-container" style="margin-top: 60px;">
+          <img src="assets/wk.png" alt="University of Aberdeen building" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="apple-footer sf-text">
     <div class="container">
       &copy; 2026 Xudong Zhu. All Rights Reserved.
     </div>
   </footer>
-
 </body>
 </html>

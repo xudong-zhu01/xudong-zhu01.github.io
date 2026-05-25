@@ -6,133 +6,71 @@ layout: null
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Blog - Xudong Zhu</title>
+  <meta name="description" content="Essays and reflections by Xudong Zhu on international history, policy, statecraft, and great-power politics.">
+  <meta name="author" content="Xudong Zhu">
+  <link rel="canonical" href="{{ '/blog.html' | absolute_url }}">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9SFENNRFJS');
+    gtag("js", new Date());
+    gtag("config", "G-9SFENNRFJS");
   </script>
 
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* Blog 列表特定组件优化 */
-    .blog-list {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-      width: 100%;
-    }
-
-    .blog-card {
-      background-color: #ffffff;
-      border-radius: 12px;
-      padding: 40px;
-      box-shadow: var(--card-shadow);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      text-decoration: none;
-      display: block;
-      color: inherit;
-      text-align: left;
-    }
-    
-    .blog-card:hover {
-      transform: translateY(-4px);
-      box-shadow: rgba(0, 0, 0, 0.16) 3px 10px 40px 0px;
-    }
-
-    .blog-meta-row {
-      display: flex;
-      align-items: center;
-      margin-bottom: 16px;
-      gap: 12px;
-    }
-
-    .badge-apple {
-      font-size: 12px;
-      font-weight: 600;
-      background-color: #f2f2f7;
-      color: var(--near-black);
-      padding: 4px 12px;
-      border-radius: 980px;
-      letter-spacing: -0.12px;
-      text-transform: uppercase;
-    }
-
-    .blog-date {
-      font-size: 14px;
-      color: var(--text-black-80);
-      font-weight: 400;
-    }
-
-    .blog-title {
-      font-size: clamp(22px, 4vw, 28px);
-      font-weight: 600;
-      line-height: 1.14;
-      letter-spacing: 0.196px;
-      margin-bottom: 16px;
-      color: var(--near-black);
-    }
-
-    .blog-snippet {
-      font-size: 17px;
-      line-height: 1.47;
-      color: var(--text-black-80);
-      margin-bottom: 24px;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .link-more {
-      color: var(--link-light);
-      font-size: 14px;
-      font-weight: 400;
-    }
-  </style>
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
-<body>
 
-  <nav class="apple-nav">
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="apple-nav" aria-label="Primary navigation">
     <ul class="nav-links sf-text">
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
       <li><a href="{{ '/cv.html' | relative_url }}">CV</a></li>
       <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
       <li><a href="{{ '/teaching.html' | relative_url }}">Teaching</a></li>
       <li><a href="{{ '/theses.html' | relative_url }}">Theses</a></li>
-      <li><a href="{{ '/blog.html' | relative_url }}" style="opacity: 0.5;">Blog</a></li>
+      <li><a href="{{ '/blog.html' | relative_url }}" aria-current="page">Blog</a></li>
     </ul>
   </nav>
 
-  <section class="apple-section section-light" style="padding-top: 60px; padding-bottom: 160px;">
-    <div class="container">
-      <div class="blog-list">
-        {% for post in site.posts %}
-        <a href="{{ post.url | relative_url }}" class="blog-card">
-          <div class="blog-meta-row sf-text">
-            <span class="badge-apple">{{ post.tags | first }}</span>
-            <span class="blog-date">{{ post.date | date: "%B %d, %Y" }}</span>
-          </div>
-          <h2 class="sf-display blog-title">{{ post.title }}</h2>
-          <p class="body-text blog-snippet">
-            {{ post.excerpt | strip_html | truncatewords: 30 }}
-          </p>
-          <div class="sf-text link-more">Read Article &gt;</div>
-        </a>
-        {% endfor %}
+  <main id="main">
+    <section class="apple-section section-light" style="padding-top: 60px; padding-bottom: 160px;">
+      <div class="container">
+        <div class="blog-list">
+          {% for post in site.posts %}
+          <a href="{{ post.url | relative_url }}" class="blog-card">
+            <div class="blog-meta-row sf-text">
+              <span class="badge-apple">{{ post.tags | first | default: "Essay" }}</span>
+              <span class="blog-date">{{ post.date | date: "%B %d, %Y" }}</span>
+            </div>
+
+            <h1 class="sf-display blog-title">{{ post.title }}</h1>
+
+            <p class="body-text blog-snippet">
+              {{ post.excerpt | strip_html | truncatewords: 30 }}
+            </p>
+
+            <div class="sf-text link-more">Read Article &gt;</div>
+          </a>
+          {% else %}
+          <article class="card card-light">
+            <h1 class="sf-display card-title-small">No posts yet.</h1>
+            <p class="body-text muted">New writing will appear here soon.</p>
+          </article>
+          {% endfor %}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="apple-footer sf-text">
     <div class="container">
       &copy; 2026 Xudong Zhu. All Rights Reserved.
     </div>
   </footer>
-
 </body>
 </html>

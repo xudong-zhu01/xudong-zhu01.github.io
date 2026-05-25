@@ -3,113 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>{{ page.title }} - Xudong Zhu</title>
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 155 | default: 'Essay by Xudong Zhu.' }}">
+  <meta name="author" content="Xudong Zhu">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <meta property="og:title" content="{{ page.title }} - Xudong Zhu">
+  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 155 | default: 'Essay by Xudong Zhu.' }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9SFENNRFJS');
+    gtag("js", new Date());
+    gtag("config", "G-9SFENNRFJS");
   </script>
 
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-
-  <style>
-    /* 文章正文特定排版优化 */
-    .article-header {
-      padding: 100px 20px 40px;
-      text-align: center;
-      background-color: var(--light-gray);
-    }
-
-    .article-container {
-      max-width: 720px; /* 严格限制宽度以提升长文阅读体验 */
-      margin: 0 auto;
-      padding: 60px 20px 120px;
-      color: var(--near-black);
-      background-color: #ffffff;
-    }
-
-    .entry-title {
-      font-size: clamp(32px, 5vw, 44px);
-      font-weight: 600;
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-      margin-bottom: 12px;
-    }
-
-    .entry-meta {
-      font-size: 14px;
-      color: var(--text-black-80);
-      font-weight: 600;
-      margin-bottom: 24px;
-    }
-
-    /* 正文元素样式 */
-    .article-body {
-      font-size: 18px;
-      line-height: 1.65; /* 增加行高，学术阅读更舒适 */
-      letter-spacing: -0.01em;
-    }
-
-    .article-body p { margin-bottom: 1.8em; }
-
-    .article-body h2 {
-      font-size: 28px;
-      font-weight: 600;
-      margin: 2em 0 0.8em;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
-      padding-bottom: 0.3em;
-    }
-
-    .article-body blockquote {
-      border-left: 3px solid var(--apple-blue);
-      margin: 2em 0;
-      padding: 0.5em 0 0.5em 24px;
-      color: var(--text-black-80);
-      font-style: italic;
-      background-color: #f9f9fb;
-    }
-
-    .article-body img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin: 2.5em 0;
-      box-shadow: var(--card-shadow);
-    }
-
-    .back-to-blog {
-      display: inline-block;
-      margin-top: 80px;
-      color: var(--apple-blue);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 400;
-    }
-    .back-to-blog:hover { text-decoration: underline; }
-
-    @media (max-width: 768px) {
-      .article-container { padding: 40px 20px 80px; }
-      .article-body { font-size: 17px; }
-    }
-  </style>
 </head>
-<body>
 
-  <nav class="apple-nav">
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="apple-nav" aria-label="Primary navigation">
     <ul class="nav-links sf-text">
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
       <li><a href="{{ '/cv.html' | relative_url }}">CV</a></li>
       <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
       <li><a href="{{ '/teaching.html' | relative_url }}">Teaching</a></li>
       <li><a href="{{ '/theses.html' | relative_url }}">Theses</a></li>
-      <li><a href="{{ '/blog.html' | relative_url }}">Blog</a></li>
+      <li><a href="{{ '/blog.html' | relative_url }}" aria-current="page">Blog</a></li>
     </ul>
   </nav>
 
   <header class="article-header">
-    <div class="container" style="max-width: 800px;">
+    <div class="container container-narrow">
       <h1 class="sf-display entry-title">{{ page.title }}</h1>
       <div class="sf-text entry-meta">
         {{ page.date | date: "%B %d, %Y" }} • By Xudong Zhu
@@ -117,12 +48,12 @@
     </div>
   </header>
 
-  <main class="article-container">
+  <main id="main" class="article-container">
     <article class="article-body sf-text">
       {{ content }}
     </article>
-    
-    <div style="text-align: center;">
+
+    <div class="text-center">
       <a href="{{ '/blog.html' | relative_url }}" class="back-to-blog sf-text">&larr; Back to Blog</a>
     </div>
   </main>
@@ -132,6 +63,5 @@
       &copy; 2026 Xudong Zhu. All Rights Reserved.
     </div>
   </footer>
-
 </body>
 </html>

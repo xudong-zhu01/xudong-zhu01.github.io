@@ -3,72 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>CV - Xudong Zhu</title>
+  <meta name="description" content="Curriculum vitae of Xudong Zhu, PhD Candidate in International History at the University of Aberdeen.">
+  <meta name="author" content="Xudong Zhu">
+  <link rel="canonical" href="https://xudong-zhu01.github.io/cv.html">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9SFENNRFJS');
+    gtag("js", new Date());
+    gtag("config", "G-9SFENNRFJS");
   </script>
 
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* CV 页面特定组件优化 */
-    .resume-wrapper {
-      width: 100%;
-      max-width: 1024px;
-      margin: 0 auto;
-      border-radius: 8px; /* 严格遵守 design.md 8px 圆角 */
-      overflow: hidden;
-      box-shadow: var(--card-shadow);
-      background-color: #ffffff;
-      border: 1px solid rgba(0,0,0,0.05);
-    }
-    
-    .resume-wrapper iframe {
-      width: 100%;
-      height: 80vh;
-      min-height: 800px;
-      border: none;
-      display: block;
-    }
-
-    .mobile-notice {
-      display: none;
-      text-align: center;
-      padding: 16px 20px;
-      background-color: rgba(0, 0, 0, 0.04);
-      border-radius: 8px;
-      color: var(--text-black-80);
-      margin-bottom: 32px;
-      font-size: 14px;
-      letter-spacing: -0.224px;
-    }
-
-    @media (max-width: 768px) {
-      .resume-wrapper iframe {
-        height: 60vh;
-        min-height: 500px;
-      }
-      .mobile-notice {
-        display: block; /* 仅在移动端显示温馨提示 */
-      }
-      .btn-primary {
-        width: 100%; /* 移动端按钮全宽，方便点击 */
-        justify-content: center;
-      }
-    }
-  </style>
 </head>
-<body>
 
-  <nav class="apple-nav">
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="apple-nav" aria-label="Primary navigation">
     <ul class="nav-links sf-text">
       <li><a href="index.html">Home</a></li>
-      <li><a href="cv.html" style="opacity: 0.5;">CV</a></li>
+      <li><a href="cv.html" aria-current="page">CV</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="teaching.html">Teaching</a></li>
       <li><a href="theses.html">Theses</a></li>
@@ -76,45 +34,48 @@
     </ul>
   </nav>
 
-  <section class="apple-section section-dark" style="padding-top: 140px; padding-bottom: 80px;">
-    <div class="container" style="text-align: center;">
-      <h1 class="sf-display display-hero">Curriculum Vitae</h1>
-      
-      <div style="margin-top: 40px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-        <a href="https://xudong-zhu01.github.io/documents/cv-xudong-zhu.pdf" class="btn-primary sf-text" download>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="7 10 12 15 17 10"></polyline>
-            <line x1="12" y1="15" x2="12" y2="3"></line>
-          </svg>
-          Download Full CV (PDF)
-        </a>
-        <p class="caption" style="color: var(--text-white-80);">
-          Last updated: May 2026
-        </p>
-      </div>
-    </div>
-  </section>
+  <main id="main">
+    <section class="apple-section section-dark page-hero">
+      <div class="container text-center">
+        <h1 class="sf-display display-hero">Curriculum Vitae</h1>
 
-  <section class="apple-section section-light" style="padding-top: 60px; padding-bottom: 120px;">
-    <div class="container">
-      
-      <div class="sf-text mobile-notice">
-        For the best reading experience on mobile, please download the PDF above.
-      </div>
+        <div class="cv-actions">
+          <a href="documents/cv-xudong-zhu.pdf" class="btn-primary sf-text" download>
+            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Full CV (PDF)
+          </a>
 
-      <div class="resume-wrapper">
-        <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://xudong-zhu01.github.io/documents/cv-xudong-zhu.pdf" title="Xudong Zhu - Curriculum Vitae"></iframe>
+          <p class="caption muted-dark">Last updated: May 2026</p>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section class="apple-section section-light" style="padding-top: 60px; padding-bottom: 120px;">
+      <div class="container">
+        <div class="sf-text mobile-notice">
+          For the best reading experience on mobile, please download the PDF above.
+        </div>
+
+        <div class="resume-wrapper">
+          <object data="documents/cv-xudong-zhu.pdf" type="application/pdf" class="cv-object" aria-label="Xudong Zhu Curriculum Vitae PDF">
+            <p class="body-text" style="padding: 32px;">
+              Your browser cannot display the PDF.
+              <a href="documents/cv-xudong-zhu.pdf" class="link-inline">Download the CV instead.</a>
+            </p>
+          </object>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="apple-footer sf-text">
     <div class="container">
       &copy; 2026 Xudong Zhu. All Rights Reserved.
     </div>
   </footer>
-
 </body>
 </html>
