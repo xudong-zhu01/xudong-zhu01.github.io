@@ -1,0 +1,9 @@
+  <nav class="apple-nav" aria-label="Primary navigation">
+    <ul class="nav-links sf-text">
+      <li><a href="{{ '/' | relative_url }}"{% if page.active_nav == "home" %} aria-current="page"{% endif %}>Home</a></li>
+      <li><a href="{{ '/cv.html' | relative_url }}"{% if page.active_nav == "cv" %} aria-current="page"{% endif %}>CV</a></li>
+      <li><a href="{{ '/publications.html' | relative_url }}"{% if page.active_nav == "publications" %} aria-current="page"{% endif %}>Publications</a></li>
+      <li><a href="{{ '/teaching.html' | relative_url }}"{% if page.active_nav == "teaching" %} aria-current="page"{% endif %}>Teaching</a></li>
+      <li><a href="{{ '/blog.html' | relative_url }}"{% if page.active_nav == "blog" or page.layout == "post" %} aria-current="page"{% endif %}>Blog</a></li>
+    </ul>
+  </nav>

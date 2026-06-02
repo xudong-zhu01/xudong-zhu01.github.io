@@ -1,53 +1,32 @@
+---
+layout: null
+title: Xudong Zhu - Academic Homepage
+description: Xudong Zhu is a PhD Candidate in International History at the University of Aberdeen, working on statecraft, grand strategy, and great-power competition.
+active_nav: home
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Xudong Zhu - Academic Homepage</title>
-  <meta name="description" content="Xudong Zhu is a PhD Candidate in International History at the University of Aberdeen, working on statecraft, grand strategy, and great-power competition.">
-  <meta name="author" content="Xudong Zhu">
-  <link rel="canonical" href="https://xudong-zhu01.github.io/">
-
-  <meta property="og:title" content="Xudong Zhu - Academic Homepage">
-  <meta property="og:description" content="PhD Candidate in International History at the University of Aberdeen.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://xudong-zhu01.github.io/">
-  <meta property="og:image" content="https://xudong-zhu01.github.io/assets/1.png">
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-    gtag("config", "G-9SFENNRFJS");
-  </script>
-
-  <link rel="stylesheet" href="style.css">
+{% include site-head.html title=page.title description=page.description canonical=page.url %}
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <nav class="apple-nav" aria-label="Primary navigation">
-    <ul class="nav-links sf-text">
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
-  </nav>
+{% include nav.html %}
 
   <main id="main">
     <section class="apple-section section-light">
       <div class="container hero-profile">
         <img
-          src="assets/1.png"
+          src="{{ '/assets/portrait-240.jpg' | relative_url }}"
+          srcset="{{ '/assets/portrait-240.jpg' | relative_url }} 240w, {{ '/assets/portrait.jpg' | relative_url }} 1254w"
+          sizes="120px"
           class="hero-portrait"
           alt="Portrait of Xudong Zhu"
           width="120"
           height="120"
+          decoding="async"
         >
 
         <span class="caption hero-kicker">International History · Policy</span>
@@ -155,16 +134,19 @@
         </div>
 
         <div class="photo-container" style="margin-top: 60px;">
-          <img src="assets/wk.png" alt="University of Aberdeen building" loading="lazy">
+          <img
+            src="{{ '/assets/statecraft-illustration.jpg' | relative_url }}"
+            alt="Historical illustration with the words Kraft im Recht"
+            width="1200"
+            height="609"
+            loading="lazy"
+            decoding="async"
+          >
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="apple-footer sf-text">
-    <div class="container">
-      &copy; 2026 Xudong Zhu. All Rights Reserved.
-    </div>
-  </footer>
+{% include footer.html %}
 </body>
 </html>

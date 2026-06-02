@@ -1,44 +1,28 @@
 ---
 layout: null
+title: Blog - Xudong Zhu
+description: Essays and reflections by Xudong Zhu on international history, policy, statecraft, and great-power politics.
+active_nav: blog
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Blog - Xudong Zhu</title>
-  <meta name="description" content="Essays and reflections by Xudong Zhu on international history, policy, statecraft, and great-power politics.">
-  <meta name="author" content="Xudong Zhu">
-  <link rel="canonical" href="{{ '/blog.html' | absolute_url }}">
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-    gtag("config", "G-9SFENNRFJS");
-  </script>
-
-  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+{% include site-head.html title=page.title description=page.description canonical=page.url %}
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <nav class="apple-nav" aria-label="Primary navigation">
-    <ul class="nav-links sf-text">
-      <li><a href="{{ '/' | relative_url }}">Home</a></li>
-      <li><a href="{{ '/cv.html' | relative_url }}">CV</a></li>
-      <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
-      <li><a href="{{ '/teaching.html' | relative_url }}">Teaching</a></li>
-      <li><a href="{{ '/blog.html' | relative_url }}" aria-current="page">Blog</a></li>
-    </ul>
-  </nav>
+{% include nav.html %}
 
   <main id="main">
     <section class="apple-section section-light" style="padding-top: 60px; padding-bottom: 160px;">
       <div class="container">
+        <header class="blog-page-header">
+          <h1 class="sf-display section-heading">Essays &amp; Reflections</h1>
+          <p class="body-text muted">Writing on international history, statecraft, and policy.</p>
+        </header>
+
         <div class="blog-list">
           {% for post in site.posts %}
           <a href="{{ post.url | relative_url }}" class="blog-card">
@@ -47,7 +31,7 @@ layout: null
               <span class="blog-date">{{ post.date | date: "%B %d, %Y" }}</span>
             </div>
 
-            <h1 class="sf-display blog-title">{{ post.title }}</h1>
+            <h2 class="sf-display blog-title">{{ post.title }}</h2>
 
             <p class="body-text blog-snippet">
               {{ post.excerpt | strip_html | truncatewords: 30 }}
@@ -57,7 +41,7 @@ layout: null
           </a>
           {% else %}
           <article class="card card-light">
-            <h1 class="sf-display card-title-small">No posts yet.</h1>
+            <h2 class="sf-display card-title-small">No posts yet.</h2>
             <p class="body-text muted">New writing will appear here soon.</p>
           </article>
           {% endfor %}
@@ -66,10 +50,6 @@ layout: null
     </section>
   </main>
 
-  <footer class="apple-footer sf-text">
-    <div class="container">
-      &copy; 2026 Xudong Zhu. All Rights Reserved.
-    </div>
-  </footer>
+{% include footer.html %}
 </body>
 </html>

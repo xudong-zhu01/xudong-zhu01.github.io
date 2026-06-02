@@ -236,10 +236,6 @@ p {
   max-width: var(--container-narrow);
 }
 
-.container-reading {
-  max-width: var(--container-reading);
-}
-
 .grid-2,
 .grid-3 {
   display: grid;
@@ -531,6 +527,10 @@ p {
   margin-left: 12px;
 }
 
+.card-dark .course-meta {
+  color: var(--text-white-80);
+}
+
 .course-description {
   margin-bottom: 24px;
   color: var(--text-black-80);
@@ -543,75 +543,7 @@ p {
 }
 
 /* =========================================
-   9. Theses
-   ========================================= */
-
-.thesis-page {
-  padding-top: 40px;
-  padding-bottom: 160px;
-}
-
-.thesis-item {
-  padding: 64px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.thesis-item:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.thesis-eyebrow {
-  display: block;
-  margin-bottom: 12px;
-  color: var(--text-black-80);
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: -0.224px;
-}
-
-.thesis-title {
-  margin-bottom: 32px;
-  color: var(--near-black);
-  font-size: clamp(24px, 4vw, 32px);
-  font-weight: 600;
-  line-height: 1.14;
-  letter-spacing: 0.196px;
-}
-
-.meta-list {
-  display: grid;
-  gap: 12px;
-  margin: 0 0 32px;
-  padding: 24px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.meta-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 24px;
-  margin: 0;
-  font-size: 16px;
-}
-
-.meta-label {
-  flex-shrink: 0;
-  font-weight: 600;
-  color: var(--near-black);
-}
-
-.meta-value {
-  margin: 0;
-  text-align: right;
-  color: var(--text-black-80);
-}
-
-/* =========================================
-   10. CV
+   9. CV
    ========================================= */
 
 .cv-actions {
@@ -654,7 +586,7 @@ p {
 }
 
 /* =========================================
-   11. Blog List
+   10. Blog List
    ========================================= */
 
 .blog-list {
@@ -662,6 +594,14 @@ p {
   flex-direction: column;
   gap: 32px;
   width: 100%;
+}
+
+.blog-page-header {
+  margin-bottom: 48px;
+}
+
+.blog-page-header .section-heading {
+  margin-bottom: 12px;
 }
 
 .blog-card {
@@ -721,7 +661,7 @@ p {
 }
 
 /* =========================================
-   12. Blog Post / Article
+   11. Blog Post / Article
    ========================================= */
 
 .article-header {
@@ -807,6 +747,18 @@ p {
 }
 
 /* =========================================
+   12. Error Page
+   ========================================= */
+
+.error-kicker {
+  color: var(--text-white-80);
+}
+
+.error-page .btn-primary {
+  margin-top: 32px;
+}
+
+/* =========================================
    13. Responsive Refinements
    ========================================= */
 
@@ -826,14 +778,9 @@ p {
     min-width: 148px;
   }
 
-  .news-item,
-  .meta-row {
+  .news-item {
     flex-direction: column;
     gap: 4px;
-  }
-
-  .meta-value {
-    text-align: left;
   }
 
   .course-meta .badge-apple {

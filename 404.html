@@ -1,0 +1,33 @@
+---
+layout: null
+title: Page Not Found - Xudong Zhu
+description: The requested page could not be found on Xudong Zhu's academic website.
+permalink: /404.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include site-head.html title=page.title description=page.description canonical=page.url %}
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+{% include nav.html %}
+
+  <main id="main">
+    <section class="apple-section section-dark page-hero error-page">
+      <div class="container container-narrow text-center">
+        <span class="caption hero-kicker error-kicker">404</span>
+        <h1 class="sf-display display-hero">Page Not Found</h1>
+        <p class="body-text muted-dark">
+          The page may have moved or no longer exists. Use the navigation above or return to the homepage.
+        </p>
+        <a href="{{ '/' | relative_url }}" class="btn-primary">Return Home</a>
+      </div>
+    </section>
+  </main>
+
+{% include footer.html %}
+</body>
+</html>

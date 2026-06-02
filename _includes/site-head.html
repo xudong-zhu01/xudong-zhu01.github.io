@@ -1,0 +1,36 @@
+{% assign meta_title = include.title | strip_html %}
+{% assign meta_description = include.description | strip_html | strip_newlines | truncate: 160 %}
+{% assign meta_type = include.type | default: "website" %}
+{% assign meta_image = include.image | default: "/assets/portrait.jpg" %}
+{% assign meta_image_alt = include.image_alt | default: "Portrait of Xudong Zhu" %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ meta_title | escape }}</title>
+  <meta name="description" content="{{ meta_description | escape }}">
+  <meta name="author" content="Xudong Zhu">
+  <link rel="canonical" href="{{ include.canonical | absolute_url }}">
+
+  <meta property="og:site_name" content="Xudong Zhu">
+  <meta property="og:title" content="{{ meta_title | escape }}">
+  <meta property="og:description" content="{{ meta_description | escape }}">
+  <meta property="og:type" content="{{ meta_type }}">
+  <meta property="og:url" content="{{ include.canonical | absolute_url }}">
+  <meta property="og:image" content="{{ meta_image | absolute_url }}">
+  <meta property="og:image:alt" content="{{ meta_image_alt | escape }}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ meta_title | escape }}">
+  <meta name="twitter:description" content="{{ meta_description | escape }}">
+  <meta name="twitter:image" content="{{ meta_image | absolute_url }}">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-9SFENNRFJS");
+  </script>
+
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+

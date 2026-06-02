@@ -1,0 +1,19 @@
+title: Xudong Zhu
+description: Academic homepage of Xudong Zhu, PhD Candidate in International History at the University of Aberdeen.
+url: "https://xudong-zhu01.github.io"
+baseurl: ""
+timezone: Europe/London
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+

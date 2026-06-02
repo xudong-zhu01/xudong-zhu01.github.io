@@ -1,6 +1,7 @@
 ---
 title: 环德之旅（2）：萨尔堡罗马边墙
 author: xudong
+lang: zh-CN
 date: 2022-03-16 22:09:00 +0800
 tags: [Travel]
 math: true
@@ -35,5 +36,4 @@ _可爱的罐子_
 
 ![Desktop View](https://xudong-zhu01.github.io/assets/frankfurt/7.png)
 _罗马弩机_
-
 

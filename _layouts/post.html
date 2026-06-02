@@ -1,42 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>{{ page.title }} - Xudong Zhu</title>
-  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 155 | default: 'Essay by Xudong Zhu.' }}">
-  <meta name="author" content="Xudong Zhu">
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-
-  <meta property="og:title" content="{{ page.title }} - Xudong Zhu">
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 155 | default: 'Essay by Xudong Zhu.' }}">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFENNRFJS"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-    gtag("config", "G-9SFENNRFJS");
-  </script>
-
-  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+{% assign meta_title = page.title | append: " - Xudong Zhu" %}
+{% assign meta_description = page.description | default: page.excerpt | default: "Essay by Xudong Zhu." %}
+{% include site-head.html title=meta_title description=meta_description canonical=page.url type="article" %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <nav class="apple-nav" aria-label="Primary navigation">
-    <ul class="nav-links sf-text">
-      <li><a href="{{ '/' | relative_url }}">Home</a></li>
-      <li><a href="{{ '/cv.html' | relative_url }}">CV</a></li>
-      <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
-      <li><a href="{{ '/teaching.html' | relative_url }}">Teaching</a></li>
-      <li><a href="{{ '/blog.html' | relative_url }}" aria-current="page">Blog</a></li>
-    </ul>
-  </nav>
+{% include nav.html %}
 
   <header class="article-header">
     <div class="container container-narrow">
@@ -57,10 +31,6 @@
     </div>
   </main>
 
-  <footer class="apple-footer sf-text">
-    <div class="container">
-      &copy; 2026 Xudong Zhu. All Rights Reserved.
-    </div>
-  </footer>
+{% include footer.html %}
 </body>
 </html>

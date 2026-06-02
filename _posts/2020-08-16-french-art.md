@@ -1,6 +1,7 @@
 ---
 title: 十六世纪法兰西宫廷艺术的巅峰:赏析枫丹白露画派
 author: zhu
+lang: zh-CN
 date: 2020-08-16 11:34:00 +0800
 tags: [Other]
 math: true
