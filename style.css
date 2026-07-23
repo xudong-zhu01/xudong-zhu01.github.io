@@ -511,7 +511,7 @@ p {
   width: 100%;
   aspect-ratio: 16 / 7;
   object-fit: cover;
-  object-position: center 70%;
+  object-position: center 80%;
   filter: saturate(0.78) contrast(1.04);
   transition: transform 700ms ease;
 }
