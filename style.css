@@ -187,20 +187,6 @@ p {
   -webkit-backdrop-filter: blur(18px);
 }
 
-.apple-nav::before {
-  position: absolute;
-  left: max(24px, calc((100vw - var(--container)) / 2));
-  display: grid;
-  width: 36px;
-  height: 36px;
-  place-items: center;
-  border: 1px solid var(--ink);
-  color: var(--ink);
-  content: "XZ";
-  font: 700 10px/1 var(--sans);
-  letter-spacing: 0.08em;
-}
-
 .nav-links {
   width: min(calc(100% - 170px), 640px);
   display: flex;
@@ -511,7 +497,7 @@ p {
   width: 100%;
   aspect-ratio: 16 / 7;
   object-fit: cover;
-  object-position: center 80%;
+  object-position: center 85%;
   filter: saturate(0.78) contrast(1.04);
   transition: transform 700ms ease;
 }
@@ -1159,21 +1145,15 @@ p {
   .apple-nav {
     justify-content: flex-start;
   }
-
-  .apple-nav::before {
-    left: 18px;
-    width: 32px;
-    height: 32px;
-  }
-
+  
   .nav-links {
-    width: calc(100% - 66px);
-    margin-left: 66px;
-    padding: 0 18px 0 0;
-    overflow-x: auto;
-    justify-content: flex-start;
-    gap: 1.45rem;
-    scrollbar-width: none;
+  width: 100%;
+  margin-left: 0;
+  padding: 0 18px;
+  overflow-x: auto;
+  justify-content: flex-start;
+  gap: 1.45rem;
+  scrollbar-width: none;
   }
 
   .nav-links::-webkit-scrollbar {
