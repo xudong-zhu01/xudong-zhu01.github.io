@@ -511,15 +511,6 @@ p {
   width: 100%;
   aspect-ratio: 16 / 7;
   object-fit: cover;
-  filter: saturate(0.78) contrast(1.04);
-  transition: transform 700ms ease;
-}
-
-.photo-container img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 7;
-  object-fit: cover;
   object-position: center 70%;
   filter: saturate(0.78) contrast(1.04);
   transition: transform 700ms ease;
