@@ -596,7 +596,8 @@ p {
 }
 
 .grid-3 .card {
-  min-height: 240px;
+  min-height: auto;
+  padding: clamp(1.75rem, 3vw, 2.5rem);
   border-top: 1px solid var(--line);
   border-right: 1px solid var(--line);
   background: transparent;
@@ -604,26 +605,6 @@ p {
 
 .grid-3 .card:first-child {
   border-left: 1px solid var(--line);
-}
-
-.grid-3 .card::before {
-  display: block;
-  margin-bottom: 2.5rem;
-  color: var(--accent);
-  font: 700 0.66rem/1 var(--sans);
-  letter-spacing: 0.12em;
-}
-
-.grid-3 .card:nth-child(1)::before {
-  content: "01";
-}
-
-.grid-3 .card:nth-child(2)::before {
-  content: "02";
-}
-
-.grid-3 .card:nth-child(3)::before {
-  content: "03";
 }
 
 .card-title-small {
@@ -1189,9 +1170,6 @@ p {
     border-bottom: 1px solid var(--line);
   }
 
-  .grid-3 .card::before {
-    margin-bottom: 1.6rem;
-  }
 }
 
 @media (max-width: 720px) {
