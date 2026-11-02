@@ -16,7 +16,7 @@
     <div class="container container-narrow">
       <h1 class="sf-display entry-title">{{ page.title }}</h1>
       <div class="sf-text entry-meta">
-        {{ page.date | date: "%B %d, %Y" }} • By Xudong Zhu
+        {{ page.date | date: "%-d %B %Y" }} · Xudong Zhu
       </div>
     </div>
   </header>
@@ -27,7 +27,7 @@
     </article>
 
     <div class="text-center">
-      <a href="{{ '/blog.html' | relative_url }}" class="back-to-blog sf-text">&larr; Back to Blog</a>
+      <a href="{{ '/blog.html' | relative_url }}" class="back-to-blog sf-text">&larr; All essays</a>
     </div>
   </main>
 

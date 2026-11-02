@@ -16,11 +16,11 @@ active_nav: blog
 {% include nav.html %}
 
   <main id="main">
-    <section class="apple-section section-light" style="padding-top: 60px; padding-bottom: 160px;">
+    <section class="apple-section section-light page-top">
       <div class="container">
         <header class="blog-page-header">
-          <h1 class="sf-display section-heading">Essays &amp; Reflections</h1>
-          <p class="body-text muted">Writing on international history, statecraft, and policy.</p>
+          <h1 class="sf-display section-heading">Essays</h1>
+          <p class="body-text muted">Essays, notes, and translated records on international history, statecraft, and policy. Most are in Chinese.</p>
         </header>
 
         <div class="blog-list">
@@ -28,7 +28,7 @@ active_nav: blog
           <a href="{{ post.url | relative_url }}" class="blog-card">
             <div class="blog-meta-row sf-text">
               <span class="badge-apple">{{ post.tags | first | default: "Essay" }}</span>
-              <span class="blog-date">{{ post.date | date: "%B %d, %Y" }}</span>
+              <span class="blog-date">{{ post.date | date: "%-d %B %Y" }}</span>
             </div>
 
             <h2 class="sf-display blog-title">{{ post.title }}</h2>
@@ -37,7 +37,7 @@ active_nav: blog
               {{ post.excerpt | strip_html | truncatewords: 30 }}
             </p>
 
-            <div class="sf-text link-more">Read Article &gt;</div>
+            <div class="sf-text link-more">Read</div>
           </a>
           {% else %}
           <article class="card card-light">

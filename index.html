@@ -1,6 +1,6 @@
 ---
 layout: null
-title: Xudong Zhu - Academic Homepage
+title: Xudong Zhu - International History and Strategy
 description: Xudong Zhu is a PhD Candidate in International History at the University of Aberdeen, working on statecraft, grand strategy, and great-power competition.
 active_nav: home
 ---
@@ -8,6 +8,30 @@ active_nav: home
 <html lang="en">
 <head>
 {% include site-head.html title=page.title description=page.description canonical=page.url %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Xudong Zhu",
+    "alternateName": "朱旭东",
+    "jobTitle": "PhD Candidate in International History",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Aberdeen" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Heidelberg University" },
+      { "@type": "CollegeOrUniversity", "name": "Jilin University" }
+    ],
+    "url": "{{ '/' | absolute_url }}",
+    "image": "{{ '/assets/portrait.jpg' | absolute_url }}",
+    "email": "mailto:xudong.zhu01@gmail.com",
+    "identifier": "https://orcid.org/0009-0009-9929-868X",
+    "sameAs": [
+      "https://orcid.org/0009-0009-9929-868X",
+      "https://www.linkedin.com/in/xudong-zhu-457bb3220",
+      "https://www.abdn.ac.uk/people/x.zhu.25"
+    ],
+    "knowsAbout": ["International history", "Grand strategy", "Statecraft", "Great-power competition", "US–China relations", "Transatlantic security"]
+  }
+  </script>
 </head>
 
 <body>
@@ -16,54 +40,64 @@ active_nav: home
 {% include nav.html %}
 
   <main id="main">
-    <section class="apple-section section-light">
+    <section class="apple-section section-light hero-section">
       <div class="container hero-profile">
         <img
           src="{{ '/assets/portrait-240.jpg' | relative_url }}"
           srcset="{{ '/assets/portrait-240.jpg' | relative_url }} 240w, {{ '/assets/portrait.jpg' | relative_url }} 1254w"
-          sizes="(max-width: 720px) 72vw, (max-width: 900px) 28vw, 390px"
+          sizes="(max-width: 720px) 200px, (max-width: 900px) 28vw, 340px"
           class="hero-portrait"
           alt="Portrait of Xudong Zhu"
-          width="120"
-          height="120"
+          width="340"
+          height="340"
           decoding="async"
         >
 
-        <span class="caption hero-kicker">International History · Policy</span>
-        <h1 class="sf-display display-hero">Hello, I’m Xudong Zhu.</h1>
+        <span class="caption hero-kicker">International History · Strategy</span>
+        <h1 class="sf-display display-hero">Xudong Zhu</h1>
 
         <p class="body-text hero-summary">
-          PhD Candidate in International History at the University of Aberdeen,
-          analyzing how statecraft, grand strategy, and great-power competition
-          shape contemporary governance.
+          PhD Candidate in International History at the University of Aberdeen.
+          My research examines statecraft, grand strategy, and great-power
+          competition, and what historical cases can teach policymakers today.
         </p>
 
         <div class="hero-actions">
-          <a href="mailto:xudong.zhu01@gmail.com" class="btn-primary">Say Hello</a>
+          <a href="mailto:xudong.zhu01@gmail.com" class="btn-primary">Email</a>
+          <a href="{{ '/cv.html' | relative_url }}" class="btn-primary">CV</a>
+          <a href="https://www.abdn.ac.uk/people/x.zhu.25" target="_blank" rel="noopener noreferrer" class="btn-primary">Aberdeen Profile</a>
           <a href="https://www.linkedin.com/in/xudong-zhu-457bb3220" target="_blank" rel="noopener noreferrer" class="btn-primary">LinkedIn</a>
-          <a href="https://www.abdn.ac.uk/people/x.zhu.25" target="_blank" rel="noopener noreferrer" class="btn-primary">UoA Profile</a>
         </div>
+
+        <a class="orcid-link sf-text" href="https://orcid.org/0009-0009-9929-868X" target="_blank" rel="noopener noreferrer me" aria-label="ORCID record of Xudong Zhu: 0009-0009-9929-868X">
+          {% include orcid-icon.html %}
+          <span>https://orcid.org/0009-0009-9929-868X</span>
+        </a>
       </div>
     </section>
 
-    <section class="apple-section section-light" aria-labelledby="profile-summary" style="padding-top: 0;">
+    <section class="apple-section section-light section-flush-top" aria-labelledby="profile-summary">
       <div class="container grid-3">
         <div class="card card-light">
-          <h2 id="profile-summary" class="sf-display card-title-small">Academic Journey</h2>
+          <h2 id="profile-summary" class="sf-display card-title-small">Education</h2>
           <ul class="body-text clean-list">
             <li>
+              PhD in International History<br>
+              <span class="caption muted">University of Aberdeen, UK · in progress</span>
+            </li>
+            <li>
               MA in American Studies<br>
-              <span class="caption muted">(Heidelberg University, DE)</span>
+              <span class="caption muted">Heidelberg University, DE</span>
             </li>
             <li>
               LLB in Diplomacy<br>
-              <span class="caption muted">(Jilin University, CN)</span>
+              <span class="caption muted">Jilin University, CN</span>
             </li>
           </ul>
         </div>
 
         <div class="card card-light">
-          <h2 class="sf-display card-title-small">Membership</h2>
+          <h2 class="sf-display card-title-small">Memberships</h2>
           <ul class="body-text clean-list">
             <li>Royal Historical Society</li>
             <li>Association of Chinese Political Studies</li>
@@ -83,29 +117,36 @@ active_nav: home
 
     <section class="apple-section section-dark" aria-labelledby="recent-highlights">
       <div class="container">
-        <h2 id="recent-highlights" class="sf-display section-heading">Recent Highlights.</h2>
+        <h2 id="recent-highlights" class="sf-display section-heading">Recent Activity</h2>
 
         <div class="news-timeline">
+          <div class="sf-display news-year">2026</div>
+
+          <div class="news-item body-text">
+            <div class="caption news-date">May</div>
+            <div class="news-text">Commentary on improving U.S.–China relations published by the U.S.–China Perception Monitor (The Carter Center).</div>
+          </div>
+
+          <div class="news-item body-text">
+            <div class="caption news-date">Mar.</div>
+            <div class="news-text">Chapter on China–US–EU relations published in <em>The Trilateral Interactions</em> (Routledge).</div>
+          </div>
+
           <div class="sf-display news-year">2025</div>
 
           <div class="news-item body-text">
             <div class="caption news-date">Nov.</div>
-            <div class="news-text">Happy to be part of the ACPS Annual Conference. My sincere thanks to the organizers.</div>
+            <div class="news-text">Paper presented at the Association of Chinese Political Studies Annual Conference.</div>
           </div>
 
           <div class="news-item body-text">
             <div class="caption news-date">Oct.</div>
-            <div class="news-text">Honoured to be elected as a Postgraduate Member of the Royal Historical Society.</div>
-          </div>
-
-          <div class="news-item body-text">
-            <div class="caption news-date">Oct.</div>
-            <div class="news-text">Excited to be a Teaching Assistant for HI1022: Europe in the Twentieth Century.</div>
+            <div class="news-text">Elected Postgraduate Member of the Royal Historical Society.</div>
           </div>
 
           <div class="news-item body-text">
             <div class="caption news-date">Aug.</div>
-            <div class="news-text">My essay was recognized with the Jimmy Carter Prize Runner-up award in the 2025 China Focus Essay Contest.</div>
+            <div class="news-text">Runner-up, Jimmy Carter Prize, China Focus Essay Contest 2025.</div>
           </div>
         </div>
       </div>
@@ -113,36 +154,36 @@ active_nav: home
 
     <section class="apple-section section-light" aria-labelledby="research-interests">
       <div class="container">
-        <h2 id="research-interests" class="sf-display section-heading">Research Interests.</h2>
+        <h2 id="research-interests" class="sf-display section-heading">Research Interests</h2>
 
         <div class="grid-2">
           <div class="card card-light">
             <h3 class="sf-display card-title-small">Applied History &amp; Statecraft</h3>
             <ul class="body-text clean-list disc-list muted">
-              <li>Apply statecraft and grand-strategy frameworks to current geopolitical issues.</li>
-              <li>Compare Realpolitik across cases to assess power, interests, and constraints.</li>
+              <li>Statecraft and grand-strategy frameworks applied to current geopolitical questions.</li>
+              <li>Comparative Realpolitik: power, interests, and constraints across cases.</li>
             </ul>
           </div>
 
           <div class="card card-light">
             <h3 class="sf-display card-title-small">Global Security &amp; Governance</h3>
             <ul class="body-text clean-list disc-list muted">
-              <li>Great-power competition.</li>
+              <li>Great-power competition, including U.S.–China and transatlantic relations.</li>
               <li>International institutions and legal frameworks.</li>
             </ul>
           </div>
         </div>
 
-        <div class="photo-container" style="margin-top: 60px;">
+        <figure class="photo-container illustration">
           <img
             src="{{ '/assets/statecraft-illustration.jpg' | relative_url }}"
-            alt="Historical illustration with the words Kraft im Recht"
+            alt="Engraving of the Congress of Vienna with the motto Kraft im Recht"
             width="1200"
             height="609"
             loading="lazy"
             decoding="async"
           >
-        </div>
+        </figure>
       </div>
     </section>
   </main>

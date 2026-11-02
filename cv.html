@@ -21,13 +21,13 @@ active_nav: cv
         <h1 class="sf-display display-hero">Curriculum Vitae</h1>
 
         <div class="cv-actions">
-          <a href="documents/cv-xudong-zhu.pdf" class="btn-primary sf-text" download>
+          <a href="{{ '/documents/cv-xudong-zhu.pdf' | relative_url }}" class="btn-primary sf-text" download>
             <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            Download Full CV (PDF)
+            Download CV (PDF)
           </a>
 
           <p class="caption muted-dark">Last updated: May 2026</p>
@@ -35,17 +35,17 @@ active_nav: cv
       </div>
     </section>
 
-    <section class="apple-section section-light" style="padding-top: 60px; padding-bottom: 120px;">
+    <section class="apple-section section-light section-tight">
       <div class="container">
         <div class="sf-text mobile-notice">
-          For the best reading experience on mobile, please download the PDF above.
+          On mobile, the PDF download above is easier to read.
         </div>
 
         <div class="resume-wrapper">
-          <object data="documents/cv-xudong-zhu.pdf" type="application/pdf" class="cv-object" aria-label="Xudong Zhu Curriculum Vitae PDF">
-            <p class="body-text" style="padding: 32px;">
+          <object data="{{ '/documents/cv-xudong-zhu.pdf' | relative_url }}" type="application/pdf" class="cv-object" aria-label="Xudong Zhu Curriculum Vitae PDF">
+            <p class="body-text cv-fallback">
               Your browser cannot display the PDF.
-              <a href="documents/cv-xudong-zhu.pdf" class="link-inline">Download the CV instead.</a>
+              <a href="{{ '/documents/cv-xudong-zhu.pdf' | relative_url }}" class="link-inline">Download the CV instead.</a>
             </p>
           </object>
         </div>
