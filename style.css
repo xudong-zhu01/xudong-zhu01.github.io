@@ -694,49 +694,6 @@ p {
   letter-spacing: -0.02em;
 }
 
-.news-timeline {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.news-year {
-  margin: 0 0 2.5rem;
-  color: var(--gold);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-}
-
-.news-item {
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: clamp(1rem, 4vw, 3rem);
-  align-items: start;
-  padding: 1.55rem 0;
-  border-top: 1px solid var(--line-dark);
-  margin: 0;
-}
-
-.news-item:last-child,
-.news-item:has(+ .news-year) {
-  border-bottom: 1px solid var(--line-dark);
-}
-
-.news-item + .news-year {
-  margin-top: 3rem;
-}
-
-.news-date {
-  color: var(--gold);
-}
-
-.news-text {
-  color: var(--text-on-dark);
-  font-family: var(--serif);
-  font-size: clamp(1.1rem, 2vw, 1.35rem);
-  line-height: 1.5;
-}
-
 #research-interests + .grid-2 .card {
   padding-top: 2.3rem;
 }
@@ -1322,9 +1279,6 @@ p {
     align-items: flex-start;
   }
 
-  .news-item {
-    grid-template-columns: 58px 1fr;
-  }
 
   .blog-page-header {
     align-items: start;
