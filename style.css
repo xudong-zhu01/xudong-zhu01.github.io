@@ -910,6 +910,15 @@ p {
   color: var(--accent);
 }
 
+.course-title:last-child,
+.course-description:last-child {
+  margin-bottom: 0;
+}
+
+.course-card + .pub-group {
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+}
+
 .course-meta {
   display: flex;
   flex-wrap: wrap;
