@@ -1,6 +1,6 @@
 ---
 layout: null
-title: Blog - Xudong Zhu
+title: Essays - Xudong Zhu
 description: Essays and reflections by Xudong Zhu on international history, policy, statecraft, and great-power politics.
 active_nav: blog
 ---
@@ -14,38 +14,45 @@ active_nav: blog
   <a class="skip-link" href="#main">Skip to main content</a>
 
 {% include nav.html %}
+{% assign essays = site.posts | where: "section", "essay" %}
+{% assign records = site.posts | where: "section", "record" | reverse %}
+{% assign travel = site.posts | where: "section", "travel" %}
 
   <main id="main">
     <section class="apple-section section-light page-top">
-      <div class="container">
+      <div class="container container-narrow">
         <header class="blog-page-header">
           <h1 class="sf-display section-heading">Essays</h1>
-          <p class="body-text muted">Essays, notes, and translated records on international history, statecraft, and policy. Most are in Chinese.</p>
+          <p class="body-text muted">
+            Essays, translated records, and notes on international history, statecraft, and policy.
+            Most are in Chinese. For published commentary, see
+            <a class="text-link" href="{{ '/publications.html' | relative_url }}#commentary">Publications</a>.
+          </p>
         </header>
 
-        <div class="blog-list">
-          {% for post in site.posts %}
-          <a href="{{ post.url | relative_url }}" class="blog-card">
-            <div class="blog-meta-row sf-text">
-              <span class="badge-apple">{{ post.tags | first | default: "Essay" }}</span>
-              <span class="blog-date">{{ post.date | date: "%-d %B %Y" }}</span>
-            </div>
-
-            <h2 class="sf-display blog-title">{{ post.title }}</h2>
-
-            <p class="body-text blog-snippet">
-              {{ post.excerpt | strip_html | truncatewords: 30 }}
-            </p>
-
-            <div class="sf-text link-more">Read</div>
-          </a>
-          {% else %}
-          <article class="card card-light">
-            <h2 class="sf-display card-title-small">No posts yet.</h2>
-            <p class="body-text muted">New writing will appear here soon.</p>
-          </article>
+        <h2 class="caption pub-group" id="essays">Essays</h2>
+        <ul class="entry-list">
+          {% for post in essays %}
+{% include post-row.html post=post %}
           {% endfor %}
-        </div>
+        </ul>
+
+        <h2 class="caption pub-group" id="records">Translated Records</h2>
+        <p class="body-text muted entry-note">
+          Chinese translations of the records of conversation from President Nixon’s visit to China, 21–28 February 1972.
+        </p>
+        <ul class="entry-list">
+          {% for post in records %}
+{% include post-row.html post=post nodate="yes" %}
+          {% endfor %}
+        </ul>
+
+        <h2 class="caption pub-group" id="travel">Travel Notes</h2>
+        <ul class="entry-list">
+          {% for post in travel %}
+{% include post-row.html post=post %}
+          {% endfor %}
+        </ul>
       </div>
     </section>
   </main>
