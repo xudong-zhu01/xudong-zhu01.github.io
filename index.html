@@ -44,13 +44,14 @@ active_nav: home
       <div class="container hero-profile">
         <img
           src="{{ '/assets/portrait-240.jpg' | relative_url }}"
-          srcset="{{ '/assets/portrait-240.jpg' | relative_url }} 240w, {{ '/assets/portrait.jpg' | relative_url }} 1254w"
+          srcset="{{ '/assets/portrait-240.jpg' | relative_url }} 240w, {{ '/assets/portrait-680.jpg' | relative_url }} 680w, {{ '/assets/portrait.jpg' | relative_url }} 1254w"
           sizes="(max-width: 720px) 200px, (max-width: 900px) 28vw, 340px"
           class="hero-portrait"
           alt="Portrait of Xudong Zhu"
           width="340"
           height="340"
           decoding="async"
+          fetchpriority="high"
         >
 
         <span class="caption hero-kicker">International History · Strategy</span>
@@ -76,51 +77,60 @@ active_nav: home
       </div>
     </section>
 
-    <section class="apple-section section-light section-flush-top" aria-labelledby="profile-summary">
-      <div class="container grid-3">
-        <div class="card card-light">
-          <h2 id="profile-summary" class="sf-display card-title-small">Education</h2>
-          <ul class="body-text clean-list">
-            <li>
-              PhD in International History<br>
-              <span class="caption muted">University of Aberdeen, UK · in progress</span>
-            </li>
-            <li>
-              MA in American Studies<br>
-              <span class="caption muted">Heidelberg University, DE</span>
-            </li>
-            <li>
-              LLB in Diplomacy<br>
-              <span class="caption muted">Jilin University, CN</span>
-            </li>
-          </ul>
-        </div>
+    <section class="apple-section section-light section-flush-top" aria-labelledby="selected-writing">
+      <div class="container">
+        <h2 id="selected-writing" class="sf-display section-heading">Selected Writing</h2>
 
-        <div class="card card-light">
-          <h2 class="sf-display card-title-small">Memberships</h2>
-          <ul class="body-text clean-list">
-            <li>Royal Historical Society</li>
-            <li>Association of Chinese Political Studies</li>
-          </ul>
-        </div>
+        <ul class="entry-list">
+          <li class="entry-row">
+            <span class="entry-aside sf-text">
+              <span>LSE USAPP</span>
+              <time datetime="2026-10-02">2 Oct 2026</time>
+            </span>
+            <a class="entry-link sf-display" href="https://blogs.lse.ac.uk/usappblog/2026/10/02/trump-xi-summit-stability/" target="_blank" rel="noopener noreferrer">The Washington Summit Shows That US–China Relations Require a Firmer Foundation than the Relationship between Its Two Leaders</a>
+          </li>
+          <li class="entry-row">
+            <span class="entry-aside sf-text">
+              <span>US–China Perception Monitor</span>
+              <time datetime="2026-05-18">18 May 2026</time>
+            </span>
+            <a class="entry-link sf-display" href="https://uscnpm.org/analysis/improving-u-s-china-relations/" target="_blank" rel="noopener noreferrer">Improving U.S.–China Relations: Ten Thousand Years Is Too Long; Seize the Day</a>
+          </li>
+          <li class="entry-row">
+            <span class="entry-aside sf-text">
+              <span>Routledge</span>
+              <span>Book chapter, 2026</span>
+            </span>
+            <a class="entry-link sf-display" href="https://doi.org/10.4324/9781003736554-8" target="_blank" rel="noopener noreferrer">How to Maintain a Balance in the Intricate <em>Pas de Trois</em> among China, US and EU</a>
+          </li>
+          <li class="entry-row">
+            <span class="entry-aside sf-text">
+              <span>Jimmy Carter Prize</span>
+              <span>Runner-up, 2025</span>
+            </span>
+            <a class="entry-link sf-display" href="https://uscnpm.org/analysis/europe-autonomy-against-chinese-influence/" target="_blank" rel="noopener noreferrer">Trump as the (In)advertent Harbinger of a New Transatlantic Security Architecture: Europe’s Autonomy as a Bulwark Against Chinese Influence</a>
+          </li>
+        </ul>
 
-        <div class="card card-light">
-          <h2 class="sf-display card-title-small">Languages</h2>
-          <ul class="body-text clean-list">
-            <li>English</li>
-            <li>Chinese</li>
-            <li>German</li>
-          </ul>
-        </div>
+        <p class="section-more">
+          <a href="{{ '/publications.html' | relative_url }}" class="link-inline">All publications</a>
+        </p>
       </div>
     </section>
 
-
-    <section class="apple-section section-light" aria-labelledby="research-interests">
+    <section class="apple-section section-light section-flush-top" aria-labelledby="research">
       <div class="container">
-        <h2 id="research-interests" class="sf-display section-heading">Research Interests</h2>
+        <h2 id="research" class="sf-display section-heading">Research</h2>
 
-        <div class="grid-2">
+        <p class="body-text research-lead">
+          My doctoral thesis is <em>Strategy-Making in a Fragmented State: Security Policy, Defence
+          Policy, and Grand Strategy in Sino-German Cooperation (1928–1938)</em>, supervised by
+          Prof. Dr. Thomas Weber and Dr. Andrew Dilley. I am also writing
+          <em lang="de">Das politische System Chinas</em> with Dr. Björn Alexander Düben, under
+          contract with Nomos.
+        </p>
+
+        <div class="grid-2 research-cards">
           <div class="card card-light">
             <h3 class="sf-display card-title-small">Applied History &amp; Statecraft</h3>
             <ul class="body-text clean-list disc-list muted">
@@ -134,6 +144,47 @@ active_nav: home
             <ul class="body-text clean-list disc-list muted">
               <li>Great-power competition, including U.S.–China and transatlantic relations.</li>
               <li>International institutions and legal frameworks.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apple-section section-light section-flush-top" aria-label="Background">
+      <div class="container">
+        <div class="grid-3">
+          <div class="card card-light">
+            <h2 class="sf-display card-title-small">Education</h2>
+            <ul class="body-text clean-list">
+              <li>
+                PhD in International History<br>
+                <span class="caption muted">University of Aberdeen, UK · in progress</span>
+              </li>
+              <li>
+                MA in American Studies<br>
+                <span class="caption muted">Heidelberg University, DE</span>
+              </li>
+              <li>
+                LLB in Diplomacy<br>
+                <span class="caption muted">Jilin University, CN</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card card-light">
+            <h2 class="sf-display card-title-small">Memberships</h2>
+            <ul class="body-text clean-list">
+              <li>Postgraduate Member, Royal Historical Society</li>
+              <li>Member, Association of Chinese Political Studies</li>
+            </ul>
+          </div>
+
+          <div class="card card-light">
+            <h2 class="sf-display card-title-small">Languages</h2>
+            <ul class="body-text clean-list">
+              <li>Mandarin (native)</li>
+              <li>English (fluent)</li>
+              <li>German (fluent)</li>
             </ul>
           </div>
         </div>
