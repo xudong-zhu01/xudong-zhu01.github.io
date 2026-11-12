@@ -58,6 +58,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-offset) + 12px);
   background: var(--paper);
 }
 
@@ -1245,7 +1246,20 @@ p {
 /* Error page
    ========================================================================== */
 
+.page-error {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--ink-deep);
+}
+
+.page-error main {
+  flex: 1;
+  display: flex;
+}
+
 .error-kicker {
+  justify-content: center;
   color: var(--gold);
 }
 
@@ -1253,6 +1267,10 @@ p {
   display: block;
   max-width: 780px;
   text-align: center;
+}
+
+.error-page p {
+  margin: 1.25rem auto 0;
 }
 
 .error-page .btn-primary {
@@ -1417,9 +1435,13 @@ p {
 }
 
 @media (max-width: 440px) {
+  .nav-links {
+    gap: 0;
+  }
+
   .nav-links a {
-    padding: 0 9px;
-    font-size: 0.84rem;
+    padding: 0 clamp(4px, 1.8vw, 12px);
+    font-size: clamp(0.78rem, 3.5vw, 0.88rem);
   }
 
   .footer-inner {
